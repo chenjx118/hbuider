@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	    <style type="text/css" >
+	    *{margin: 0;padding: 0;}	
+		.btn    {width:200px;
+		         height:50px;
+				 float:left;
+				 border-bottom:1px solid #888888;
+				 }
+		.btn:hover{cursor:pointer;}
+		.btnclick{width:200px;
+		         height:55px;
+				 float:left;
+				 border-bottom:1px solid #888888;
+				 }
+				 
+		.text   {color:#fff;
+		         font-size:18px;
+				 font-weight:400;
+				 float:left;
+				 margin-top:10px;
+				 }
+		.textclick{color:#fff;
+		         font-size:18px;
+				 font-weight:700;
+				 float:left;
+				 margin-top:10px;
+				 
+				 }
+		.tooltip{display:inline-block;
+		         margin-top:10px;
+				 
+				 position:relative;}		
+		.tooltip .tooltiptext {
+		    visibility: hidden;
+		    width: 100px;
+		    background-color:#fff;
+		    color: black;
+		    text-align: center;
+		    
+		    padding: 5px 5px;
+		​    bottom:10px;
+		    /* 定位 */
+		    position: absolute;
+		    z-index: 1;
+			font-size:12px;
+			font-weight:100;
+			box-shadow:#DFDFDF 3px 3px 3px 3px;
+		}
+		
+		.tooltip:hover .tooltiptext {
+		    visibility: visible;
+		}
+			   
+		
+		.tooltip1{display:inline-block;
+				 position:relative;}		
+		.tooltip1 .tooltiptext1 {
+		    visibility: hidden;
+		    width: 300px;
+		    background-color:#fff;
+		    color: black;
+		    text-align: center;
+		   
+		    padding: 5px 5px;
+		​    bottom:10px;
+		    /* 定位 */
+		    position: absolute;
+		    z-index: 1;
+			font-size:12px;
+			font-weight:100;
+		}
+		
+		.tooltip1:hover .tooltiptext1 {
+		    visibility: visible;
+		}
+		.triangle2 .content2{float:left;
+		                     width:7px;
+		                     height:7px;
+							 border-top:2px solid #fff;
+							 border-right:2px solid #fff;
+							 transform:rotate(45deg);
+							 margin:10px 0 0 10px;
+							 }
+		
+		</style>
+	    
+		<script type="text/javascript">
+			window.onload = function(){
+				var li=document.getElementsByClassName("pagetwoleft")[0].getElementsByTagName('li');<!--获取li-->
+				var divs=document.getElementsByClassName("pagetworight")[0].getElementsByClassName('tworight');<!--获取tworight的div-->
+				
+				
+				divs[0].style.display="block";
+				for(var i=0;i<li.length;i++){
+					li[i].index = i;
+					li[i].onclick = function(){
+						for (var i =0;i<li.length;i++){
+							divs[i].style.display="none";<!--点击时隐藏所有样式-->
+						};<!--for-->
+					divs[this.index].style.display="block";	<!--点击出现-->
+					
+					};<!--onclick-->
+			    }<!--for-->
+			        
+			    	
+			    	
+			    		
+			    		
+			    	
+			    
+			};<!--结束-->
+		   
+		</script>
+	    
+	
+	
+	</head>
+	<body>
+	
+	<div class="pagetwo" style="background: #141414;width:100%;height:950px;float:left;overflow: hidden;">
+		<ul class="pagetwoleft" style="float:left;display:block;margin:150px 0 0 100px;width:300px;list-style:none;">
+			
+			<li class="btn">
+				<div class="btncircle" style="float:left;border-radius:20px;background-color:#605E5C;width:40px;height:40px;margin:5px 10px 0 0;">
+				    <div class="jpg" style="float:left;margin:10px 0 0 15px;">
+					    <a href="#">
+					    <img src="pagetwo1.jpg" alt="logo">
+					    </a>
+	                </div><!--jpg-->
+				</div><!--btncircle-->
+				<div class="text">
+					开发
+				</div>
+			</li><!--btn-->
+			
+			<li class="btn" >
+				<div class="btncircle" style="float:left;border-radius:20px;background-color:#605E5C;width:40px;height:40px;margin:5px 10px 0 0;">
+				    <div class="jpg" style="float:left;margin:10px 0 0 13px;">
+					    <a href="#">
+					    <img src="pagetwo2.jpg" alt="logo">
+					    </a>
+				    </div><!--jpg-->
+				</div><!--btncircle-->
+				<div class="text">
+					分析
+				</div>
+			</li><!--btn-->
+			
+			<li class="btn" >
+				<div class="btncircle" style="float:left;border-radius:20px;background-color:#605E5C;width:40px;height:40px;margin:5px 10px 0 0;">
+				    <div class="jpg" style="float:left;margin:10px 0 0 13px;">
+					    <a href="#">
+					    <img src="pagetwo3.jpg" alt="logo">
+					    </a>
+				    </div><!--jpg-->
+				</div><!--btncircle-->
+				<div class="text" >
+					Debug
+				</div>
+			</li><!--btn-->
+			
+			<li class="btn" >
+				<div class="btncircle" style="float:left;border-radius:20px;background-color:#605E5C;width:40px;height:40px;margin:5px 10px 0 0;">
+				    <div class="jpg" style="float:left;margin:10px 0 0 13px;">
+					    <a href="#">
+					    <img src="pagetwo4.jpg" alt="logo">
+					    </a>
+				    </div><!--jpg-->
+				</div><!--btncircle-->
+				<div class="text">
+					测试
+				</div>
+			</li><!--btn-->
+			
+			<li class="btn" >
+				<div class="btncircle" style="float:left;border-radius:20px;background-color:#605E5C;width:40px;height:40px;margin:5px 10px 0 0;">
+				    <div class="jpg" style="float:left;margin:10px 0 0 13px;">
+					    <a href="#">
+					    <img src="pagetwo5.jpg" alt="logo">
+					    </a>
+				    </div><!--jpg-->
+				</div><!--btncircle-->
+				<div class="text" >
+					协作
+				</div>
+			</li><!--btn-->
+			
+			<li class="btn" >
+				<div class="btncircle" style="float:left;border-radius:20px;background-color:#605E5C;width:40px;height:40px;margin:5px 10px 0 0;">
+				    <div class="jpg" style="float:left;margin:10px 0 0 13px;">
+					    <a href="#">
+					    <img src="pagetwo6.jpg" alt="logo">
+					    </a>
+				    </div><!--jpg-->
+				</div><!--btncircle-->
+				<div class="text">
+				   部署
+				</div>
+			</li><!--btn-->
+		</ul><!--pagetwoleft-->
+		
+		
+		
+		<div class="pagetworight" style="float:right;margin:150px 0 0 0;width:900px;height:100%;">
+			
+			
+			
+			<div class="tworight"style="height:100%;">
+			<div class="boxtop" style="float:left;">
+			    <h1 class="boxtoptitle"style="display:block;color:#fff;font-weight:700;font-size:36px;">编写没什么错误的代码</h1><!--boxtoptitle-->
+			    <div class="boxtoptext"style="color:#fff;font-size:20px;margin-top:20px;font-weight:100;width:800px;">遇到困难时使用<div class="tooltip1"style="border-bottom-width:1px;
+			     border-bottom-style:dashed;border-color:fff;">IntelliSense<span class="tooltiptext1">Code comletion including Complete Word and more</span></div>
+				 代码建议快速准确地键入变量。
+			   无论导航到所需的任何文件、类型、成员或符号声明时的复杂程度如何，都保持一定的速度。
+			   使用建议操作（例如重命名函数或添加参数）的灯泡快速改进代码。
+			    </div><!--boxtoptext-->
+			</div><!--boxtop-->
+			<div class="boxmiddle" style="float:left;margin-top:30px;width:100%;">
+			    <div class="boxmiddlebutton" style="color:#fff;float:left;">
+				    所有开发功能
+			    </div><!--boxmiddlebutton-->
+				<div class="triangle2">
+				    <div class="content2">
+				    </div><!--content2-->
+				</div><!--triangle2-->
+			</div><!--boxmiddle-->
+			<div class="boxbottom" style="float:left;margin-top:30px;">
+				<img src="combined-gif2sl.gif"/ style="width:800px;">
+			</div><!--boxbottom-->
+		</div><!--tworight-->
+		
+		<div class="tworight"style="height:100%;">
+			<div class="boxtop" style="float:left;">
+			    <h1 class="boxtoptitle"style="display:block;color:#fff;font-weight:700;font-size:36px;">了解有关代码的详细信息</h1><!--boxtoptitle-->
+			    <div class="boxtoptext"style="color:#fff;font-size:20px;margin-top:20px;font-weight:100;width:800px;">
+					<div class="tooltip1"style="border-bottom-width:1px;
+			     border-bottom-style:dashed;border-color:fff;">
+				 CodeLens
+				 <span class="tooltiptext1">Find references,code changes,bugs,and more</span></div>
+				 帮助你轻松找到重要见解，例如对代码所做的更改、这些更改的影响以及是否对方法进行了单元测试。
+				  可一目了然地查看参考、作者、测试、提交历史记录和其他重要信息。
+			    </div><!--boxtoptext-->
+			</div><!--boxtop-->
+			<div class="boxmiddle" style="float:left;margin-top:30px;width:100%;">
+			    <div class="boxmiddlebutton" style="color:#fff;float:left;">
+				    所有分析功能
+			    </div><!--boxmiddlebutton-->
+				<div class="triangle2">
+				    <div class="content2">
+				    </div><!--content2-->
+				</div><!--triangle2-->
+			</div><!--boxmiddle-->
+			<div class="boxbottom" style="float:left;margin-top:30px;">
+				<img src="combined-gif2sl.gif"/ style="width:800px;">
+			</div><!--boxbottom-->
+		</div><!--tworight-->
+		
+		
+		<div class="tworight"style="height:100%;">
+			<div class="boxtop" style="float:left;">
+			    <h1 class="boxtoptitle"style="display:block;color:#fff;font-weight:700;font-size:36px;">快速找到并修复bug</h1><!--boxtoptitle-->
+			    <div class="boxtoptext"style="color:#fff;font-size:20px;margin-top:20px;font-weight:100;width:800px;">
+					借助 Visual Studio，可以使用断点和所需方法在要检查 bug 时暂停代码执行。
+					如果一步过长或遇到了意外的更改，可以回退到任何特定代码行，而无需重启会话或重新创建状态。
+			    </div><!--boxtoptext-->
+			</div><!--boxtop-->
+			<div class="boxmiddle" style="float:left;margin-top:30px;width:100%;">
+			    <div class="boxmiddlebutton" style="color:#fff;float:left;">
+				    所有调试功能
+			    </div><!--boxmiddlebutton-->
+				<div class="triangle2">
+				    <div class="content2">
+				    </div><!--content2-->
+				</div><!--triangle2-->
+			</div><!--boxmiddle-->
+			<div class="boxbottom" style="float:left;margin-top:30px;">
+				<img src="combined-gif2sl.gif"/ style="width:800px;">
+			</div><!--boxbottom-->
+		</div><!--tworight-->
+		
+		<div class="tworight"style="height:100%;">
+			<div class="boxtop" style="float:left;">
+			    <h1 class="boxtoptitle"style="display:block;color:#fff;font-weight:700;font-size:36px;">有效工作</h1><!--boxtoptitle-->
+			    <div class="boxtoptext"style="color:#fff;font-size:20px;margin-top:20px;font-weight:100;width:800px;">
+					轻松导航和组织测试套件，以便分析测试的代码量并立即查看结果。
+					立即了解所做的每个更改的影响，并让高级功能在你键入代码时对其进行测试。
+					在错误发生时立即修复错误，并查看现有测试是否覆盖了新更改。
+			    </div><!--boxtoptext-->
+			</div><!--boxtop-->
+			<div class="boxmiddle" style="float:left;margin-top:30px;width:100%;">
+			    <div class="boxmiddlebutton" style="color:#fff;float:left;">
+				    所有测试功能
+			    </div><!--boxmiddlebutton-->
+				<div class="triangle2">
+				    <div class="content2">
+				    </div><!--content2-->
+				</div><!--triangle2-->
+			</div><!--boxmiddle-->
+			<div class="boxbottom" style="float:left;margin-top:30px;">
+				<img src="combined-gif2sl.gif"/ style="width:800px;">
+			</div><!--boxbottom-->
+		</div><!--tworight-->
+		
+		
+		<div class="tworight"style="height:100%;">
+			<div class="boxtop" style="float:left;">
+			    <h1 class="boxtoptitle"style="display:block;color:#fff;font-weight:700;font-size:36px;">共享多个屏幕</h1><!--boxtoptitle-->
+			    <div class="boxtoptext"style="color:#fff;font-size:20px;margin-top:20px;font-weight:100;width:800px;">
+					轻松导航和组织测试套件，以便分析测试的代码量并立即查看结果。
+					立即了解所做的每个更改的影响，并让高级功能在你键入代码时对其进行测试。
+					在错误发生时立即修复错误，并查看现有测试是否覆盖了新更改。
+			    </div><!--boxtoptext-->
+			</div><!--boxtop-->
+			<div class="boxmiddle" style="float:left;margin-top:30px;width:100%;">
+			    <div class="boxmiddlebutton" style="color:#fff;float:left;">
+				    所有协作功能
+			    </div><!--boxmiddlebutton-->
+				<div class="triangle2">
+				    <div class="content2">
+				    </div><!--content2-->
+				</div><!--triangle2-->
+			</div><!--boxmiddle-->
+			<div class="boxbottom" style="float:left;margin-top:30px;">
+				<img src="combined-gif2sl.gif"/ style="width:800px;">
+			</div><!--boxbottom-->
+		</div><!--tworight-->
+		
+		
+		<div class="tworight"style="height:100%;">
+			<div class="boxtop" style="float:left;">
+			    <h1 class="boxtoptitle"style="display:block;color:#fff;font-weight:700;font-size:36px;">针对云进行构建</h1><!--boxtoptitle-->
+			    <div class="boxtoptext"style="color:#fff;font-size:20px;margin-top:20px;font-weight:100;width:800px;">
+					使用适用于常见应用程序类型和本地 Azure 仿真程序的模板快速启动和运行，而无需 Azure 帐户。
+					还可以预配应用程序依赖项（例如 Azure SQL 数据库和 Azure 存储帐户），而无需离开 Visual Studio。
+					使用直接附加到应用程序的 Visual Studio 远程调试器快速诊断任何问题。
+			    </div><!--boxtoptext-->
+			</div><!--boxtop-->
+			<div class="boxmiddle" style="float:left;margin-top:30px;width:100%;">
+			    <div class="boxmiddlebutton" style="color:#fff;float:left;">
+				    所有部署功能
+			    </div><!--boxmiddlebutton-->
+				<div class="triangle2">
+				    <div class="content2">
+				    </div><!--content2-->
+				</div><!--triangle2-->
+			</div><!--boxmiddle-->
+			<div class="boxbottom" style="float:left;margin-top:30px;">
+				<img src="combined-gif2sl.gif"/ style="width:800px;">
+			</div><!--boxbottom-->
+		</div><!--tworight-->
+		
+		
+		
+		</div><!--pagetworight-->
+	
+	
+	</div><!--pagetwo-->
+	</body>
+</html>

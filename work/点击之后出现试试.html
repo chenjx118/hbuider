@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	<style>
+		.triangle2 .content2{float:left;
+		                     width:7px;
+		                     height:7px;
+							 border-top:2px solid #fff;
+							 border-right:2px solid #fff;
+							 transform:rotate(45deg);
+							 margin:10px 0 0 10px;
+							 }
+		.lineboxactive{
+		                 float:left;
+						 margin:0 0 0 180px;
+						 width:1000px;
+						 height:650px;
+						 background-color:#FAF9F8;
+						 color:#000;
+						 font-size:24px;
+						 }
+	    .lineboxactive1{display:none;
+	                     }
+	</style>
+	<script type="text/javascript">
+	    window.onload = function(){
+		var button0=document.getElementsByClassName("linebox");
+	    var text0=document.getElementsByClassName("lineboxactive");
+	     
+		for(var i=0;i<button0.length;i++){
+			button0[i].onclick=function(){
+				var presentbutton = this.lineboxactive1;
+				 removeClass(presentbutton,"line1boxactive1");
+			}<!--onclick-->
+	    }<!--for-->
+	
+	}<!--onload-->
+	
+	</script>
+	
+	</head>
+	<body>
+	
+	
+	<div class="pagethree" style="float:left;height:1300px;width:100%;overflow:hidden;">	 
+		 <div class="pagethreetop" style="float:left;margin:100px 0 0 50px;width:1000px;">
+		<h1 class="pagethreetoptitle" style="color: #000000;font-size:44px;font-weight:700;">VisualStudio工作负载</h1><!--pagethreetoptitle-->
+		<p class="pagethreetoptext" style="color:#000000;font-size:26px;font-weight:700;margin-top:20px;">仅安装在VisualStudio中开发所需的工具和组件捆绑包</p><!--pagethreetoptext-->
+	</div><!--pagethreetop-->
+	<div class="pagethreemiddle" style="float:left;margin:30px 0 50px 50px;width:1000px;">
+		<div class="ptmbutton" style="color: #21759B;font-size:18px;font-weight:300;float:left;">
+		    修改VisualStudio
+		</div><!--ptmbutton-->
+		<div class="triangle2" style="border-color:#21759B;"><!--箭头的颜色不是蓝色，为了防止麻烦在标签内改变颜色，其他的还按照样式中的-->
+		    <div class="content2" style="border-color:#21759B;">
+		    </div><!--content2-->
+		</div><!--triangle2-->
+	</div><!--pagethreemiddle-->
+	
+	
+	<div class="pagethreebottom" style="float:left;width:1280px;margin-left:50px;">
+		<div class="line1" style="float:left;width:1280px;height:170px;border-bottom:1px solid rgba(186,172,172,.2);">
+			<div class="line1text" style="display:inline-block;width:180px;color:#000000;float:left;font-weight:700;font-size:22px;cursor:pointer;">
+				Web & cloud
+			</div><!--line1text-->
+			
+			<div class="linebox" style="display:inline-block;width:180px;height:120px;float:left;border:1px solid rgba(186,172,172,.2);">
+				<div class="box1.1logo" style="float:left;width:150px;margin:10px 0 0 10px;">
+					<a href="#">
+					<img src="box1.1.jpg" alt="logo">
+					</a>
+				</div><!--box1.1logo-->
+				<div class="box1.1text" style="float:left;width:150px;margin:10px 0 0 10px;color:#000000;font-size:16px;font-weight:200;">
+					ASP.NET和Web开发
+				</div><!--box1.1text-->
+			</div><!--line1box1-->
+			
+			
+			
+			<div class="linebox" style="display:inline-block;width:180px;height:120px;float:left;border:1px solid rgba(186,172,172,.2);margin-left:30px;">
+				<div class="box1.2logo" style="float:left;width:150px;margin:10px 0 0 10px;">
+					<a href="#">
+					<img src="box1.2.jpg" alt="logo">
+					</a>
+				</div><!--box1.2logo-->
+				<div class="box1.2text" style="float:left;width:150px;margin:10px 0 0 10px;color:#000000;font-size:16px;font-weight:200;">
+					Azure
+				</div><!--box1.2text-->
+			</div><!--line1box2-->
+			
+			<div class="linebox" style="display:inline-block;width:180px;height:120px;float:left;border:1px solid rgba(186,172,172,.2);margin-left:30px;">
+				<div class="box1.3logo" style="float:left;width:150px;margin:10px 0 0 10px;">
+					<a href="#">
+					<img src="box1.3.jpg" alt="logo">
+					</a>
+				</div><!--box1.3logo-->
+				<div class="box1.3text" style="float:left;width:150px;margin:10px 0 0 10px;color:#000000;font-size:16px;font-weight:200;">
+					Python
+				</div><!--box1.3text-->
+			</div><!--line1box3-->
+			
+			<div class="linebox" style="display:inline-block;width:180px;height:120px;float:left;border:1px solid rgba(186,172,172,.2);margin-left:30px;">
+				<div class="box1.4logo" style="float:left;width:150px;margin:10px 0 0 10px;">
+					<a href="#">
+					<img src="box1.4.jpg" alt="logo">
+					</a>
+				</div><!--box1.4logo-->
+				<div class="box1.4text" style="float:left;width:150px;margin:10px 0 0 10px;color:#000000;font-size:16px;font-weight:200;">
+					Azure
+				</div><!--box1.4text-->
+			</div><!--line1box4-->
+		</div><!--line1-->
+		
+	<div class="lineboxactive1">
+		<div class="lineboxactive" >
+			<div class="drop-down-list1.1" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+				<p class="drop-down-list1.1.1" style="float:left;width:100%;font-size:20px;font-weight:700;">
+					ASP.NET和Web开发
+				</p><!--drop-down-list1.1.1--><br>
+			    <p class="drop-down-list1.1.2" style="float:left;width:100%;font-size:18px;font-weight:100;">
+					使用ASP.NETCore、ASP.NET(NET Framework)、HTML/JavaScript和包括Docker支持的容器生成Web应用程序
+				</p><!--drop-down-list1.1.2-->
+			</div><!--drop-down-list1-->
+			
+			<div class="drop-down-list1.2" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+				<p class="drop-down-list1.2.1" style="float:left;font-size:20px;font-weight:700;">
+					说明
+				</p><!--drop-down-list1.2.1--><br>
+			    <p class="drop-down-list1.2.2" style="float:left;font-size:18px;font-weight:100;">
+					最大限度地提高使用ASPNET Core以及HTML和JavasCript等基于标准的技术开发.NET Web应用程序的工作效率。
+				</p><!--drop-down-list1.2.2-->
+			</div><!--drop-down-list2-->
+			
+			<div class="drop-down-list1.3" style="float;left;width:100%;margin:30px 0 0 30px;height:100px;">
+				<p class="drop-down-list1.3.1" style="float:left;font-size:20px;font-weight:700;">
+					开发应用程序
+				</p><!--drop-down-list1.3.1--><br>
+			    <p class="drop-down-list1.3.2" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+					使用ASPNET Core中的Razor页面的网站
+				</p><!--drop-down-list1.3.2--><br>
+			    <p class="drop-down-list1.3.3" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+					-使用ASPNET Core MVC生成Web API
+				</p><!--1.3.3--><br>
+			    <p class="drop-down-list1.3.4" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+					-使用ASPNET Core SignalR构建实时Web应用
+				</p><!--1.3.4--><br>
+			</div><!--drop-down-list3-->
+			
+			<div class="drop-down-list1.4" style="float;left;width:100%;margin:30px 0 0 30px;height:250px;">
+				<p class="drop-down-list1.4.1" style="float:left;font-size:20px;font-weight:700;">
+					组件
+				</p><!--drop-down-list1.4.1--><br>
+			    <p class="drop-down-list1.4.2" style="float:left;font-size:18px;font-weight:100;">
+					-NET Framework 4x 开发工具
+				</p><!--drop-down-list1.4.2--><br>
+			    <p class="drop-down-list1.4.3" style="float:left;font-size:18px;font-weight:100;">
+					-NET Core 2.1 开发工具
+				</p><!--1.4.3--><br>
+			    <p class="drop-down-list1.4.4" style="float:left;font-size:18px;font-weight:100;">
+					-ASPNET和Web开发工具
+				</p><!--1.4.4--><br>
+				<p class="drop-down-list1.4.5" style="float:left;font-size:18px;font-weight:100;">
+					-NET分析工具
+				</p><!--1.4.5--><br>
+				<p class="drop-down-list1.4.6" style="float:left;font-size:18px;font-weight:100;">
+					-容器开发开发工具
+				</p><!--drop-down-list1.4.6--></br>
+				<p class="drop-down-list1.4.7" style="float:left;font-size:18px;font-weight:100;">
+					-用于Web开发的云工具</br>
+				</p><!--1.4.7-->
+				<p class="drop-down-list1.4.8" style="float:left;font-size:18px;font-weight:100;">
+					-IntelliSense、代码导航和重构（C#、Visual Basic和F#)</br>
+				</p><!--1.4.8-->
+			</div><!--drop-down-list1.4-->
+			
+			<div class="drop-down-list1.5" style="float;left;width:100%;margin:30px 0 0 30px;font-size:18px;font-weight:100;color:#2A6496;height:25px;">
+			    
+					详细了解ASPNET和Web开发&nbsp;<b>></b>
+				
+			</div><!--drop-down-list1.5-->
+			
+		</div><!--line1box1active-->
+	</div>
+	
+	
+	<div class="lineboxactive1">	 
+		<div class="lineboxactive">
+			<div class="drop-down-list2.1" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+				<p class="drop-down-list2.1.1" style="float:left;width:100%;font-size:20px;font-weight:700;">
+					Azure
+				</p><!--drop-down-list2.1.1--></br>
+			    <p class="drop-down-list2.1.2" style="float:left;width:100%;font-size:18px;font-weight:100;">
+					用于开发云应用、创建资源以及生成包括Docker支持的容器的Azure SDK、和项目
+				</p><!--drop-down-list2.1.2-->
+			</div><!--drop-down-list2.1-->
+			
+			<div class="drop-down-list2.2" style="float;left;width:100%;margin:30px 0 0 30px;height:100px;">
+				<p class="drop-down-list2.2.1" style="float:left;font-size:20px;font-weight:700;">
+					说明
+				</p><!--drop-down-list2.2.1--></br>
+			    <p class="drop-down-list2.2.2" style="float:left;font-size:18px;font-weight:100;">
+					轻松在 Microsoft 云上生成、测试、部署和管理可扩展的应用和服务。 安装后，在 Cloud Explorer 中查看资源、使用<br>
+					Azure 管理工具创建资源、生成适用于 Azure Web 和云服务的应用程序，还能使用 Azure Datalake 工具执行大数据运<br>算。
+				</p><!--drop-down-list2.2.2-->
+			</div><!--drop-down-list2.2-->
+			
+			<div class="drop-down-list2.3" style="float;left;width:100%;margin:30px 0 0 30px;height:100px;">
+				<p class="drop-down-list2.3.1" style="float:left;font-size:20px;font-weight:700;">
+					开发应用程序
+				</p><!--drop-down-list2.3.1--></br>
+			    <p class="drop-down-list2.3.2" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+					在集成开发环境中将 ASP.NET Core 应用发布到 Azure
+				</p><!--drop-down-list2.3.2--></br>
+			    <p class="drop-down-list2.3.3" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+					-测试云服务的性能
+				</p><!--2.3.3--></br>
+			    <p class="drop-down-list2.3.4" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+					-测试已发布的Azure云服务
+				</p><!--2.3.4--></br>
+			</div><!--drop-down-list2.3-->
+			
+			<div class="drop-down-list2.4" style="float;left;width:100%;margin:30px 0 0 30px;height:180px;">
+				<p class="drop-down-list2.4.1" style="float:left;font-size:20px;font-weight:700;">
+					组件
+				</p><!--drop-down-list2.4.1--><br>
+			    <p class="drop-down-list2.4.2" style="float:left;font-size:18px;font-weight:100;">
+					– Azure 开发必备组件
+				</p><!--drop-down-list2.4.2--><br>
+			    <p class="drop-down-list2.4.3" style="float:left;font-size:18px;font-weight:100;">
+					–.NET Framework 4.x 开发工具
+				</p><!--2.4.3--><br>
+			    <p class="drop-down-list2.4.4" style="float:left;font-size:18px;font-weight:100;">
+					– .NET Core 2.1 开发工具
+				</p><!--2.4.4--><br>
+				<p class="drop-down-list2.4.5" style="float:left;font-size:18px;font-weight:100;">
+	                –ASPNET和Web开发工具
+				</p><!--2.4.5--><br>
+				<p class="drop-down-list2.4.6" style="float:left;font-size:18px;font-weight:100;">
+					-容器开发工具
+				</p><!--drop-down-list2.4.6--><br>
+				
+			</div><!--drop-down-list2.4-->
+		
+		    <div class="drop-down-list2.5" style="float;left;width:100%;margin:30px 0 0 30px;font-size:18px;font-weight:100;color:#2A6496;height:25px;">
+		        
+		    		了解有关Azure的详细信息&nbsp;<b>></b>
+		    </div><!--drop-down-list2.5-->
+		</div><!--line1box2active-->
+	</div>	
+		
+	<div class="lineboxactive1">	
+		<div class="lineboxactive">
+			<div class="drop-down-list3.1" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+				<p class="drop-down-list3.1.1" style="float:left;width:100%;font-size:20px;font-weight:700;">
+					Python
+				</p><!--drop-down-list3.1.1--></br>
+			    <p class="drop-down-list3.1.2" style="float:left;width:100%;font-size:18px;font-weight:100;">
+					对Python进行编辑、调试、交互式开发和源代码管理
+				</p><!--drop-down-list3.1.2-->
+			</div><!--drop-down-list3.1-->
+			
+			<div class="drop-down-list3.2" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+				<p class="drop-down-list3.2.1" style="float:left;font-size:20px;font-weight:700;">
+					说明
+				</p><!--drop-down-list3.2.1--></br>
+			    <p class="drop-down-list3.2.2" style="float:left;font-size:18px;font-weight:100;">
+					支持使用熟悉的框架（包括Django和Flash)构建的Python Web应用程序，
+					以及使用内置Conda和IPython支持构建的数据科学应用程序。
+				</p><!--drop-down-list3.2.2-->
+			</div><!--drop-down-list3.2-->
+			
+			<div class="drop-down-list3.3" style="float;left;width:100%;margin:30px 0 0 30px;height:100px;">
+				<p class="drop-down-list3.3.1" style="float:left;font-size:20px;font-weight:700;">
+					开发应用程序
+				</p><!--drop-down-list3.3.1--></br>
+			    <p class="drop-down-list3.3.2" style="float:left;font-size:18px;font-weight:100;">
+					-Python 应用程序
+				</p><!--drop-down-list3.3.2--></br>
+			    <p class="drop-down-list3.3.3" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+					-Django Web 应用
+				</p><!--3.3.3--></br>
+			    <p class="drop-down-list3.3.4" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+					-Flash Web 应用
+				</p><!--3.3.4--></br>
+			</div><!--drop-down-list3.3-->
+			
+			<div class="drop-down-list3.4" style="float;left;width:100%;margin:30px 0 0 30px;height:230px;">
+				<p class="drop-down-list3.4.1" style="float:left;font-size:20px;font-weight:700;">
+					组件
+				</p><!--drop-down-list3.4.1--><br>
+			    <p class="drop-down-list3.4.2" style="float:left;font-size:18px;font-weight:100;">
+					– 支持CPython、virtualenv、venv和conda环境
+				</p><!--drop-down-list3.4.2--><br>
+			    <p class="drop-down-list3.4.3" style="float:left;font-size:18px;font-weight:100;">
+					–多种多样的编辑、intelliSense和代码理解
+				</p><!--3.4.3--><br>
+			    <p class="drop-down-list3.4.4" style="float:left;font-size:18px;font-weight:100;">
+					–交互式（REPL)环境窗口
+				</p><!--3.4.4--><br>
+				<p class="drop-down-list3.4.5" style="float:left;font-size:18px;font-weight:100;">
+		            –在开放的文件夹工作区中支持Python
+				</p><!--3.4.5--><br>
+				<p class="drop-down-list3.4.6" style="float:left;font-size:18px;font-weight:100;">
+					-使用项目和项模板简化新建项目过程
+				</p><!--drop-down-list3.4.6--><br>
+				<p class="drop-down-list3.4.7" style="float:left;font-size:18px;font-weight:100;">
+					–分析和单元测试工具
+				</p><!--3.4.7--><br>
+				<p class="drop-down-list3.4.8" style="float:left;font-size:18px;font-weight:100;">
+				    –使用Miniconda管理Conda环境
+				</p><!--3.4.8--><br>
+				<p class="drop-down-list3.4.9" style="float:left;font-size:18px;font-weight:100;">
+					-Live Share
+				</p><!--drop-down-list3.4.9--><br>
+				
+			</div><!--drop-down-list3.4-->
+		
+		    <div class="drop-down-list3.5" style="float;left;width:100%;margin:30px 0 0 30px;font-size:18px;font-weight:100;color:#2A6496;height:25px;">
+		        
+		    		深入了解Python&nbsp;<b>></b>
+		    </div><!--drop-down-list3.5-->
+		</div><!--line1box3active-->
+	</div>
+	
+	
+	<div class="lineboxactive1">
+		<div class="lineboxactive">
+			<div class="drop-down-list4.1" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+				<p class="drop-down-list4.1.1" style="float:left;width:100%;font-size:20px;font-weight:700;">
+					Node.js开发
+				</p><!--drop-down-list4.1.1--></br>
+			    <p class="drop-down-list4.1.2" style="float:left;width:100%;font-size:18px;font-weight:100;">
+					使用服务器端 JavaScript 运行时环境 Node.js 构建快速且可缩放的应用程序
+				</p><!--drop-down-list4.1.2-->
+			</div><!--drop-down-list4.1-->
+			
+			<div class="drop-down-list4.2" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+				<p class="drop-down-list4.2.1" style="float:left;font-size:20px;font-weight:700;">
+					说明
+				</p><!--drop-down-list4.2.1--></br>
+			    <p class="drop-down-list4.2.2" style="float:left;font-size:18px;font-weight:100;">
+					使用 Web 框架（如 Express）和前端框架（如 React）轻松构建 Node.js 应用程序。
+				</p><!--drop-down-list4.2.2-->
+			</div><!--drop-down-list4.2-->
+			
+			<div class="drop-down-list4.3" style="float;left;width:100%;margin:30px 0 0 30px;height:100px;">
+				<p class="drop-down-list4.3.1" style="float:left;font-size:20px;font-weight:700;">
+					开发应用程序
+				</p><!--drop-down-list4.3.1--></br>
+			    <p class="drop-down-list4.3.2" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+					-使用 Express 创建 Node.js 应用
+				</p><!--drop-down-list4.3.2--></br>
+			    <p class="drop-down-list4.3.3" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+					-使用 React 创建 Node.js 应用
+				</p><!--4.3.3--></br>
+			    <p class="drop-down-list4.3.4" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+					-将 Node.js 应用发布到 Azure 云
+				</p><!--4.3.4--></br>
+			</div><!--drop-down-list4.3-->
+			
+			<div class="drop-down-list4.4" style="float;left;width:100%;margin:30px 0 0 30px;height:250px;">
+				<p class="drop-down-list4.4.1" style="float:left;font-size:20px;font-weight:700;">
+					组件
+				</p><!--drop-down-list4.4.1--><br>
+			    <p class="drop-down-list4.4.2" style="float:left;font-size:18px;font-weight:100;">
+					– 项目模板
+				</p><!--drop-down-list4.4.2--><br>
+			    <p class="drop-down-list4.4.3" style="float:left;font-size:18px;font-weight:100;">
+					–IntelliCode
+				</p><!--4.4.3--><br>
+			    <p class="drop-down-list4.4.4" style="float:left;font-size:18px;font-weight:100;">
+					–npm集成
+				</p><!--4.4.4--><br>
+				<p class="drop-down-list4.4.5" style="float:left;font-size:18px;font-weight:100;">
+		            –交互式 (REPL) 环境窗口
+				</p><!--4.4.5--><br>
+				<p class="drop-down-list4.4.6" style="float:left;font-size:18px;font-weight:100;">
+					-本地和远程
+				</p><!--drop-down-list4.4.6-->
+				<p class="drop-down-list4.4.7" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+					高级调试
+				</p><!--4.4.7--><br>
+				<p class="drop-down-list4.4.8" style="float:left;font-size:18px;font-weight:100;">
+				    –使用分析工具跟踪性能
+				</p><!--4.4.8--><br>
+				<p class="drop-down-list4.4.9" style="float:left;font-size:18px;font-weight:100;">
+					-单元测试支持
+				</p><!--drop-down-list4.4.9--><br>
+				<p class="drop-down-list4.4.10" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+					-TypeScript 集成
+				</p><!--drop-down-list4.4.10--><br>
+				
+			</div><!--drop-down-list4.4-->
+		
+		    <div class="drop-down-list4.5" style="float;left;width:100%;margin:30px 0 0 30px;font-size:18px;font-weight:100;color:#2A6496;height:25px;">
+		        了解更多有关 Node.js 的信息 <b>></b>
+		    </div><!--drop-down-list4.5-->
+		</div><!--line1box4active-->
+	</div>	
+		
+		
+		</div><!--pagethree-->
+	</body>
+</html>

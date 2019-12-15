@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	<style type="text/css" >
+			
+	*{margin: 0;padding: 0;}	
+		.ul         {width:100%;
+		             height:80px;
+					 list-style-type:none;
+					 overflow: hidden;
+					 }
+		.logo       {display:inline;
+		             margin-left:30px;
+					 float:left;
+					 margin-top:30px;
+					 }
+	    .visual     {float:left;
+		             display:inline;
+			         margin:30px 15px 15px 15px;
+		             border-left:1px solid black;
+					 text-align: center;
+					 padding-left:15px;
+					 font-size:16px;
+					}
+		.visual a   {color:#000000;text-decoration:none;}
+		.visual:hover {border-bottom:2px solid #000000;
+		               cursor: pointer;
+					   }
+					   
+					   
+		.visualstudio{float:left;
+		              display:inline;
+		             text-align: center;
+					 margin:30px 15px;
+					 font-size:12px;		
+				     border-bottom:2px solid transparent;
+					 }
+		.visualstudio a{color:#000000;text-decoration:none;}
+		.visualstudio:hover{border-bottom:2px solid #000000;
+		               cursor: pointer;
+					   }
+					   
+		
+		.function   {float:left;
+		             display:inline-block;
+		             margin:30px 0 15px 0;
+					 font-size:12px;
+					 position:relative;
+				     }
+		.function a {color:#000000;
+		             text-decoration:none;
+					 }
+		.dropdown1  {
+		             padding-bottom:8px;
+					 float:left;}
+		
+		.dropdown-content1 {display: none;
+		                   position: absolute;
+		                   background-color: #f9f9f9;
+		                   width: 350px;
+		                   padding: 12px 16px;
+						   top:26px;
+						   }
+		.function:hover .dropdown-content1 
+		                  {display: block;}
+		.function:hover{border-bottom:2px solid #000000;
+		                cursor: pointer;
+						}
+		.dropdown-content1 a{color: black;
+		                     text-decoration: none;
+		                     display: block;
+		                    }
+		.dropdown-content1 p:hover
+		                  {text-decoration: underline;
+						  }
+		.dropdown-content1left{display:inline-block;
+		                       float:left;width:50%;
+							   }
+		.dropdown-content1right{display:inline-block;
+		                        float:right;width:50%;
+								}
+		
+		
+		
+		.version    {float:left;
+		             display:inline-block;
+		             margin:30px 0 15px 0;
+					 font-size:12px;		
+				     }
+		.version a  {color:#000000;text-decoration:none;}
+		.dropdown2  {float:left;
+		             padding-bottom:8px;
+					 }
+		.dropdown-content2 {display: none;
+		                   position: absolute;
+		                   background-color: #f9f9f9;
+		                   width: 280px;
+						   top:58px;
+		                   }
+		.version:hover .dropdown-content2 
+		                  {display: block;}
+		.version:hover{border-bottom:2px solid #000000;
+		                cursor: pointer;
+						}
+		.dropdown-content2 a{color: black;
+		                     text-decoration: none;
+		                     display: block;
+		                    }
+		.dropdown-content2 span:hover
+		                  {text-decoration: underline;
+						   background-color: #f1f1f1;
+						  }
+		
+		
+		
+		
+		
+		
+		.download   {float:left;
+		             display:inline;
+		             margin:30px 30px 15px 0;
+					 font-size:12px;		
+				     }
+		.download a {color:#000000;
+		             text-decoration:none;
+					 }
+		.download:hover{border-bottom:2px solid #000000;
+		                cursor: pointer;
+						}
+						
+						
+		
+		.support    {float:left;
+		             display:inline-block;
+		             padding:30px 0px 0px 0;
+					 font-size:12px;			 
+					 }
+		.support a  {color:#000000;
+		             text-decoration:none;
+					 }
+		.dropdown3  {float:left;
+		             padding-bottom:8px;
+					 }
+		.dropdown-content3 {display: none;
+		                   position: absolute;
+		                   background-color: #f9f9f9;
+		                   width: 200px;
+		                   top:56px;}
+		.support:hover .dropdown-content3 
+		                  {display: block;}
+		.support:hover{border-bottom:2px solid #000000;
+		                cursor: pointer;
+						}
+		.dropdown-content3 a{color: black;
+		                     text-decoration: none;
+		                     display: block;
+		                    }
+		.dropdown-content3 span:hover
+		                  {text-decoration: underline;
+						   background-color: #f1f1f1;
+						  }
+		
+		
+		
+		
+		
+		
+		.visit      {float:left;
+		             display:inline;
+		             padding:30px 15px 6px 0;
+					 font-size:12px;			 
+					 }
+		.visit a    {color:#000000;
+		             text-decoration:none;
+					 }
+		.visit:hover{border-bottom:2px solid #000000;
+		                cursor: pointer;
+						}
+						
+						
+						
+						
+		.freevisual {float:left;
+		             display:inline;
+					 margin-top:15px;
+		             margin-right:100px;
+					padding:10px 10px 10px 10px;
+					 border:1px solid black;
+					 border-radius:3px;
+					 font-size:12px;		 
+					 }
+		.freevisual a{color:#000000;
+		              text-decoration:none;
+					  }
+		.freevisual:hover{text-decoration: underline;
+		                  cursor: pointer;
+						  }
+						  
+						  
+		
+		.allmicrosoft{float:left;
+		              display:inline-block;
+		            padding:30px 0px 0px 0;
+					 font-size:14px;}
+		.allmicrosoft a{color:#000000;
+		                text-decoration:none;
+						}
+		
+		
+		.dropdown4  {float:left;
+		             padding-bottom:8px;
+					 
+					 }
+		.dropdown-content4 {display: none;
+		                   position: absolute;
+		                   background-color: #f9f9f9;
+		                   width: 1200px;
+		                   padding: 12px 0 12px 0;
+						   right:80px;
+						   top:60px;
+						   z-index: 9999;}
+		.allmicrosoft:hover .dropdown-content4
+		                  {display: block;}
+		.allmicrosoft:hover{border-bottom:2px solid #000000;
+		                  cursor: pointer;
+						  }
+		.dropdown-content4 a{color: black;
+		                     text-decoration: none;
+		                     display: block;
+		                    }
+		.dropdown-content4 p:hover
+		                  {text-decoration: underline;
+						  }
+		.dropdown-content4top{border-bottom:2px solid gainsboro;
+		                      padding-left:20px;
+							  }
+		.dropdown-content4bottom:hover{text-decoration: underline;
+		                              }
+		.dropdown-content4bottom{text-align: center;
+		                         width:100%;
+								 height:50px;
+								 background-color: #F1F1F1;
+								 float:left;
+								 }
+		.dropdown-content4bottom p:hover{text-decoration: underline;
+		                                }
+	    .dropdown-content4text1 {display:inline-block;
+		                         float:left;width:16%;
+								 margin-top:20px;
+								 margin-left:20px;
+								 }
+		.dropdown-content4text2{display:inline-block;
+		                        float:left;width:16%;
+								margin-top:20px;
+								}
+		.dropdown-content4text3{display:inline-block;
+		                        float:left;width:16%;
+								margin-top:20px;
+								}
+		.search         {display:inline;
+		                 margin-left:35px;
+						 padding-top:10px;
+						 float:left;
+						 }
+						 
+		
+		.dropdown-content5 {display: none;
+		                   position: absolute;
+		                   background-color: #f9f9f9;
+		                   width: 178px;
+						   top:53px;
+		                   border:1px solid transparent;
+						   }
+		.dropdown5:hover{border:1px solid #000000;
+		                 background-color: #ECEBE9;
+					    }
+						
+		
+		
+.tooltip{display:inline-block;
+         margin-top:10px;
+		 
+		 position:relative;}		
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color:#fff;
+    color: black;
+    text-align: center;
+    border-radius: 1px;
+    padding: 5px 5px;
+​    bottom:10px;
+    /* 定位 */
+    position: absolute;
+    z-index: 1;
+	font-size:12px;
+	font-weight:100;
+	box-shadow:#DFDFDF 3px 3px 3px 3px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+		
+		
+		
+	</style>
+	</head>
+	<body>
+	     <ul >
+					<li class="logo">
+					  <a href="#">
+					  <img src="logo.png" alt="logo"></a>
+					</li><!--logo-->
+					
+					<li class="visual" >
+						<a href="#">
+						<b>Visual &nbsp; Studio</b></a>
+					</li><!--visual-->
+					
+					<li class="visualstudio" >
+						<a href="#">
+						Visual&nbsp; Studio&nbsp; 2019</a>
+					</li><!--visualstudio-->
+					
+					<div class="function">
+						<div style="width:60px;">
+						    <div class="dropdown1">
+					            功能
+						    </div><!--dropdown1-->
+						    <div class="triangle1">
+						        <div class="content1">
+						        </div><!--content1-->
+						    </div><!--triangle1-->
+						</div>
+						<div  class="dropdown-content1" >
+							<div class="dropdown-content1left">
+							<h1 style="font-size:14px;display:block;">工作负荷</h1>
+							<p style="display:block;margin-top:30px ;">移动</p>
+							<p style="display:block;margin-top:30px ;">Azure</p>
+							<p style="display:block;margin-top:30px ;">Web</p>
+							<p style="display:block;margin-top:30px ;">Windows</p>
+							<p style="display:block;margin-top:30px ;">游戏</p>
+							</div><!--dropdown-content1left-->
+							<div class="dropdown-content1right">
+							<h1 style="font-size:14px;display:block;">技术</h1>
+							
+							<p style="display:block;margin-top:30px ;">.NET</p>
+							
+							<p style="display:block;margin-top:30px ;">Python</p>
+							
+							<p style="display:block;margin-top:30px ;">Node.js</p>
+							
+							<p style="display:block;margin-top:30px ;">C＋＋</p>
+							</div><!--dropdown-content1right-->
+						
+						</div><!--dropdown-content1-->
+					</div><!--function-->
+					
+					<li class="version" >
+						<div style="width:60px;">
+						    <div class="dropdown2">
+						         版本
+						    </div><!--dropdown2-->
+						    <div class="triangle1">
+						        <div class="content1">
+						        </div><!--content1-->
+						    </div><!--triangle1-->
+						</div>
+	       <div class="dropdown-content2">
+							<span style="display:block;padding:16px;">Visual&nbsp Studio&nbsp Communnity</span>
+							<span style="display:block;padding:16px;">Visual&nbsp Studio&nbsp Professional</span>
+							<span style="display:block;padding:16px;">Visual&nbsp Studio&nbsp Enterprise</span>
+							<span style="display:block;padding:16px;">版本比较</span>
+							<span style="display:block;padding:16px;">定价</span>
+						</div><!--dropdown-content2-->
+					</li><!--version-->
+					
+					<li class="download" >
+						<a href="#">
+					    下载</a>
+					</li><!--download-->
+					
+					<li class="support" >
+						<div style="width:60px;">
+						    <div class="dropdown3">
+						         支持
+						    </div><!--dropdown3-->
+						    <div class="triangle1">
+						        <div class="content1">
+						        </div><!--content1-->
+						    </div><!--triangle1-->
+						</div>
+						<div class="dropdown-content3">
+							<span style="display:block;padding:12px;">获得支持</span>
+							<span style="display:block;padding:12px;">开始使用</span>
+							<span style="display:block;padding:12px;">博客</span>
+						</div><!--dropdown-content3-->
+					</li><!--support-->
+					
+					<li class="visit" >
+						<a href="#">
+						订阅者访问</a>
+					</li><!--visit-->
+					
+					<li class="freevisual">
+						<a href="#">
+						<b>免费&nbsp; Visual&nbsp; Studio</b></a>
+					</li><!--freevisual-->
+					
+					<li class="allmicrosoft">
+						<div style="width:130px;">
+						    <div class="dropdown4">
+						         所有Microsoft
+						    </div><!--dropdown4-->
+						    <div class="triangle1">
+						        <div class="content1">
+						        </div><!--content1-->
+						    </div><!--triangle1-->
+						</div>
+	       <div class="dropdown-content4">
+							<div class="dropdown-content4top">
+							   <p style="display:inline-block;margin:10px 50px 20px 0;">Microsoft&nbsp; 365</p>
+							   <p style="display:inline-block;margin:10px 50px 20px 0;">Azure</p>
+							   <p style="display:inline-block;margin:10px 50px 20px 0;">Office&nbsp; 365</p>
+							   <p style="display:inline-block;margin:10px 50px 20px 0;">Dynamics&nbsp; 365</p>
+							   <p style="display:inline-block;margin:10px 50px 20px 0;">SQL</p>
+							   <p style="display:inline-block;margin:10px 50px 20px 0;">Windows&nbsp; 10</p>
+							</div><!--dropdown-content4top-->
+							<div class="dropdown-content4text1">
+								<h1 style="font-size:14px;display:block;">产品与服务</h1>
+								<p style="display:block;margin-top:30px;">Windows&nbsp; Server</p>
+								<p style="display:block;margin-top:30px;">企业移动性＋安全性</p>
+								<p style="display:block;margin-top:30px;">Power&nbsp; BI</p>
+								<p style="display:block;margin-top:30px;">团队</p>
+								<p style="display:block;margin-top:30px;">Visual&nbsp; Studio</p>
+								<p style="display:block;margin-top:30px;">Surface&nbsp; for&nbsp; Business</p>
+							</div><!--dropdown-content4text1-->
+							<div class="dropdown-content4text2">
+								<h1 style="font-size:14px;display:block;">新兴技术</h1>
+								<p style="display:block;margin-top:30px;">人工智能</p>
+								<p style="display:block;margin-top:30px;">Azure&nbsp; 认知服务</p>
+								<p style="display:block;margin-top:30px;">Quantum</p>
+								<p style="display:block;margin-top:30px;">Microsoft&nbsp; Hololens</p>
+							</div><!--dropdown-content4text2-->
+							<div class="dropdown-content4text3">
+								<h1 style="font-size:14px;display:block;">开发人员与IT</h1>
+								<p style="display:block;margin-top:30px;">文档</p>
+								<p style="display:block;margin-top:30px;">TechNet</p>
+								<p style="display:block;margin-top:30px;">开发人员网络</p>
+								<p style="display:block;margin-top:30px;">Windows开发人员中心</p>
+								<p style="display:block;margin-top:30px;">Windows&nbsp; IT&nbsp; Pro&nbsp; Center</p>
+								<p style="display:block;margin-top:30px;">FastTrack</p>
+							</div><!--dropdown-content4text3-->
+							<div class="dropdown-content4text4" style="display:inline-block;float:left;width:16%;margin-top:20px;">
+								<h1 style="font-size:14px;display:block;">合作伙伴</h1>
+								<p style="display:block;margin-top:30px;">合作伙伴网络</p>
+								<p style="display:block;margin-top:30px;">解决方案提供商</p>
+								<p style="display:block;margin-top:30px;">合作伙伴中心</p>
+							</div><!--dropdown-content4text4-->
+							<div class="dropdown-content4text5" style="display:inline-block;float:left;width:16%;margin-top:20px;">
+								<h1 style="font-size:14px;display:block;">行业</h1>
+								<p style="display:block;margin-top:30px;">教育</p>
+								<p style="display:block;margin-top:30px;">政府</p>
+								<p style="display:block;margin-top:30px;">制造业与资源</p>
+								<p style="display:block;margin-top:30px;">零售</p>
+							</div><!--dropdown-content4text5-->
+							<div class="dropdown-content4text6" style="display:inline-block;float:left;width:16%;margin-top:20px;">
+								<h1 style="font-size:14px;display:block;">其他</h1>
+								<p style="display:block;margin-top:30px;">安全性</p>
+								<p style="display:block;margin-top:30px;">许可</p>
+								<p style="display:block;margin-top:30px;">AppSource</p>
+								<p style="display:block;margin-top:30px;">Azure&nbsp; Marketplace</p>
+								<p style="display:block;margin-top:30px;">活动</p>
+								<p style="display:block;margin-top:30px;">研究</p>
+							</div><!--dropdown-content4text6-->
+							<div class="dropdown-content4bottom" >
+								<p style="display:block;margin-top:20px;">查看更多站点&nbsp;></p>
+							</div><!--dropdown-content4bottom-->
+						
+							
+						</div><!--dropdown-content4-->
+					</li><!--allmicrosoft-->
+					
+					<li class="search">
+					  <a href="#">
+					  <img src="search.jpg" alt="search"></a>
+					</li><!--search-->
+					
+					<div class="tooltip">
+					 <a href="#">
+					 <img src="join.jpg" alt="join"></a>
+					 <span class="tooltiptext">sign in your account</span>
+					</div><!--tooltip-->
+					
+				</ul><!--banner-->
+				
+				
+				
+				
+	</body>
+</html>

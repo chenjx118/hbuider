@@ -1,0 +1,3645 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css" >
+			
+	*{margin: 0;padding: 0;}	
+		.ul        {width:100%;
+		            height:80px;
+					list-style-type:none;
+					overflow: hidden;
+					}
+		.logo      {display:inline;
+		            margin-left:30px;
+					float:left;
+					margin-top:30px;
+					}
+	    .visual    {float:left;
+		            display:inline;
+			        margin:30px 15px 15px 15px;
+		            border-left:1px solid black;
+					text-align: center;
+					padding-left:15px;
+					font-size:16px;
+					}
+		.visual a  {color:#000000;text-decoration:none;}
+	.visual:hover  {border-bottom:2px solid #000000;
+		            cursor: pointer;
+					}   
+	.visualstudio  {float:left;
+		            display:inline;
+		            text-align: center;
+					margin:30px 15px;
+					font-size:12px;		
+				    border-bottom:2px solid transparent;
+					}
+	.visualstudio a{color:#000000;
+	                text-decoration:none;
+					}
+.visualstudio:hover{border-bottom:2px solid #000000;
+		            cursor: pointer;
+					}
+		.function  {float:left;
+		            display:inline-block;
+		            margin:30px 0 15px 0;
+					font-size:12px;
+					position:relative;
+				    }
+		.function a{color:#000000;
+		            text-decoration:none;
+					}
+		.dropdown1 {padding-bottom:8px;
+					float:left;
+					}
+.dropdown-content1 {display: none;
+		            position: absolute;
+		            background-color: #f9f9f9;
+		            width: 350px;
+		            padding: 12px 16px;
+				    top:26px;
+					}
+.function:hover .dropdown-content1 
+		           {display: block;}
+	.function:hover{border-bottom:2px solid #000000;
+		            cursor: pointer;
+				    }
+.dropdown-content1 a{color: black;
+		            text-decoration: none;
+		            display: block;
+		            }
+.dropdown-content1 p:hover
+		           {text-decoration: underline;
+				    }
+.dropdown-content1left
+                   {display:inline-block;
+		            float:left;
+					width:50%;
+					}
+.dropdown-content1right
+                   {display:inline-block;
+		            float:right;width:50%;
+					}
+		.version   {float:left;
+		            display:inline-block;
+		            margin:30px 0 15px 0;
+					font-size:12px;		
+				    }
+		.version a {color:#000000;
+		            text-decoration:none;
+					}
+		.dropdown2 {float:left;
+		            padding-bottom:8px;
+					}
+.dropdown-content2 {display: none;
+		            position: absolute;
+		            background-color: #f9f9f9;
+		            width: 280px;
+				    top:58px;
+		            }
+.version:hover .dropdown-content2 
+		           {display: block;}
+	.version:hover {border-bottom:2px solid #000000;
+		            cursor: pointer;
+				    }
+.dropdown-content2 a{color: black;
+		            text-decoration: none;
+		            display: block;
+		            }
+.dropdown-content2 span:hover
+		           {text-decoration: underline;
+				    background-color: #f1f1f1;
+				    }
+		.download  {float:left;
+		            display:inline;
+		            margin:30px 30px 15px 0;
+					font-size:12px;		
+				    }
+		.download a{color:#000000;
+		            text-decoration:none;
+					}
+	.download:hover{border-bottom:2px solid #000000;
+		            cursor: pointer;
+				    }
+		.support   {float:left;
+		            display:inline-block;
+		            padding:30px 0px 0px 0;
+					font-size:12px;			 
+					}
+		.support a {color:#000000;
+		            text-decoration:none;
+					}
+		.dropdown3 {float:left;
+		            padding-bottom:8px;
+					}
+.dropdown-content3 {display: none;
+		            position: absolute;
+		            background-color: #f9f9f9;
+		            width: 200px;
+		            top:56px;
+					}
+.support:hover .dropdown-content3 
+		           {display: block;}
+.support:hover     {border-bottom:2px solid #000000;
+		            cursor: pointer;
+				    }
+.dropdown-content3 a{color: black;
+		            text-decoration: none;
+		            display: block;
+		            }
+.dropdown-content3 span:hover
+		           {text-decoration: underline;
+				    background-color: #f1f1f1;
+				    }
+	.visit         {float:left;
+		            display:inline;
+		            padding:30px 15px 6px 0;
+					font-size:12px;			 
+					}
+		.visit a   {color:#000000;
+		            text-decoration:none;
+					}
+	.visit:hover   {border-bottom:2px solid #000000;
+		            cursor: pointer;
+				    }		
+		.freevisual{float:left;
+		            display:inline;
+					margin-top:15px;
+		            margin-right:100px;
+					padding:10px 10px 10px 10px;
+					border:1px solid black;
+					border-radius:3px;
+					font-size:12px;		 
+					}
+	.freevisual a  {color:#000000;
+		            text-decoration:none;
+					}
+.freevisual:hover  {text-decoration: underline;
+		            cursor: pointer;
+					}
+	.allmicrosoft  {float:left;
+		            display:inline-block;
+		            padding:30px 0px 0px 0;
+					font-size:14px;
+					}
+	.allmicrosoft a{color:#000000;
+		            text-decoration:none;
+					}
+		.dropdown4 {float:left;
+		            padding-bottom:8px;
+					}
+.dropdown-content4 {display: none;
+		            position: absolute;
+		            background-color: #f9f9f9;
+		            width: 1200px;
+		            padding: 12px 0 12px 0;
+					right:80px;
+					top:60px;
+					z-index: 9999;
+					}
+.allmicrosoft:hover .dropdown-content4
+		           {display: block;}
+.allmicrosoft:hover{border-bottom:2px solid #000000;
+		            cursor: pointer;
+					}
+.dropdown-content4 a{color: black;
+		            text-decoration: none;
+		            display: block;
+		            }
+.dropdown-content4 p:hover
+		           {text-decoration: underline;
+					}
+.dropdown-content4top{border-bottom:2px solid gainsboro;
+		            padding-left:20px;
+					}
+.dropdown-content4bottom:hover
+                   {text-decoration: underline;
+		            }
+.dropdown-content4bottom
+                   {text-align: center;
+		            width:100%;
+					height:50px;
+					background-color: #F1F1F1;
+					float:left;
+					}
+.dropdown-content4bottom p:hover
+                   {text-decoration: underline;
+		            }
+.dropdown-content4text1 
+                   {display:inline-block;
+		            float:left;width:16%;
+				    margin-top:20px;
+					margin-left:20px;
+					}
+.dropdown-content4text2
+                   {display:inline-block;
+		            float:left;width:16%;
+				    margin-top:20px;
+					}
+.dropdown-content4text3
+                   {display:inline-block;
+		            float:left;width:16%;
+					margin-top:20px;
+					}
+		.search    {display:inline;
+		            margin-left:35px;
+					padding-top:10px;
+					float:left;
+				    }
+.dropdown-content5 {display: none;
+		            position: absolute;
+		            background-color: #f9f9f9;
+		            width: 178px;
+					top:53px;
+		            border:1px solid transparent;
+					}
+.dropdown5:hover   {border:1px solid #000000;
+		            background-color: #ECEBE9;
+					}
+		/**以上为导航栏ul的内容**/
+		
+	.pageone   {width:100%;
+		        background-color:#5C2D91;
+				float:left;
+				height:1600px;
+				}
+		.top1  {float:left;
+		        margin-top:50px;
+			    width:100%;
+			    }
+	.top1title {display:block;
+			    font-weight:700;
+		        color: #fff;
+			    font-size:80px;
+			    margin-left:300px;
+			    }
+		.top2  {float:left;
+		        margin-top:30px;
+			    width:100%;
+			    }
+		.top2p {font-weight:400;
+		        color: #FFF;
+			    font-size:28px;
+			    text-align: center;
+			    }
+		.top3  {float:left;
+		        margin-top:20px;
+			    margin-left:530px;
+			    background-color:#fff;
+			    height:54px;
+			    width:230px;
+			    }
+	.top3left  {float:left;
+		        border-right:2px solid gainsboro;
+				}
+	.top3right {float:left;
+	            position:relative;
+				}
+.top3right:hover .dropdown-content5 
+		       {display: block;}
+.top3right:hover{cursor: pointer;
+				}
+ .dropdown5    {float:right;
+		        height:100%;
+				width:178px;
+				}
+	.topright1 {display:inline-block;
+		        height:54px;
+				width:100%;
+				}
+.top3right1text{float:left;
+		        font-weight:400;
+			    font-size:18px;
+				text-align:center;
+				display:inline-block;
+				margin:20px 0 0 0px;
+				height:54px;}
+.dropdown-content5 a
+               {color: black;
+		        text-decoration: none;
+		        display: block;
+		        }
+		.button{display:block;
+		        padding:12px;
+			    }
+.button:hover  {border:1px solid #000000;
+				background-color: #ECEBE9;
+				}
+		
+.bottomleft1   {padding-left:100px;
+		        font-size:36px;
+				font-weight:500;
+				color:#fff;
+				float:left;
+				}
+.bottomleft2   {float:left;
+		        padding-left:100px;
+				margin-top:100px;
+				width:170px;
+				}
+.bottomleft2text1:hover
+               {cursor: pointer;}
+.bottomleft2text1
+               {font-size:18px;
+		        font-weight:400;
+				color:#fff;
+				float:left;
+				}
+.bottomleft2text2:hover
+               {cursor: pointer;}
+.bottomleft2text2
+               {font-size:18px;
+		        font-weight:400;
+				color:#fff;
+				float:left;
+				}
+.triangle .content
+               {margin-top:25px;
+		        float:left;
+			    width:10px;
+		        height:10px;
+				border:#666 solid;
+				border-width:1px 1px 0 0 ;
+				transform:rotate(135deg);
+				margin-bottom:10px;
+				margin-left:10px;
+				}
+.triangle1 .content1
+               {margin-top:5px;
+		        float:left;
+			    width:8px;
+		        height:8px;
+				border:#666 solid;
+				border-width:1px 1px 0 0 ;
+				transform:rotate(135deg);
+		        margin-left:5px;
+				}
+.triangle2 .content2
+               {float:left;
+		        width:7px;
+		        height:7px;
+				border-top:2px solid #fff;
+				border-right:2px solid #fff;
+				transform:rotate(45deg);
+				margin:10px 0 0 10px;
+				}
+             /**这是第一张页面的**/
+       .pagetwo{background:#141414;
+	            width:100%;
+				height:950px;
+				float:left;
+				overflow: hidden; 
+				}
+.pagetwoleft   {float:left;
+                display:block;
+				margin:150px 0 0 100px;
+				width:300px;
+				list-style:none;
+				}
+.triangle3 .content3
+               {float:left;
+			    width:8px;
+		        height:16px;
+				border-color:#fff;
+				border-style:solid;
+				border-width:0 2px 2px 0;
+				transform:rotate(45deg);
+				margin-top:5px;
+				}
+	   .btn    {width:200px;
+				height:50px;
+				float:left;
+				border-bottom:1px solid #888888;
+				}
+	 .btn:hover{cursor:pointer;} 
+    .btncircle {float:left;
+	            border-radius:20px;
+				background-color:#605E5C;
+				width:40px;
+				height:40px;
+				margin:5px 10px 0 0;
+				}
+.pagetworight  {float:right;
+                margin:150px 0 0 0;
+				width:900px;
+				height:100%;
+				}
+		 .text {color:#fff;
+				font-size:18px;
+				font-weight:400;
+				float:left;
+			    margin-top:10px;
+				}
+		.box1  {float:left;
+				width:600px;
+				margin:30px 0 0 50px;
+				}
+.bottomrighttext1   
+               {float:left;
+		        font-size:20px;
+				color:#fff;
+				margin-left:20px;
+				}
+		.box2  {float:left;
+				width:600px;
+				margin:30px 0 0 50px;
+				}
+.boxtoptitle   {display:block;
+                color:#fff;
+				font-weight:700;
+				font-size:36px;
+				}
+.boxtoptext    {color:#fff;
+                font-size:20px;
+				margin-top:20px;
+				font-weight:100;
+				width:800px;
+                }
+.bottomrighttext2   
+               {float:left;
+		        font-size:20px;
+				color:#fff;
+				margin-left:20px;
+				}
+		.box3  {float:left;
+				width:600px;
+				margin:30px 0 0 50px;
+				}
+.bottomrighttext3   
+               {float:left;
+		        font-size:20px;
+				color:#fff;
+				margin-left:20px;
+				}
+.tooltip1      {display:inline-block;
+				position:relative;
+				border-bottom-width:1px;
+				border-bottom-style:dashed;
+				border-color:fff;
+				}
+					
+.tooltip1 .tooltiptext1 
+               {visibility: hidden;
+		        width: 300px;
+		        background-color:#fff;
+		        color: black;
+		        text-align: center;
+		        padding: 5px 5px;
+		​        bottom:10px;
+		    /* 定位 */
+		        position: absolute;
+		        z-index: 1;
+			    font-size:12px;
+			    font-weight:100;
+		        }
+.tooltip1:hover .tooltiptext1 
+               {visibility: visible;
+		        }
+	.boxmiddle {float:left;
+	            margin-top:30px;
+				width:100%;
+				}				
+	.boxbottom {float:left;
+	            margin-top:30px;
+				}
+.boxtoptitle   {display:block;
+                color:#fff;
+				font-weight:700;
+				font-size:36px;
+				}
+.boxtoptext    {color:#fff;
+                font-size:20px;
+				margin-top:20px;
+				font-weight:100;
+				width:800px;
+				}
+.pagethree     {float:left;
+                height:1900px;
+				width:100%;
+				}
+.pagethreetop
+       {float:left;
+	    margin:100px 0 0 50px;
+		width:1000px;
+		}			   
+.pagethreetoptitle
+       {color: #000000;
+	    font-size:44px;
+	    font-weight:700;
+		}		
+.pagethreetoptext
+       {color:#000000;
+	    font-size:26px;
+		font-weight:700;
+		margin-top:20px;
+		}			
+.pagethreemiddle
+       {float:left;
+	    margin:30px 0 50px 50px;
+		width:1000px;
+		}			
+.ptmbutton
+       {color: #21759B;
+	    font-size:18px;
+		font-weight:300;
+		float:left;
+		}			
+.pagethreebottom
+       {float:left;
+	    width:1280px;
+		margin-left:50px;
+		}			
+.line1 {float:left;
+        width:1280px;
+		height:170px;
+		border-bottom:1px solid rgba(186,172,172,.2);			
+		}	
+.line1text
+       {display:inline-block;
+	    width:180px;
+		color:#000000;
+		float:left;
+		font-weight:700;
+		font-size:22px;
+		cursor:pointer;
+		}			
+.linebox
+       {display:inline-block;
+	    width:180px;
+		height:120px;
+		float:left;
+		border:1px solid rgba(186,172,172,.2);
+		}			
+.boxlogo
+       {float:left;
+	    width:150px;
+		margin:10px 0 0 10px;
+		}
+	
+.box1.1text
+       {float:left;
+	    width:150px;
+		margin:10px 0 0 10px;
+		color:#000000;
+		font-size:16px;
+		font-weight:200;
+		}			
+.linebox{display:inline-block;
+        width:180px;
+		height:120px;
+		float:left;
+		border:1px solid rgba(186,172,172,.2);
+		margin-left:30px;
+		}			
+.drop-down-list1.1		
+       {float;left;
+	    width:100%;
+		margin:30px 0 0 30px;
+		height:50px;
+		}	
+.drop-down-list1.1.1			
+	   {float:left;
+	    width:100%;
+		font-size:20px;
+		font-weight:700;
+		}
+.drop-down-list1.1.2			
+       {float:left;
+	    width:100%;
+		font-size:18px;
+		font-weight:100;
+		}
+.drop-down-list1.3		
+       {float;left;
+	    width:100%;
+		margin:30px 0 0 30px;
+		height:100px;
+		}	
+	.box4      {float:left;
+				width:600px;
+				margin:30px 0 0 50px;
+				}
+.bottomrighttext4   
+               {float:left;
+		        font-size:20px;
+				color:#fff;
+				margin-left:20px;
+				}
+					.box5   {float:left;
+					         width:600px;
+							 margin:30px 0 0 50px;
+							 }
+		.bottomrighttext5   {float:left;
+		                     font-size:20px;
+							 color:#fff;
+							 margin-left:20px;
+							 }
+			.boxmiddlebutton:hover{cursor: pointer;}
+			.ptmbutton:hover{cursor: pointer;}
+		    .linebox:hover{box-shadow:#DFDFDF 3px 3px 3px 3px;cursor: pointer;}
+		    .line1text:hover{cursor: pointer;}
+		    .line2text:hover{cursor: pointer;}
+		    .line3text:hover{cursor: pointer;}
+		    .line4text:hover{cursor: pointer;}
+			.lineboxactive{display:none;
+			                 float:left;
+							 margin:0 0 0 180px;
+							 width:1000px;
+							 height:650px;
+							 background-color:#FAF9F8;
+							 color:#000;
+							 font-size:24px;
+							 }
+			.fourbox1:hover .fourbox1title{border-bottom:2px solid #000000;}
+			.fourbox2:hover .fourbox2title{border-bottom:2px solid #000000;}
+			.fourbox3:hover .fourbox3title{border-bottom:2px solid #000000;}
+			.fourbox4:hover .fourbox4title{border-bottom:2px solid #000000;}
+			
+		.triangle4 .content4{float:left;
+		                     width:30px;
+		                     height:30px;
+							 border-bottom:2px solid #fff;
+							 border-left:2px solid #fff;
+							 transform:rotate(45deg);
+							 margin:80px 0 0 10px;
+							 }
+		.triangle5 .content5{float:left;
+		                     width:30px;
+		                     height:30px;
+							 border-top:2px solid #fff;
+							 border-right:2px solid #fff;
+							 transform:rotate(45deg);
+							 margin:80px 0 0 10px;
+							 }
+		     .fivebox1      {display:inline-block;
+			                 float:left;
+							 width:50px;
+							 height:200px;
+							 margin-left:100px;
+							 border:2px solid transparent;
+							 }
+			.pagefivetriangle{display:inline-block;
+			                  float:left;width:50px;
+							  height:200px;
+							  margin-left:30px;
+							  padding:2px;
+							  border:2px solid transparent;	
+			                 }
+			 .fivebox2     {display:inline-block;
+			                 float:left;width:170px;
+							 height:200px;
+							 border:1px solid transparent;
+							 margin-left:30px;
+							 
+							 }					 
+		     .fivebox2:hover{border:1px solid #000000;cursor:pointer;}
+			 .fivebox3     {display:inline-block;
+			                float:left;width:170px;
+			 				height:200px;
+			 				border:1px solid transparent;
+			 				margin-left:30px;
+			 				
+			 				}
+		    .fivebox3:hover{border:1px solid #000000;cursor:pointer}
+		     .fivebox4     {display:inline-block;
+		                    float:left;width:170px;
+							height:200px;
+							border:1px solid transparent;
+							margin-left:30px;
+							
+							}
+		.fivebox4:hover{border:1px solid #000000;cursor:pointer}
+		           .fivebox5{display:inline-block;
+		                     float:left;width:170px;
+							 height:200px;
+							border:1px solid transparent;
+							margin-left:30px;
+							
+							}
+		.fivebox5:hover{border:1px solid #000000;cursor:pointer}
+		           .fivebox6{display:inline-block;
+		                     float:left;width:170px;
+							 height:200px;
+							 border:1px solid transparent;
+							 margin-left:30px;
+							
+							 }
+				.fivebox7  {display:inline-block;
+					        float:left;width:170px;
+							height:200px;
+							border:1px solid transparent;
+							margin-left:30px;
+							
+							}
+				.fivebox8  {display:inline-block;
+					        float:left;width:170px;
+							height:200px;
+							border:1px solid transparent;
+							margin-left:30px;
+							
+							}
+				.fivebox9{display:inline-block;
+					          float:left;width:170px;
+												 height:200px;
+												border:1px solid transparent;
+												margin-left:30px;
+												
+												}
+					.fivebox10{display:inline-block;
+					          float:left;width:170px;
+												 height:200px;
+												border:1px solid transparent;
+												margin-left:30px;
+												
+												}
+					.fivebox11{display:inline-block;
+					          float:left;width:170px;
+												 height:200px;
+												border:1px solid transparent;
+												margin-left:30px;
+												
+												}
+												
+		.fivebox6:hover{border:1px solid #000000;}
+		.fivebox1:active{border:2px solid #23A6E8;}
+		.pagefivetriangle:active{border:2px solid #23A6E8;}
+		.fivetext1:hover{cursor:pointer;}
+		.fivetext2:hover{cursor:pointer;}
+		.triangle6 .content6{float:left;
+		                     width:10px;
+		                     height:10px;
+							 border-bottom:2px solid #000000;
+							 border-left:2px solid #000000;
+							 transform:rotate(45deg);
+							 position:relative;
+							 margin:20px 0 0 20px;
+							 }
+		.triangle7 .content7{float:left;
+		                     width:10px;
+		                     height:10px;
+							 border-top:1px solid #000000;
+							 border-right:1px solid #000000;
+							 transform:rotate(45deg);
+							 position:relative;
+							 margin:20px 0 0 20px;
+							 }
+		          .P1:hover {text-decoration: underline;}
+				            
+		.P1 a:hover{color:#000000;}
+		.seven1:hover{text-decoration: underline;text-decoration-color:#fff;}
+		.seven2:hover{text-decoration: underline;text-decoration-color:#fff;}
+		.seven3:hover{text-decoration: underline;text-decoration-color:#fff;}
+		.bottomleft2text1:hover{bottom:3px;right:3px;position:relative;}
+		.bottomleft2text2:hover{bottom:3px;right:3px;position:relative;}
+		.sixtriangle1{display:block;
+		              float:left;
+					  margin:50px 0 0 50px;
+					  width:50px;
+					  height:50px;
+					  border-radius:25px;
+					  background-color:#FAF9F8;
+					  }
+		.sixtriangle2{display:block;
+		              float:left;
+					  margin:50px 0 0 50px;
+					  width:50px;
+					  height:50px;
+					  border-radius:25px;
+					  background-color:#FAF9F8;
+					  }
+		.sixtriangle1:hover{background-color:#888888;}
+		.sixtriangle2:hover{background-color:#888888;}
+		       .right1:hover{text-decoration:underline;}
+			   .right2:hover{text-decoration:underline;}
+			   .right3:hover{text-decoration:underline;}
+			   .right4:hover{text-decoration:underline;}
+			   .right5:hover{text-decoration:underline;}
+			   .right6:hover{text-decoration:underline;}
+		
+		.tooltip{display:inline-block;
+		         margin-top:10px;
+				 
+				 position:relative;}		
+		.tooltip .tooltiptext {
+		    visibility: hidden;
+		    width: 100px;
+		    background-color:#fff;
+		    color: black;
+		    text-align: center;
+		    
+		    padding: 5px 5px;
+		​    bottom:10px;
+		    /* 定位 */
+		    position: absolute;
+		    z-index: 1;
+			font-size:12px;
+			font-weight:100;
+			box-shadow:#DFDFDF 3px 3px 3px 3px;
+		}
+		
+		.tooltip:hover .tooltiptext {
+		    visibility: visible;
+		}
+			   
+		
+		
+		
+		
+		
+		.tooltip2{display:inline-block;
+				 position:relative;}		
+		.tooltip2 .tooltiptext2 {
+		    visibility: hidden;
+		    width: 300px;
+		    background-color:#fff;
+		    color: black;
+		    text-align: center;
+		    border:1px solid black;
+		    padding: 5px 5px;
+		​    bottom:10px;
+		    /* 定位 */
+		    position: absolute;
+		    z-index: 1;
+			font-size:12px;
+			font-weight:100;
+		}
+.tooltip2:hover .tooltiptext2 {
+		    visibility: visible;
+		}
+.imglist{float:left;
+		 position:absolute;
+		 height:204px;
+		 width:2020px;
+		 	
+		left:0px;
+		}
+	
+			
+			
+			
+			
+			</style>
+		
+		<script type="text/javascript">
+			window.onload = function(){
+				var li=document.getElementsByClassName("pagetwoleft")[0].getElementsByTagName('li');
+				var divs=document.getElementsByClassName("pagetworight")[0].getElementsByClassName('tworight');
+				
+				divs[0].style.display="block";
+				for(var i=0;i<li.length;i++){
+					li[i].index = i;
+					li[i].onclick = function(){
+						for (var i =0;i<li.length;i++){
+							divs[i].style.display="none";
+						}<!--for-->
+					divs[this.index].style.display="block";	
+					}<!--onclick-->
+				}<!--for-->
+			
+			    		var button0=document.getElementsByClassName("linebox");
+			    		var active=document.getElementsByClassName("lineboxactive");
+			    		
+			    		var text1=document.getElementsByClassName("line1text")[0];
+			    		var text2=document.getElementsByClassName("line2text")[0];
+			    		var text3=document.getElementsByClassName("line3text")[0];
+			    		var text4=document.getElementsByClassName("line4text")[0];<!--获取每一行的标题-->
+			    		
+			    		var textnone10=document.getElementsByClassName("lineboxactive")[0];
+			    		var textnone11=document.getElementsByClassName("lineboxactive")[1];
+			    		var textnone12=document.getElementsByClassName("lineboxactive")[2];
+			    		var textnone13=document.getElementsByClassName("lineboxactive")[3];<!--获取第一行点击出现的div-->
+			    		
+			    		var textnone20=document.getElementsByClassName("lineboxactive")[4];
+			    		var textnone21=document.getElementsByClassName("lineboxactive")[5];
+			    		var textnone22=document.getElementsByClassName("lineboxactive")[6];<!--获取第儿行点击出现的div-->
+			    		
+			    		var textnone30=document.getElementsByClassName("lineboxactive")[7];
+			    		var textnone31=document.getElementsByClassName("lineboxactive")[8];
+			    		var textnone32=document.getElementsByClassName("lineboxactive")[9];
+			    		var textnone33=document.getElementsByClassName("lineboxactive")[10];<!--获取第三行点击出现的div-->
+			    		
+			    		var textnone40=document.getElementsByClassName("lineboxactive")[11];
+			    		var textnone41=document.getElementsByClassName("lineboxactive")[12];
+			    		var textnone42=document.getElementsByClassName("lineboxactive")[13];
+			    		var textnone43=document.getElementsByClassName("lineboxactive")[14];
+			    		var textnone44=document.getElementsByClassName("lineboxactive")[15];
+			    		var textnone45=document.getElementsByClassName("lineboxactive")[16];<!--获取第四行点击出现的div-->**/
+			    		
+						for(var i=0;i<button0.length;i++){
+			    			button0[i].index = i;
+			    			
+			    			button0[i].onclick = function(){
+			    				for (var i =0;i<button0.length;i++){
+			    					active[i].style.display="none";<!--点击时隐藏所有样式-->
+			    				};<!--for-->
+			    			active[this.index].style.display="block";	<!--点击出现-->
+			    			};<!--onclick-->
+			    		    
+						}<!--for-->
+						
+			    		text1.onclick=function(){
+			    			textnone10.style.display="none";
+			    			textnone11.style.display="none";
+			    			textnone12.style.display="none";
+			    			textnone13.style.display="none";
+						}<!--点击第一行标题Web & cloud让div消失-->
+			    		text2.onclick=function(){
+			    			textnone20.style.display="none";
+			    			textnone21.style.display="none";
+			    			textnone22.style.display="none";
+			    		}<!--点击第二行标题Windows让div消失-->
+			    		text3.onclick=function(){
+			    			textnone30.style.display="none";
+			    			textnone31.style.display="none";
+			    			textnone32.style.display="none";
+			    			textnone33.style.display="none";
+			    		}<!--点击第三行标题Mobile & gaming让div消失-->
+			    		text4.onclick=function(){
+			    			textnone40.style.display="none";
+			    			textnone41.style.display="none";
+			    			textnone42.style.display="none";
+			    			textnone43.style.display="none";
+			    			textnone44.style.display="none";
+			    			textnone45.style.display="none";
+			    		}<!--点击第四行标题Other toolsets让div消失-->
+			    	var imglist=document.getElementsByClassName("imglist")[0];
+					var gopre=document.getElementsByClassName("fivebox1")[0];
+				    var gonext=document.getElementsByClassName("pagefivetriangle")[0];
+			            
+						gonext.onclick=function(){
+							<!--alert(左移)-->
+							imglist.style.left=-202+"px";<!--每次点击按钮让页面左移202px露出下一张图片-->
+						}
+						gopre.onclick=function(){
+							<!--alert(右移)-->
+							imglist.style.left=202+"px";<!--每次点击按钮让页面右移202px露出下一张图片-->
+						}<!--onclick-->
+			        
+					var banner=document.getElementsByClassName("banner");<!--轮播图-->
+					var banner_item=document.getElementsByClassName("banner").children;
+					var prev=document.getElementsByClassName("sixtriangle1");
+					var next=document.getElementsByClassName("sixtriangle2");
+					var clone=banner_item[0].cloneNode(true)
+					banner.appendChild(clone);
+					var x=0;
+					next.onclick=function(){<!--点击按钮切换到后面一个页面-->
+						x++;
+						
+						if(x>3){
+							x=0;
+							banner.style.marginLeft=0;
+						}<!--if-->
+					    ani(banner,"marginLeft",-x*800,function(){ })
+			        }<!--onclick-->
+					pre.onclick=function(){<!--点击按钮切换到前面一个页面-->
+						x--;
+						
+						if(x<0){
+							x=2;
+							banner.style.marginLeft=-800+"px";
+						}<!--if-->
+					    ani(banner,"marginLeft",-x*800,function(){ })
+					}<!--onclick-->
+			   }<!--结束-->
+			  
+		</script>
+		
+		
+		
+		</head>
+		<body>
+		     <ul >
+				<li class="logo">
+				  <a href="#">
+				  <img src="logo.png" alt="logo"></a>
+				</li><!--logo-->
+				
+				<li class="visual" >
+					<a href="#">
+					<b>Visual &nbsp; Studio</b></a>
+				</li><!--visual-->
+				
+				<li class="visualstudio" >
+					<a href="#">
+					Visual&nbsp; Studio&nbsp; 2019</a>
+				</li><!--visualstudio-->
+				
+				<div class="function">
+					<div style="width:60px;">
+					    <div class="dropdown1">
+				            功能
+					    </div><!--dropdown1-->
+					    <div class="triangle1">
+					        <div class="content1">
+					        </div><!--content1-->
+					    </div><!--triangle1-->
+					</div>
+					<div  class="dropdown-content1" >
+						<div class="dropdown-content1left">
+						<h1 style="font-size:14px;display:block;">工作负荷</h1>
+						<p style="display:block;margin-top:30px ;">移动</p>
+						<p style="display:block;margin-top:30px ;">Azure</p>
+						<p style="display:block;margin-top:30px ;">Web</p>
+						<p style="display:block;margin-top:30px ;">Windows</p>
+						<p style="display:block;margin-top:30px ;">游戏</p>
+						</div><!--dropdown-content1left-->
+						<div class="dropdown-content1right">
+						<h1 style="font-size:14px;display:block;">技术</h1>
+						
+						<p style="display:block;margin-top:30px ;">.NET</p>
+						
+						<p style="display:block;margin-top:30px ;">Python</p>
+						
+						<p style="display:block;margin-top:30px ;">Node.js</p>
+						
+						<p style="display:block;margin-top:30px ;">C＋＋</p>
+						</div><!--dropdown-content1right-->
+					
+					</div><!--dropdown-content1-->
+				</div><!--function-->
+				
+				<li class="version" >
+					<div style="width:60px;">
+					    <div class="dropdown2">
+					         版本
+					    </div><!--dropdown2-->
+					    <div class="triangle1">
+					        <div class="content1">
+					        </div><!--content1-->
+					    </div><!--triangle1-->
+					</div>
+			        <div class="dropdown-content2">
+						<span style="display:block;padding:16px;">Visual&nbsp Studio&nbsp Communnity</span>
+						<span style="display:block;padding:16px;">Visual&nbsp Studio&nbsp Professional</span>
+						<span style="display:block;padding:16px;">Visual&nbsp Studio&nbsp Enterprise</span>
+						<span style="display:block;padding:16px;">版本比较</span>
+						<span style="display:block;padding:16px;">定价</span>
+					</div><!--dropdown-content2-->
+				</li><!--version-->
+				
+				<li class="download" >
+					<a href="#">
+				    下载</a>
+				</li><!--download-->
+				
+				<li class="support" >
+					<div style="width:60px;">
+					    <div class="dropdown3">
+					         支持
+					    </div><!--dropdown3-->
+					    <div class="triangle1">
+					        <div class="content1">
+					        </div><!--content1-->
+					    </div><!--triangle1-->
+					</div>
+					<div class="dropdown-content3">
+						<span style="display:block;padding:12px;">获得支持</span>
+						<span style="display:block;padding:12px;">开始使用</span>
+						<span style="display:block;padding:12px;">博客</span>
+					</div><!--dropdown-content3-->
+				</li><!--support-->
+				
+				<li class="visit" >
+					<a href="#">
+					订阅者访问</a>
+				</li><!--visit-->
+				
+				<li class="freevisual">
+					<a href="#">
+					<b>免费&nbsp; Visual&nbsp; Studio</b></a>
+				</li><!--freevisual-->
+				
+				<li class="allmicrosoft">
+					<div style="width:130px;">
+					    <div class="dropdown4">
+					         所有Microsoft
+					    </div><!--dropdown4-->
+					    <div class="triangle1">
+					        <div class="content1">
+					        </div><!--content1-->
+					    </div><!--triangle1-->
+					</div>
+		            <div class="dropdown-content4">
+						<div class="dropdown-content4top">
+						   <p style="display:inline-block;margin:10px 50px 20px 0;">Microsoft&nbsp; 365</p>
+						   <p style="display:inline-block;margin:10px 50px 20px 0;">Azure</p>
+						   <p style="display:inline-block;margin:10px 50px 20px 0;">Office&nbsp; 365</p>
+						   <p style="display:inline-block;margin:10px 50px 20px 0;">Dynamics&nbsp; 365</p>
+						   <p style="display:inline-block;margin:10px 50px 20px 0;">SQL</p>
+						   <p style="display:inline-block;margin:10px 50px 20px 0;">Windows&nbsp; 10</p>
+						</div><!--dropdown-content4top-->
+						<div class="dropdown-content4text1">
+							<h1 style="font-size:14px;display:block;">产品与服务</h1>
+							<p style="display:block;margin-top:30px;">Windows&nbsp; Server</p>
+							<p style="display:block;margin-top:30px;">企业移动性＋安全性</p>
+							<p style="display:block;margin-top:30px;">Power&nbsp; BI</p>
+							<p style="display:block;margin-top:30px;">团队</p>
+							<p style="display:block;margin-top:30px;">Visual&nbsp; Studio</p>
+							<p style="display:block;margin-top:30px;">Surface&nbsp; for&nbsp; Business</p>
+						</div><!--dropdown-content4text1-->
+						<div class="dropdown-content4text2">
+							<h1 style="font-size:14px;display:block;">新兴技术</h1>
+							<p style="display:block;margin-top:30px;">人工智能</p>
+							<p style="display:block;margin-top:30px;">Azure&nbsp; 认知服务</p>
+							<p style="display:block;margin-top:30px;">Quantum</p>
+							<p style="display:block;margin-top:30px;">Microsoft&nbsp; Hololens</p>
+						</div><!--dropdown-content4text2-->
+						<div class="dropdown-content4text3">
+							<h1 style="font-size:14px;display:block;">开发人员与IT</h1>
+							<p style="display:block;margin-top:30px;">文档</p>
+							<p style="display:block;margin-top:30px;">TechNet</p>
+							<p style="display:block;margin-top:30px;">开发人员网络</p>
+							<p style="display:block;margin-top:30px;">Windows开发人员中心</p>
+							<p style="display:block;margin-top:30px;">Windows&nbsp; IT&nbsp; Pro&nbsp; Center</p>
+							<p style="display:block;margin-top:30px;">FastTrack</p>
+						</div><!--dropdown-content4text3-->
+						<div class="dropdown-content4text4" style="display:inline-block;float:left;width:16%;margin-top:20px;">
+							<h1 style="font-size:14px;display:block;">合作伙伴</h1>
+							<p style="display:block;margin-top:30px;">合作伙伴网络</p>
+							<p style="display:block;margin-top:30px;">解决方案提供商</p>
+							<p style="display:block;margin-top:30px;">合作伙伴中心</p>
+						</div><!--dropdown-content4text4-->
+						<div class="dropdown-content4text5" style="display:inline-block;float:left;width:16%;margin-top:20px;">
+							<h1 style="font-size:14px;display:block;">行业</h1>
+							<p style="display:block;margin-top:30px;">教育</p>
+							<p style="display:block;margin-top:30px;">政府</p>
+							<p style="display:block;margin-top:30px;">制造业与资源</p>
+							<p style="display:block;margin-top:30px;">零售</p>
+						</div><!--dropdown-content4text5-->
+						<div class="dropdown-content4text6" style="display:inline-block;float:left;width:16%;margin-top:20px;">
+							<h1 style="font-size:14px;display:block;">其他</h1>
+							<p style="display:block;margin-top:30px;">安全性</p>
+							<p style="display:block;margin-top:30px;">许可</p>
+							<p style="display:block;margin-top:30px;">AppSource</p>
+							<p style="display:block;margin-top:30px;">Azure&nbsp; Marketplace</p>
+							<p style="display:block;margin-top:30px;">活动</p>
+							<p style="display:block;margin-top:30px;">研究</p>
+						</div><!--dropdown-content4text6-->
+						<div class="dropdown-content4bottom" >
+							<p style="display:block;margin-top:20px;">查看更多站点&nbsp;></p>
+						</div><!--dropdown-content4bottom-->
+					
+						
+					</div><!--dropdown-content4-->
+				</li><!--allmicrosoft-->
+				
+				<li class="search">
+				  <a href="#">
+				  <img src="search.jpg" alt="search"></a>
+				</li><!--search-->
+				
+				<div class="tooltip">
+				 <a href="#">
+				 <img src="join.jpg" alt="join"></a>
+				 <span class="tooltiptext">sign in your account</span>
+				</div><!--tooltip-->
+				
+			 </ul><!--banner-->
+			
+			 <div id="content">
+				<div class="pageone">
+					<div class="top">
+					    <div class="top1">
+						    <h1 class="top1title">Visual Studio 2019</h1><!--top1title-->
+					    </div><!--top1-->
+					    <div class="top2">	
+						    <p  class="top2p">更快地进行代码编写。 更智能地执行操作。使用同类最佳IDE创建未<br>来。</p>
+					    </div><!--top2-->
+						
+						<div class="top3">
+							<div class="top3left">
+							    <a href="#">
+							    <img src="logo1.jpg" alt="logo">
+							    </a>
+							</div><!--top3left-->
+							
+						<div class="top3right">
+							
+							<div class="dropdown5">
+								<div class="top3right1">
+								    <div class="top3right1text">下载VisualStudio</div>
+								    
+									    <div class="triangle">
+									        <div class="content">
+								            </div><!--content-->
+								        </div><!--triangle-->
+								    
+								</div><!--top3right1-->
+							</div><!--dropdown5-->
+							
+							<div class="dropdown-content5">
+								
+								<div class="button" style="display:block;padding:12px;">
+									
+									<div class="tooltip2">
+										Community2019
+									    <span class="tooltiptext2">开发人员个人可免费用于学术用途，并且是开放源代码的</span>
+									</div><!--tooltip2-->
+									
+									<span style="display:inline-block;">
+									    <a href="#">
+									    <img src="arrow1.jpg" alt="arrow">
+									     </a>
+									</span>
+								</div><!--button-->
+								
+								<div class="button">
+								    <div class="tooltip2">
+										Professonal2019
+										<span class="tooltiptext2"style="width:200px;">供别人使用的免费试用版</span>
+									</div><!--tooltip2-->
+								    <span style="display:inline-block;">
+									    <a href="#">
+									    <img src="arrow1.jpg" alt="arrow">
+									     </a>
+								    </span>
+								</div><!--button-->
+						
+								<div class="button">
+								    <div class="tooltip2">
+										Enterprise2019
+										<span class="tooltiptext2"style="width:200px;">供组织使用的免费试用版</span>
+									</div><!--tooltip2-->
+								    <span style="display:inline-block;margin-left:12px;">
+									    <a href="#">
+									    <img src="arrow1.jpg" alt="arrow">
+									     </a>
+								    </span>
+								</div><!--button-->
+							</div><!--dropdown-content5-->
+							
+						</div><!--top3right-->
+							
+					</div><!--top3-->
+					</div><!--top-->
+					
+					<div class="middle" style="margin:100px 0 100px 80px;float:left;">
+						<img src="lightbulb-dark-1200.gif"/>
+					</div><!--middle-->
+					
+					<div class="bottom" style="float:left;width:100%;">
+						
+						<div class="bottomleft" style="float:left;width:50%;">
+							<div class="bottomleft1">
+								<p>使用从初始设计到最终部署的完整工具集进行开发</p>
+							</div><!--bottomleft1-->
+							<div class="bottomleft2">
+								<div class="bottomleft2.1" style="float:left;width:100px;">
+								    <div class="bottomleft2text1">新增内容</div><!--bottomleft2text1-->
+								    <div class="triangle2">
+								        <div class="content2">
+								        </div><!--content2-->
+								    </div><!--triangle2-->
+								</div>
+								<div class="bottomleft2.2" style="float:left;width:200px;">
+								    <div class="bottomleft2text2">VisualStudio预览</div><!--bottomleft2text2-->
+							        <div class="triangle2">
+							            <div class="content2">
+							            </div><!--content2-->
+							        </div><!--triangle2-->
+								</div>
+							</div><!--bottomleft2-->
+							
+						</div><!--bottomleft-->
+						
+						
+						<div class="bottomright" style="float:left;width:50%;">
+							
+							<div class="box1">
+							    <div class="triangle3">
+							        <div class="content3">
+							        </div><!--content3-->
+							    </div><!--triangle3-->
+							    <div class="bottomrighttext1">改进了C＋＋文件的IntelliSense</div>
+							</div><!--box1-->
+							
+							<div class="box2">
+							    <div class="triangle3">
+							        <div class="content3">
+							        </div><!--content3-->
+							    </div><!--triangle3-->
+							    <div class="bottomrighttext2">使用多个常用仿真程序进行本地开发</div>
+							</div><!--box2-->
+							
+							<div class="box3">
+							    <div class="triangle3">
+							        <div class="content3">
+							        </div><!--content3-->
+							    </div><!--triangle3-->
+							    <div class="bottomrighttext3">简化了解决方案资源管理器中的测试问题</div>
+							</div><!--box3-->
+							
+							<div class="box4">
+							    <div class="triangle3">
+							        <div class="content3">
+							        </div><!--content3-->
+							    </div><!--triangle3-->
+							    <div class="bottomrighttext4">IDE中的Git管理和存储库创建</div>
+							</div><!--box4-->
+							
+							<div class="box5">
+							    <div class="triangle3">
+							        <div class="content3">
+							        </div><!--content3-->
+							    </div><!--triangle3-->
+							    <div class="bottomrighttext5">Kubernetes支持现在包含在Microsoft&nbsp; Azure&nbsp; 工作负载中</div>
+							</div><!--box5-->
+							
+						</div><!--bottomright-->
+					</div><!--bottom-->
+			    </div><!--pageone-->
+				<!--这是第一张网页-->
+				
+				
+				<div class="pagetwo">
+					<ul class="pagetwoleft">
+						
+						<li class="btn">
+							<div class="btncircle">
+							    <div class="jpg" style="float:left;margin:10px 0 0 15px;">
+								    <a href="#">
+								    <img src="pagetwo1.jpg" alt="logo">
+								    </a>
+				                </div><!--jpg-->
+							</div><!--btncircle-->
+							<div class="text">
+								开发
+							</div>
+						</li><!--btn-->
+						
+						<li class="btn" >
+							<div class="btncircle">
+							    <div class="jpg" style="float:left;margin:10px 0 0 13px;">
+								    <a href="#">
+								    <img src="pagetwo2.jpg" alt="logo">
+								    </a>
+							    </div><!--jpg-->
+							</div><!--btncircle-->
+							<div class="text">
+								分析
+							</div>
+						</li><!--btn-->
+						
+						<li class="btn" >
+							<div class="btncircle">
+							    <div class="jpg" style="float:left;margin:10px 0 0 13px;">
+								    <a href="#">
+								    <img src="pagetwo3.jpg" alt="logo">
+								    </a>
+							    </div><!--jpg-->
+							</div><!--btncircle-->
+							<div class="text" >
+								Debug
+							</div>
+						</li><!--btn-->
+						
+						<li class="btn" >
+							<div class="btncircle">
+							    <div class="jpg" style="float:left;margin:10px 0 0 13px;">
+								    <a href="#">
+								    <img src="pagetwo4.jpg" alt="logo">
+								    </a>
+							    </div><!--jpg-->
+							</div><!--btncircle-->
+							<div class="text">
+								测试
+							</div>
+						</li><!--btn-->
+						
+						<li class="btn" >
+							<div class="btncircle">
+							    <div class="jpg" style="float:left;margin:10px 0 0 13px;">
+								    <a href="#">
+								    <img src="pagetwo5.jpg" alt="logo">
+								    </a>
+							    </div><!--jpg-->
+							</div><!--btncircle-->
+							<div class="text" >
+								协作
+							</div>
+						</li><!--btn-->
+						
+						<li class="btn" >
+							<div class="btncircle">
+							    <div class="jpg" style="float:left;margin:10px 0 0 13px;">
+								    <a href="#">
+								    <img src="pagetwo6.jpg" alt="logo">
+								    </a>
+							    </div><!--jpg-->
+							</div><!--btncircle-->
+							<div class="text">
+							   部署
+							</div>
+						</li><!--btn-->
+					</ul><!--pagetwoleft-->
+					
+					
+					
+					<div class="pagetworight">
+						
+						
+						
+						<div class="tworight"style="height:100%;">
+						<div class="boxtop" style="float:left;">
+						    <h1 class="boxtoptitle">编写没什么错误的代码</h1><!--boxtoptitle-->
+						    <div class="boxtoptext">遇到困难时使用<div class="tooltip1">IntelliSense<span class="tooltiptext1">Code comletion including Complete Word and more</span></div>
+							 代码建议快速准确地键入变量。
+						   无论导航到所需的任何文件、类型、成员或符号声明时的复杂程度如何，都保持一定的速度。
+						   使用建议操作（例如重命名函数或添加参数）的灯泡快速改进代码。
+						    </div><!--boxtoptext-->
+						</div><!--boxtop-->
+						<div class="boxmiddle">
+						    <div class="boxmiddlebutton" style="color:#fff;float:left;">
+							    所有开发功能
+						    </div><!--boxmiddlebutton-->
+							<div class="triangle2">
+							    <div class="content2">
+							    </div><!--content2-->
+							</div><!--triangle2-->
+						</div><!--boxmiddle-->
+						<div class="boxbottom">
+							<img src="combined-gif2sl.gif"/ style="width:800px;">
+						</div><!--boxbottom-->
+					</div><!--tworight-->
+					
+					<div class="tworight"style="height:100%;">
+						<div class="boxtop" style="float:left;">
+						    <h1 class="boxtoptitle">了解有关代码的详细信息</h1><!--boxtoptitle-->
+						    <div class="boxtoptext">
+								<div class="tooltip1" style="border-bottom-width:1px;
+					border-bottom-style:dashed;border-color:fff;">
+							 CodeLens
+							 <span class="tooltiptext1">Find references,code changes,bugs,and more</span></div>
+							 帮助你轻松找到重要见解，例如对代码所做的更改、这些更改的影响以及是否对方法进行了单元测试。
+							  可一目了然地查看参考、作者、测试、提交历史记录和其他重要信息。
+						    </div><!--boxtoptext-->
+						</div><!--boxtop-->
+						<div class="boxmiddle" style="float:left;margin-top:30px;width:100%;">
+						    <div class="boxmiddlebutton" style="color:#fff;float:left;">
+							    所有分析功能
+						    </div><!--boxmiddlebutton-->
+							<div class="triangle2">
+							    <div class="content2">
+							    </div><!--content2-->
+							</div><!--triangle2-->
+						</div><!--boxmiddle-->
+						<div class="boxbottom" style="float:left;margin-top:30px;">
+							<img src="combined-gif2sl.gif"/ style="width:800px;">
+						</div><!--boxbottom-->
+					</div><!--tworight-->
+					
+					
+					<div class="tworight"style="height:100%;">
+						<div class="boxtop" style="float:left;">
+						    <h1 class="boxtoptitle"style="display:block;color:#fff;font-weight:700;font-size:36px;">快速找到并修复bug</h1><!--boxtoptitle-->
+						    <div class="boxtoptext"style="color:#fff;font-size:20px;margin-top:20px;font-weight:100;width:800px;">
+								借助 Visual Studio，可以使用断点和所需方法在要检查 bug 时暂停代码执行。
+								如果一步过长或遇到了意外的更改，可以回退到任何特定代码行，而无需重启会话或重新创建状态。
+						    </div><!--boxtoptext-->
+						</div><!--boxtop-->
+						<div class="boxmiddle" style="float:left;margin-top:30px;width:100%;">
+						    <div class="boxmiddlebutton" style="color:#fff;float:left;">
+							    所有调试功能
+						    </div><!--boxmiddlebutton-->
+							<div class="triangle2">
+							    <div class="content2">
+							    </div><!--content2-->
+							</div><!--triangle2-->
+						</div><!--boxmiddle-->
+						<div class="boxbottom" style="float:left;margin-top:30px;">
+							<img src="combined-gif2sl.gif"/ style="width:800px;">
+						</div><!--boxbottom-->
+					</div><!--tworight-->
+					
+					<div class="tworight"style="height:100%;">
+						<div class="boxtop" style="float:left;">
+						    <h1 class="boxtoptitle">有效工作</h1><!--boxtoptitle-->
+						    <div class="boxtoptext">
+								轻松导航和组织测试套件，以便分析测试的代码量并立即查看结果。
+								立即了解所做的每个更改的影响，并让高级功能在你键入代码时对其进行测试。
+								在错误发生时立即修复错误，并查看现有测试是否覆盖了新更改。
+						    </div><!--boxtoptext-->
+						</div><!--boxtop-->
+						<div class="boxmiddle" style="float:left;margin-top:30px;width:100%;">
+						    <div class="boxmiddlebutton" style="color:#fff;float:left;">
+							    所有测试功能
+						    </div><!--boxmiddlebutton-->
+							<div class="triangle2">
+							    <div class="content2">
+							    </div><!--content2-->
+							</div><!--triangle2-->
+						</div><!--boxmiddle-->
+						<div class="boxbottom" style="float:left;margin-top:30px;">
+							<img src="combined-gif2sl.gif"/ style="width:800px;">
+						</div><!--boxbottom-->
+					</div><!--tworight-->
+					
+					
+					<div class="tworight"style="height:100%;">
+						<div class="boxtop" style="float:left;">
+						    <h1 class="boxtoptitle">共享多个屏幕</h1><!--boxtoptitle-->
+						    <div class="boxtoptext">
+								轻松导航和组织测试套件，以便分析测试的代码量并立即查看结果。
+								立即了解所做的每个更改的影响，并让高级功能在你键入代码时对其进行测试。
+								在错误发生时立即修复错误，并查看现有测试是否覆盖了新更改。
+						    </div><!--boxtoptext-->
+						</div><!--boxtop-->
+						<div class="boxmiddle" style="float:left;margin-top:30px;width:100%;">
+						    <div class="boxmiddlebutton" style="color:#fff;float:left;">
+							    所有协作功能
+						    </div><!--boxmiddlebutton-->
+							<div class="triangle2">
+							    <div class="content2">
+							    </div><!--content2-->
+							</div><!--triangle2-->
+						</div><!--boxmiddle-->
+						<div class="boxbottom" style="float:left;margin-top:30px;">
+							<img src="combined-gif2sl.gif"/ style="width:800px;">
+						</div><!--boxbottom-->
+					</div><!--tworight-->
+					
+					
+					<div class="tworight"style="height:100%;">
+						<div class="boxtop" style="float:left;">
+						    <h1 class="boxtoptitle">针对云进行构建</h1><!--boxtoptitle-->
+						    <div class="boxtoptext">
+								使用适用于常见应用程序类型和本地 Azure 仿真程序的模板快速启动和运行，而无需 Azure 帐户。
+								还可以预配应用程序依赖项（例如 Azure SQL 数据库和 Azure 存储帐户），而无需离开 Visual Studio。
+								使用直接附加到应用程序的 Visual Studio 远程调试器快速诊断任何问题。
+						    </div><!--boxtoptext-->
+						</div><!--boxtop-->
+						<div class="boxmiddle" style="float:left;margin-top:30px;width:100%;">
+						    <div class="boxmiddlebutton" style="color:#fff;float:left;">
+							    所有部署功能
+						    </div><!--boxmiddlebutton-->
+							<div class="triangle2">
+							    <div class="content2">
+							    </div><!--content2-->
+							</div><!--triangle2-->
+						</div><!--boxmiddle-->
+						<div class="boxbottom" style="float:left;margin-top:30px;">
+							<img src="combined-gif2sl.gif"/ style="width:800px;">
+						</div><!--boxbottom-->
+					</div><!--tworight-->
+					
+					
+					
+					</div><!--pagetworight-->
+				
+				
+				</div><!--pagetwo-->
+				
+				
+				<div class="pagethree">
+					<div class="pagethreetop">
+						<h1 class="pagethreetoptitle">VisualStudio工作负载</h1><!--pagethreetoptitle-->
+						<p class="pagethreetoptext">仅安装在VisualStudio中开发所需的工具和组件捆绑包</p><!--pagethreetoptext-->
+					</div><!--pagethreetop-->
+					<div class="pagethreemiddle">
+						<div class="ptmbutton">
+						    修改VisualStudio
+						</div><!--ptmbutton-->
+						<div class="triangle2" style="border-color:#21759B;"><!--箭头的颜色不是蓝色，为了防止麻烦在标签内改变颜色，其他的还按照样式中的-->
+						    <div class="content2" style="border-color:#21759B;">
+						    </div><!--content2-->
+						</div><!--triangle2-->
+					</div><!--pagethreemiddle-->
+					
+					
+					   	<div class="pagethreebottom">
+							<div class="line1">
+								<div class="line1text">
+									Web & cloud
+								</div><!--line1text-->
+								
+								<div class="linebox">
+									<div class="boxlogo">
+										<a href="#">
+										<img src="box1.1.jpg" alt="logo">
+										</a>
+									</div><!--box1.1logo-->
+									<div class="box1.1text">
+										ASP.NET和Web开发
+									</div><!--box1.1text-->
+								</div><!--line1box1-->
+								
+								
+								
+								<div class="linebox">
+									<div class="boxlogo">
+										<a href="#">
+										<img src="box1.2.jpg" alt="logo">
+										</a>
+									</div><!--box1.2logo-->
+									<div class="box1.2text">
+										Azure
+									</div><!--box1.2text-->
+								</div><!--line1box2-->
+								
+								<div class="linebox">
+									<div class="boxlogo">
+										<a href="#">
+										<img src="box1.3.jpg" alt="logo">
+										</a>
+									</div><!--box1.3logo-->
+									<div class="box1.3text">
+										Python
+									</div><!--box1.3text-->
+								</div><!--line1box3-->
+								
+								<div class="linebox">
+									<div class="boxlogo" >
+										<a href="#">
+										<img src="box1.4.jpg" alt="logo">
+										</a>
+									</div><!--box1.4logo-->
+									<div class="box1.4text">
+										Azure
+									</div><!--box1.4text-->
+								</div><!--line1box4-->
+							</div><!--line1-->
+							
+							<div class="lineboxactive" >
+								<div class="drop-down-list1.1">
+									<p class="drop-down-list1.1.1">
+										ASP.NET和Web开发
+									</p><!--drop-down-list1.1.1--><br>
+								    <p class="drop-down-list1.1.2">
+										使用ASP.NETCore、ASP.NET(NET Framework)、HTML/JavaScript和包括Docker支持的容器生成Web应用程序
+									</p><!--drop-down-list1.1.2-->
+								</div><!--drop-down-list1-->
+								
+								<div class="drop-down-list1.1">
+									<p class="drop-down-list1.1.1">
+										说明
+									</p><!--drop-down-list1.2.1--><br>
+								    <p class="drop-down-list1.1.2">
+										最大限度地提高使用ASPNET Core以及HTML和JavasCript等基于标准的技术开发.NET Web应用程序的工作效率。
+									</p><!--drop-down-list1.2.2-->
+								</div><!--drop-down-list2-->
+								
+								<div class="drop-down-list1.3">
+									<p class="drop-down-list1.1.1">
+										开发应用程序
+									</p><!--drop-down-list1.3.1--><br>
+								    <p class="drop-down-list1.1.2" style="color:#2A6496;">
+										使用ASPNET Core中的Razor页面的网站
+									</p><!--drop-down-list1.1.2--><br>
+								    <p class="drop-down-list1.1.2">
+										-使用ASPNET Core MVC生成Web API
+									</p><!--1.1.2--><br>
+								    <p class="drop-down-list1.1.2">
+										-使用ASPNET Core SignalR构建实时Web应用
+									</p><!--1.3.2--><br>
+								</div><!--drop-down-list3-->
+								
+								<div class="drop-down-list1.4" style="float;left;width:100%;margin:30px 0 0 30px;height:250px;">
+									<p class="drop-down-list1.1.1">
+										组件
+									</p><!--drop-down-list1.1.1--><br>
+								    <p class="drop-down-list1.1.2">
+										-NET Framework 4x 开发工具
+									</p><!--drop-down-list1.1.2--><br>
+								    <p class="drop-down-list1.1.2">
+										-NET Core 2.1 开发工具
+									</p><!--1.1.2--><br>
+								    <p class="drop-down-list1.1.2" >
+										-ASPNET和Web开发工具
+									</p><!--1.1.2--><br>
+									<p class="drop-down-list1.1.2">
+										-NET分析工具
+									</p><!--1.1.2--><br>
+									<p class="drop-down-list1.1.2">
+										-容器开发开发工具
+									</p><!--drop-down-list1.1.2--></br>
+									<p class="drop-down-list1.1.2">
+										-用于Web开发的云工具</br>
+									</p><!--1.4.7-->
+									<p class="drop-down-list1.1.2">
+										-IntelliSense、代码导航和重构（C#、Visual Basic和F#)</br>
+									</p><!--1.1.2-->
+								</div><!--drop-down-list1.4-->
+								
+								<div class="drop-down-list1.5" style="float;left;width:100%;margin:30px 0 0 30px;font-size:18px;font-weight:100;color:#2A6496;height:25px;">
+								    
+										详细了解ASPNET和Web开发&nbsp;<b>></b>
+									
+								</div><!--drop-down-list1.5-->
+								
+							</div><!--line1box1active-->
+							 
+							<div class="lineboxactive">
+								<div class="drop-down-list2.1" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+									<p class="drop-down-list2.1.1" style="float:left;width:100%;font-size:20px;font-weight:700;">
+										Azure
+									</p><!--drop-down-list2.1.1--></br>
+								    <p class="drop-down-list2.1.2" style="float:left;width:100%;font-size:18px;font-weight:100;">
+										用于开发云应用、创建资源以及生成包括Docker支持的容器的Azure SDK、和项目
+									</p><!--drop-down-list2.1.2-->
+								</div><!--drop-down-list2.1-->
+								
+								<div class="drop-down-list2.2" style="float;left;width:100%;margin:30px 0 0 30px;height:100px;">
+									<p class="drop-down-list2.2.1" style="float:left;font-size:20px;font-weight:700;">
+										说明
+									</p><!--drop-down-list2.2.1--></br>
+								    <p class="drop-down-list2.2.2" style="float:left;font-size:18px;font-weight:100;">
+										轻松在 Microsoft 云上生成、测试、部署和管理可扩展的应用和服务。 安装后，在 Cloud Explorer 中查看资源、使用<br>
+										Azure 管理工具创建资源、生成适用于 Azure Web 和云服务的应用程序，还能使用 Azure Datalake 工具执行大数据运<br>算。
+									</p><!--drop-down-list2.2.2-->
+								</div><!--drop-down-list2.2-->
+								
+								<div class="drop-down-list2.3" style="float;left;width:100%;margin:30px 0 0 30px;height:100px;">
+									<p class="drop-down-list2.3.1" style="float:left;font-size:20px;font-weight:700;">
+										开发应用程序
+									</p><!--drop-down-list2.3.1--></br>
+								    <p class="drop-down-list2.3.2" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										在集成开发环境中将 ASP.NET Core 应用发布到 Azure
+									</p><!--drop-down-list2.3.2--></br>
+								    <p class="drop-down-list2.3.3" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										-测试云服务的性能
+									</p><!--2.3.3--></br>
+								    <p class="drop-down-list2.3.4" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										-测试已发布的Azure云服务
+									</p><!--2.3.4--></br>
+								</div><!--drop-down-list2.3-->
+								
+								<div class="drop-down-list2.4" style="float;left;width:100%;margin:30px 0 0 30px;height:180px;">
+									<p class="drop-down-list2.4.1" style="float:left;font-size:20px;font-weight:700;">
+										组件
+									</p><!--drop-down-list2.4.1--><br>
+								    <p class="drop-down-list2.4.2" style="float:left;font-size:18px;font-weight:100;">
+										– Azure 开发必备组件
+									</p><!--drop-down-list2.4.2--><br>
+								    <p class="drop-down-list2.4.3" style="float:left;font-size:18px;font-weight:100;">
+										–.NET Framework 4.x 开发工具
+									</p><!--2.4.3--><br>
+								    <p class="drop-down-list2.4.4" style="float:left;font-size:18px;font-weight:100;">
+										– .NET Core 2.1 开发工具
+									</p><!--2.4.4--><br>
+									<p class="drop-down-list2.4.5" style="float:left;font-size:18px;font-weight:100;">
+					                    –ASPNET和Web开发工具
+									</p><!--2.4.5--><br>
+									<p class="drop-down-list2.4.6" style="float:left;font-size:18px;font-weight:100;">
+										-容器开发工具
+									</p><!--drop-down-list2.4.6--><br>
+									
+								</div><!--drop-down-list2.4-->
+							
+							    <div class="drop-down-list2.5" style="float;left;width:100%;margin:30px 0 0 30px;font-size:18px;font-weight:100;color:#2A6496;height:25px;">
+							        
+							    		了解有关Azure的详细信息&nbsp;<b>></b>
+							    </div><!--drop-down-list2.5-->
+							</div><!--line1box2active-->
+							
+							
+							<div class="lineboxactive">
+								<div class="drop-down-list3.1" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+									<p class="drop-down-list3.1.1" style="float:left;width:100%;font-size:20px;font-weight:700;">
+										Python
+									</p><!--drop-down-list3.1.1--></br>
+								    <p class="drop-down-list3.1.2" style="float:left;width:100%;font-size:18px;font-weight:100;">
+										对Python进行编辑、调试、交互式开发和源代码管理
+									</p><!--drop-down-list3.1.2-->
+								</div><!--drop-down-list3.1-->
+								
+								<div class="drop-down-list3.2" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+									<p class="drop-down-list3.2.1" style="float:left;font-size:20px;font-weight:700;">
+										说明
+									</p><!--drop-down-list3.2.1--></br>
+								    <p class="drop-down-list3.2.2" style="float:left;font-size:18px;font-weight:100;">
+										支持使用熟悉的框架（包括Django和Flash)构建的Python Web应用程序，
+										以及使用内置Conda和IPython支持构建的数据科学应用程序。
+									</p><!--drop-down-list3.2.2-->
+								</div><!--drop-down-list3.2-->
+								
+								<div class="drop-down-list3.3" style="float;left;width:100%;margin:30px 0 0 30px;height:100px;">
+									<p class="drop-down-list3.3.1" style="float:left;font-size:20px;font-weight:700;">
+										开发应用程序
+									</p><!--drop-down-list3.3.1--></br>
+								    <p class="drop-down-list3.3.2" style="float:left;font-size:18px;font-weight:100;">
+										-Python 应用程序
+									</p><!--drop-down-list3.3.2--></br>
+								    <p class="drop-down-list3.3.3" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										-Django Web 应用
+									</p><!--3.3.3--></br>
+								    <p class="drop-down-list3.3.4" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										-Flash Web 应用
+									</p><!--3.3.4--></br>
+								</div><!--drop-down-list3.3-->
+								
+								<div class="drop-down-list3.4" style="float;left;width:100%;margin:30px 0 0 30px;height:230px;">
+									<p class="drop-down-list3.4.1" style="float:left;font-size:20px;font-weight:700;">
+										组件
+									</p><!--drop-down-list3.4.1--><br>
+								    <p class="drop-down-list3.4.2" style="float:left;font-size:18px;font-weight:100;">
+										– 支持CPython、virtualenv、venv和conda环境
+									</p><!--drop-down-list3.4.2--><br>
+								    <p class="drop-down-list3.4.3" style="float:left;font-size:18px;font-weight:100;">
+										–多种多样的编辑、intelliSense和代码理解
+									</p><!--3.4.3--><br>
+								    <p class="drop-down-list3.4.4" style="float:left;font-size:18px;font-weight:100;">
+										–交互式（REPL)环境窗口
+									</p><!--3.4.4--><br>
+									<p class="drop-down-list3.4.5" style="float:left;font-size:18px;font-weight:100;">
+							            –在开放的文件夹工作区中支持Python
+									</p><!--3.4.5--><br>
+									<p class="drop-down-list3.4.6" style="float:left;font-size:18px;font-weight:100;">
+										-使用项目和项模板简化新建项目过程
+									</p><!--drop-down-list3.4.6--><br>
+									<p class="drop-down-list3.4.7" style="float:left;font-size:18px;font-weight:100;">
+										–分析和单元测试工具
+									</p><!--3.4.7--><br>
+									<p class="drop-down-list3.4.8" style="float:left;font-size:18px;font-weight:100;">
+									    –使用Miniconda管理Conda环境
+									</p><!--3.4.8--><br>
+									<p class="drop-down-list3.4.9" style="float:left;font-size:18px;font-weight:100;">
+										-Live Share
+									</p><!--drop-down-list3.4.9--><br>
+									
+								</div><!--drop-down-list3.4-->
+							
+							    <div class="drop-down-list3.5" style="float;left;width:100%;margin:30px 0 0 30px;font-size:18px;font-weight:100;color:#2A6496;height:25px;">
+							        
+							    		深入了解Python&nbsp;<b>></b>
+							    </div><!--drop-down-list3.5-->
+							</div><!--line1box3active-->
+							
+							<div class="lineboxactive">
+								<div class="drop-down-list4.1" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+									<p class="drop-down-list4.1.1" style="float:left;width:100%;font-size:20px;font-weight:700;">
+										Node.js开发
+									</p><!--drop-down-list4.1.1--></br>
+								    <p class="drop-down-list4.1.2" style="float:left;width:100%;font-size:18px;font-weight:100;">
+										使用服务器端 JavaScript 运行时环境 Node.js 构建快速且可缩放的应用程序
+									</p><!--drop-down-list4.1.2-->
+								</div><!--drop-down-list4.1-->
+								
+								<div class="drop-down-list4.2" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+									<p class="drop-down-list4.2.1" style="float:left;font-size:20px;font-weight:700;">
+										说明
+									</p><!--drop-down-list4.2.1--></br>
+								    <p class="drop-down-list4.2.2" style="float:left;font-size:18px;font-weight:100;">
+										使用 Web 框架（如 Express）和前端框架（如 React）轻松构建 Node.js 应用程序。
+									</p><!--drop-down-list4.2.2-->
+								</div><!--drop-down-list4.2-->
+								
+								<div class="drop-down-list4.3" style="float;left;width:100%;margin:30px 0 0 30px;height:100px;">
+									<p class="drop-down-list4.3.1" style="float:left;font-size:20px;font-weight:700;">
+										开发应用程序
+									</p><!--drop-down-list4.3.1--></br>
+								    <p class="drop-down-list4.3.2" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										-使用 Express 创建 Node.js 应用
+									</p><!--drop-down-list4.3.2--></br>
+								    <p class="drop-down-list4.3.3" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										-使用 React 创建 Node.js 应用
+									</p><!--4.3.3--></br>
+								    <p class="drop-down-list4.3.4" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										-将 Node.js 应用发布到 Azure 云
+									</p><!--4.3.4--></br>
+								</div><!--drop-down-list4.3-->
+								
+								<div class="drop-down-list4.4" style="float;left;width:100%;margin:30px 0 0 30px;height:250px;">
+									<p class="drop-down-list4.4.1" style="float:left;font-size:20px;font-weight:700;">
+										组件
+									</p><!--drop-down-list4.4.1--><br>
+								    <p class="drop-down-list4.4.2" style="float:left;font-size:18px;font-weight:100;">
+										– 项目模板
+									</p><!--drop-down-list4.4.2--><br>
+								    <p class="drop-down-list4.4.3" style="float:left;font-size:18px;font-weight:100;">
+										–IntelliCode
+									</p><!--4.4.3--><br>
+								    <p class="drop-down-list4.4.4" style="float:left;font-size:18px;font-weight:100;">
+										–npm集成
+									</p><!--4.4.4--><br>
+									<p class="drop-down-list4.4.5" style="float:left;font-size:18px;font-weight:100;">
+							            –交互式 (REPL) 环境窗口
+									</p><!--4.4.5--><br>
+									<p class="drop-down-list4.4.6" style="float:left;font-size:18px;font-weight:100;">
+										-本地和远程
+									</p><!--drop-down-list4.4.6-->
+									<p class="drop-down-list4.4.7" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										高级调试
+									</p><!--4.4.7--><br>
+									<p class="drop-down-list4.4.8" style="float:left;font-size:18px;font-weight:100;">
+									    –使用分析工具跟踪性能
+									</p><!--4.4.8--><br>
+									<p class="drop-down-list4.4.9" style="float:left;font-size:18px;font-weight:100;">
+										-单元测试支持
+									</p><!--drop-down-list4.4.9--><br>
+									<p class="drop-down-list4.4.10" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										-TypeScript 集成
+									</p><!--drop-down-list4.4.10--><br>
+									
+								</div><!--drop-down-list4.4-->
+							
+							    <div class="drop-down-list4.5" style="float;left;width:100%;margin:30px 0 0 30px;font-size:18px;font-weight:100;color:#2A6496;height:25px;">
+							        了解更多有关 Node.js 的信息 <b>></b>
+							    </div><!--drop-down-list4.5-->
+							</div><!--line1box4active-->
+							
+							<div class="line2" style="float:left;width:1280px;height:170px;border-bottom:1px solid rgba(186,172,172,.2);margin-top:30px;">
+								<div class="line2text" style="display:inline-block;width:180px;color:#000000;float:left;font-weight:700;font-size:22px;">
+									Windows
+								</div><!--line2text-->
+								
+								<div class="linebox" style="display:inline-block;width:180px;height:120px;float:left;border:1px solid rgba(186,172,172,.2);">
+									<div class="box2.1logo" style="float:left;width:150px;margin:10px 0 0 10px;">
+										<a href="#">
+										<img src="box2.1.jpg" alt="logo">
+										</a>
+									</div><!--box2.1logo-->
+									<div class="box2.1text" style="float:left;width:150px;margin:10px 0 0 10px;color:#000000;font-size:16px;font-weight:200;">
+										.NET桌面开发
+									</div><!--box2.1text-->
+								</div><!--line2box1-->
+								
+								<div class="linebox" style="display:inline-block;width:180px;height:120px;float:left;border:1px solid rgba(186,172,172,.2);margin-left:30px;">
+									<div class="box2.2logo" style="float:left;width:150px;margin:10px 0 0 10px;">
+										<a href="#">
+										<img src="box2.2.jpg" alt="logo">
+										</a>
+									</div><!--box2.2logo-->
+									<div class="box2.2text" style="float:left;width:150px;margin:10px 0 0 10px;color:#000000;font-size:16px;font-weight:200;">
+										使用C＋＋的桌面开发
+									</div><!--box2.2text-->
+								</div><!--line2box2-->
+								
+								<div class="linebox" style="display:inline-block;width:180px;height:120px;float:left;border:1px solid rgba(186,172,172,.2);margin-left:30px;">
+									<div class="box2.3logo" style="float:left;width:150px;margin:10px 0 0 10px;">
+										<a href="#">
+										<img src="box2.3.jpg" alt="logo">
+										</a>
+									</div><!--box2.3logo-->
+									<div class="box2.3text" style="float:left;width:150px;margin:10px 0 0 10px;color:#000000;font-size:16px;font-weight:200;">
+										UWP开发
+									</div><!--box2.3text-->
+								</div><!--line2box3-->
+							</div><!--line2-->
+							
+							
+							<div class="lineboxactive">
+								<div class="drop-down-list5.1" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+									<p class="drop-down-list5.1.1" style="float:left;width:100%;font-size:20px;font-weight:700;">
+										.NET 桌面开发
+									</p><!--drop-down-list5.1.1--></br>
+								    <p class="drop-down-list5.1.2" style="float:left;width:100%;font-size:18px;font-weight:100;">
+										使用 C#、Visual Basic 和 F# 生成 WPF、Windows 窗体和控制台应用程序
+									</p><!--drop-down-list5.1.2-->
+								</div><!--drop-down-list5.1-->
+								
+								<div class="drop-down-list5.2" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+									<p class="drop-down-list5.2.1" style="float:left;font-size:20px;font-weight:700;">
+										说明
+									</p><!--drop-down-list5.2.1--></br>
+								    <p class="drop-down-list5.2.2" style="float:left;font-size:18px;font-weight:100;">
+										使用 Windows Presentation Foundation 或 Windows 窗体创建基于 Windows 的应用程序。
+										此外，利用 .NET Framework 创建 Web 应用程序，以及创建可通过 Microsoft Store 发布
+										的面向计算机或设备的客户端应用程序。
+									</p><!--drop-down-list5.2.2-->
+								</div><!--drop-down-list5.2-->
+								
+								<div class="drop-down-list5.3" style="float;left;width:100%;margin:30px 0 0 30px;height:130px;">
+									<p class="drop-down-list5.3.1" style="float:left;font-size:20px;font-weight:700;">
+										开发应用程序
+									</p><!--drop-down-list5.3.1--></br>
+								    <p class="drop-down-list5.3.2" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										-Windows Presentation Foundation (WPF)
+									</p><!--drop-down-list5.3.2--></br>
+								    <p class="drop-down-list5.3.3" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										-Windows 窗体
+									</p><!--5.3.3--></br>
+								   
+								</div><!--drop-down-list5.3-->
+								
+								<div class="drop-down-list5.4" style="float;left;width:100%;margin:30px 0 0 30px;height:250px;">
+									<p class="drop-down-list5.4.1" style="float:left;font-size:20px;font-weight:700;">
+										组件
+									</p><!--drop-down-list5.4.1--><br>
+								    <p class="drop-down-list5.4.2" style="float:left;font-size:18px;font-weight:100;">
+										–.NET 桌面开发工具
+									</p><!--drop-down-list5.4.2--><br>
+								    <p class="drop-down-list5.4.3" style="float:left;font-size:18px;font-weight:100;">
+										–.NET Framework 4.x 开发工具
+									</p><!--5.4.3--><br>
+								    <p class="drop-down-list5.4.4" style="float:left;font-size:18px;font-weight:100;">
+										–.NET 分析工具
+									</p><!--5.4.4--><br>
+									<p class="drop-down-list5.4.5" style="float:left;font-size:18px;font-weight:100;">
+							            –C# 和 Visual Basic 语言支持
+									</p><!--5.4.5--><br>
+									<p class="drop-down-list5.4.6" style="float:left;font-size:18px;font-weight:100;">
+										-Entity Framework 6 工具
+									</p><!--drop-down-list5.4.6--></br>
+									<p class="drop-down-list5.4.7" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										IntelliTrace
+									</p><!--5.4.7--><br>
+									<p class="drop-down-list5.4.8" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+									    –实时调试器
+									</p><!--5.4.8--><br>
+									<p class="drop-down-list5.4.9" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										-Live Unit Testing
+									</p><!--drop-down-list5.4.9--><br>
+									<p class="drop-down-list5.4.10" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										-Live Share
+									</p><!--drop-down-list5.4.10--><br>
+									
+								</div><!--drop-down-list5.4-->
+							
+							    <div class="drop-down-list5.5" style="float;left;width:100%;margin:30px 0 0 30px;font-size:18px;font-weight:100;color:#2A6496;height:25px;">
+							         详细了解 .NET 桌面开发  <b>></b>
+							    </div><!--drop-down-list5.5-->
+							</div><!--line2box1active-->
+							
+							<div class="lineboxactive">
+								<div class="drop-down-list6.1" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+									<p class="drop-down-list6.1.1" style="float:left;width:100%;font-size:20px;font-weight:700;">
+										使用C++桌面开发
+									</p><!--drop-down-list6.1.1--></br>
+								    <p class="drop-down-list6.1.2" style="float:left;width:100%;font-size:18px;font-weight:100;">
+										使用所选的工具构建适用于 Windows 的新式 C++ 应用，包括 MSVC、Clang、CMake 或 MS Build
+									</p><!--drop-down-list6.1.2-->
+								</div><!--drop-down-list6.1-->
+								
+								<div class="drop-down-list6.2" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+									<p class="drop-down-list6.2.1" style="float:left;font-size:20px;font-weight:700;">
+										说明
+									</p><!--drop-down-list6.2.1--></br>
+								    <p class="drop-down-list6.2.2" style="float:left;font-size:18px;font-weight:100;">
+										C++ 桌面应用在控制台或窗口中运行。 利用强大的 MSVC 编译器和库工具集，
+										或引入自己的生成工具，来完成作业。
+									</p><!--drop-down-list6.2.2-->
+								</div><!--drop-down-list6.2-->
+								
+								<div class="drop-down-list6.3" style="float;left;width:100%;margin:30px 0 0 30px;height:80px;">
+									<p class="drop-down-list6.3.1" style="float:left;font-size:20px;font-weight:700;">
+										开发应用程序
+									</p><!--drop-down-list6.3.1--></br>
+								    <p class="drop-down-list6.3.2" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										-使用 C++ 构建传统的 Windows 桌面应用程序
+									</p><!--drop-down-list6.3.2--></br>
+								    <p class="drop-down-list6.3.3" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										-使用 C++ 构建控制台应用程序
+									</p><!--6.3.3--></br>
+								   
+								</div><!--drop-down-list6.3-->
+								
+								<div class="drop-down-list6.4" style="float;left;width:100%;margin:30px 0 0 30px;height:250px;">
+									<p class="drop-down-list6.4.1" style="float:left;font-size:20px;font-weight:700;">
+										组件
+									</p><!--drop-down-list6.4.1--><br>
+								    <p class="drop-down-list6.4.2" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										–MSVC x64/x86 生成工具
+									</p><!--drop-down-list6.4.2--><br>
+								    <p class="drop-down-list6.4.3" style="float:left;font-size:18px;font-weight:100;">
+										–C++ 分析工具
+									</p><!--6.4.3--><br>
+								    <p class="drop-down-list6.4.4" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										–Windows 10 SDK
+									</p><!--6.4.4--><br>
+									<p class="drop-down-list6.4.5" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+							            –用于 Windows 的 C++ CMake 工具
+									</p><!--6.4.5--><br>
+									<p class="drop-down-list6.4.6" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										-Google Test 测试适配器
+									</p><!--drop-down-list6.4.6--></br>
+									<p class="drop-down-list6.4.7" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										Boost.Test 测试适配器
+									</p><!--6.4.7--><br>
+									<p class="drop-down-list6.4.8" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+									    –IntelliTrace
+									</p><!--6.4.8--><br>
+									<p class="drop-down-list6.4.9" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										-实时调试器
+									</p><!--drop-down-list6.4.9--><br>
+									<p class="drop-down-list6.4.10" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										-Live Share
+									</p><!--drop-down-list6.4.10--><br>
+									
+								</div><!--drop-down-list6.4-->
+							
+							    <div class="drop-down-list6.5" style="float;left;width:100%;margin:30px 0 0 30px;font-size:18px;font-weight:100;color:#2A6496;height:25px;">
+							         详细了解使用C++进行桌面开发 <b>></b>
+							    </div><!--drop-down-list6.5-->
+							</div><!--line2box2active-->
+							
+							<div class="lineboxactive">
+								<div class="drop-down-list7.1" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+									<p class="drop-down-list7.1.1" style="float:left;width:100%;font-size:20px;font-weight:700;">
+										UWP开发
+									</p><!--drop-down-list7.1.1--></br>
+								    <p class="drop-down-list7.1.2" style="float:left;width:100%;font-size:18px;font-weight:100;">
+										使用 C#、VB、或（可选）C++ 为通用 Windows 平台创建应用程序
+									</p><!--drop-down-list7.1.2-->
+								</div><!--drop-down-list7.1-->
+								
+								<div class="drop-down-list7.2" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+									<p class="drop-down-list7.2.1" style="float:left;font-size:20px;font-weight:700;">
+										说明
+									</p><!--drop-down-list7.2.1--></br>
+								    <p class="drop-down-list7.2.2" style="float:left;font-size:18px;font-weight:100;">
+										生成面向 Windows 桌面、Xbox、HoloLens、SurfaceHub 和 Windows 10 loT 的应用程序。
+									</p><!--drop-down-list7.2.2-->
+								</div><!--drop-down-list7.2-->
+								
+								<div class="drop-down-list7.3" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+									<p class="drop-down-list7.3.1" style="float:left;font-size:20px;font-weight:700;">
+										开发应用程序
+									</p><!--drop-down-list7.3.1--></br>
+								    <p class="drop-down-list7.3.2" style="float:left;font-size:18px;font-weight:100;">
+										-通用 Windows 平台(UWP)
+									</p><!--drop-down-list7.3.2--></br>
+								    
+								</div><!--drop-down-list7.3-->
+								
+								<div class="drop-down-list7.4" style="float;left;width:100%;margin:30px 0 0 30px;height:160px;">
+									<p class="drop-down-list7.4.1" style="float:left;font-size:20px;font-weight:700;">
+										组件
+									</p><!--drop-down-list7.4.1--><br>
+								    <p class="drop-down-list7.4.2" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										–Blend for Visual Studio
+									</p><!--drop-down-list7.4.2--><br>
+								    <p class="drop-down-list7.4.3" style="float:left;font-size:18px;font-weight:100;">
+										– .NET 本机和 .NET 标准
+									</p><!--7.4.3--><br>
+								    <p class="drop-down-list7.4.4" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										– Nuget 包管理器
+									</p><!--7.4.4--><br>
+									<p class="drop-down-list7.4.5" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+							            – 通用 Windows 平台工具
+									</p><!--7.4.5--><br>
+									<p class="drop-down-list7.4.6" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										– Windows 10 SDK
+									</p><!--drop-down-list7.4.6--></br>
+									
+									
+								</div><!--drop-down-list7.4-->
+							
+							    <div class="drop-down-list7.5" style="float;left;width:100%;margin:30px 0 0 30px;font-size:18px;font-weight:100;color:#2A6496;height:25px;">
+							          深入了解 UWP 开发  <b>></b>
+							    </div><!--drop-down-list7.5-->
+							</div><!--line2box3active-->
+							
+							
+							
+							
+							<div class="line3" style="float:left;width:1280px;height:170px;border-bottom:1px solid rgba(186,172,172,.2);margin-top:30px;">
+								<div class="line3text" style="display:inline-block;width:180px;color:#000000;float:left;font-weight:700;font-size:22px;">
+									Mobile& gaming
+								</div><!--line3text-->
+								
+								<div class="linebox" style="display:inline-block;width:180px;height:120px;float:left;border:1px solid rgba(186,172,172,.2);">
+									<div class="box3.1logo" style="float:left;width:150px;margin:10px 0 0 10px;">
+										<a href="#">
+										<img src="box3.1.jpg" alt="logo">
+										</a>
+									</div><!--box3.1logo-->
+									<div class="box3.1text" style="float:left;width:150px;margin:10px 0 0 10px;color:#000000;font-size:16px;font-weight:200;">
+										使用.NET的移动开发
+									</div><!--box3.1text-->
+								</div><!--line3box1-->
+								
+								<div class="linebox" style="display:inline-block;width:180px;height:120px;float:left;border:1px solid rgba(186,172,172,.2);margin-left:30px;">
+									<div class="box3.2logo" style="float:left;width:150px;margin:10px 0 0 10px;">
+										<a href="#">
+										<img src="box3.2.jpg" alt="logo">
+										</a>
+									</div><!--box3.2logo-->
+									<div class="box3.2text" style="float:left;width:150px;margin:10px 0 0 10px;color:#000000;font-size:16px;font-weight:200;">
+										使用C＋＋的移动开发
+									</div><!--box3.2text-->
+								</div><!--line3box2-->
+								
+								<div class="linebox" style="display:inline-block;width:180px;height:120px;float:left;border:1px solid rgba(186,172,172,.2);margin-left:30px;">
+									<div class="box3.3logo" style="float:left;width:150px;margin:10px 0 0 10px;">
+										<a href="#">
+										<img src="box3.3.jpg" alt="logo">
+										</a>
+									</div><!--box3.3logo-->
+									<div class="box3.3text" style="float:left;width:150px;margin:10px 0 0 10px;color:#000000;font-size:16px;font-weight:200;">
+										使用Unity的游戏开发
+									</div><!--box3.3text-->
+								</div><!--line3box3-->
+								<div class="linebox" style="display:inline-block;width:180px;height:120px;float:left;border:1px solid rgba(186,172,172,.2);margin-left:30px;">
+									<div class="box3.4logo" style="float:left;width:150px;margin:10px 0 0 10px;">
+										<a href="#">
+										<img src="box3.4.jpg" alt="logo">
+										</a>
+									</div><!--box3.4logo-->
+									<div class="box3.4text" style="float:left;width:150px;margin:10px 0 0 10px;color:#000000;font-size:16px;font-weight:200;">
+										使用C＋＋的游戏开发
+									</div><!--box3.4text-->
+								</div><!--line3box4-->
+							</div><!--line3-->
+							
+							<div class="lineboxactive">
+								<div class="drop-down-list8.1" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+									<p class="drop-down-list8.1.1" style="float:left;width:100%;font-size:20px;font-weight:700;">
+										使用 .NET 的移动开发
+									</p><!--drop-down-list8.1.1--></br>
+								    <p class="drop-down-list8.1.2" style="float:left;width:100%;font-size:18px;font-weight:100;">
+										使用 Xamarin 生成适用于 iOS、Android 或 Windows 的跨平台应用程序
+									</p><!--drop-down-list8.1.2-->
+								</div><!--drop-down-list8.1-->
+								
+								<div class="drop-down-list8.2" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+									<p class="drop-down-list8.2.1" style="float:left;font-size:20px;font-weight:700;">
+										说明
+									</p><!--drop-down-list8.2.1--></br>
+								    <p class="drop-down-list8.2.2" style="float:left;font-size:18px;font-weight:100;">
+										使用 C# 和 XAML 生成完全本机的 iOS、Android 和通用 Windows 平台应用。
+										Xamarin 利用单种语言提供平台 API 和功能的完全访问权限，并允许与其他 .NET 平台共享代码库。
+									</p><!--drop-down-list8.2.2-->
+								</div><!--drop-down-list8.2-->
+								
+								<div class="drop-down-list8.3" style="float;left;width:100%;margin:30px 0 0 30px;height:130px;">
+									<p class="drop-down-list8.3.1" style="float:left;font-size:20px;font-weight:700;">
+										开发应用程序
+									</p><!--drop-down-list8.3.1--></br>
+								    <p class="drop-down-list8.3.2" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										-使用 Xamarin.Forms 生成跨平台应用
+									</p><!--drop-down-list8.3.2--></br>
+								    <p class="drop-down-list8.3.3" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										-使用 Xamarin.Essentials API 访问本机功能
+									</p><!--8.3.3--></br>
+								   
+								</div><!--drop-down-list8.3-->
+								
+								<div class="drop-down-list8.4" style="float;left;width:100%;margin:30px 0 0 30px;height:130px;">
+									<p class="drop-down-list8.4.1" style="float:left;font-size:20px;font-weight:700;">
+										组件
+									</p><!--drop-down-list8.4.1--><br>
+								    <p class="drop-down-list8.4.2" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										– Xamarin
+									</p><!--drop-down-list8.4.2--><br>
+								    <p class="drop-down-list8.4.3" style="float:left;font-size:18px;font-weight:100;">
+										– .NET Framework4.x 开发工具
+									</p><!--8.4.3--><br>
+								    <p class="drop-down-list8.4.4" style="float:left;font-size:18px;font-weight:100;">
+										–C# 和 Visual Basic 语言支持
+									</p><!--8.4.4--><br>
+									<p class="drop-down-list8.4.5" style="float:left;font-size:18px;font-weight:100;">
+							            – Android SDK 安装
+									</p><!--8.4.5--><br>
+									
+									
+								</div><!--drop-down-list8.4-->
+							
+							    <div class="drop-down-list8.5" style="float;left;width:100%;margin:30px 0 0 30px;font-size:18px;font-weight:100;color:#2A6496;height:25px;">
+							          详细了解如何使用 .NET 进行移动开发  <b>></b>
+							    </div><!--drop-down-list8.5-->
+							</div><!--line3box1active-->
+							
+							<div class="lineboxactive">
+								<div class="drop-down-list9.1" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+									<p class="drop-down-list9.1.1" style="float:left;width:100%;font-size:20px;font-weight:700;">
+										使用 C++ 的移动开发
+									</p><!--drop-down-list9.1.1--></br>
+								    <p class="drop-down-list9.1.2" style="float:left;width:100%;font-size:18px;font-weight:100;">
+										构建适用于 iOS 或 Android 的跨平台 C++ 应用
+									</p><!--drop-down-list9.1.2-->
+								</div><!--drop-down-list9.1-->
+								
+								
+								
+								<div class="drop-down-list9.2" style="float;left;width:100%;margin:30px 0 0 30px;height:100px;">
+									<p class="drop-down-list9.2.1" style="float:left;font-size:20px;font-weight:700;">
+										开发应用程序
+									</p><!--drop-down-list9.2.1--></br>
+								    <p class="drop-down-list9.2.2" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										-Android 本机应用
+									</p><!--drop-down-list9.2.2--></br>
+								    <p class="drop-down-list9.2.3" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										-导入 XCode 项目
+									</p><!--9.2.3--></br>
+									 <p class="drop-down-list9.2.4" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										-Android 和 iOS 上的 OpenGL ES 应用程序
+									</p><!--9.2.3--></br>
+								   
+								</div><!--drop-down-list9.2-->
+								
+								<div class="drop-down-list9.3" style="float;left;width:100%;margin:30px 0 0 30px;height:160px;">
+									<p class="drop-down-list9.3.1" style="float:left;font-size:20px;font-weight:700;">
+										组件
+									</p><!--drop-down-list9.3.1--><br>
+								    <p class="drop-down-list9.3.2" style="float:left;font-size:18px;font-weight:100;">
+										–Visual Studio C++ 核心功能
+									</p><!--drop-down-list9.3.2--><br>
+								    <p class="drop-down-list9.3.3" style="float:left;font-size:18px;font-weight:100;">
+										–Android SDK 安装
+									</p><!--9.3.3--><br>
+								    <p class="drop-down-list9.3.4" style="float:left;font-size:18px;font-weight:100;">
+										–Android NDK
+									</p><!--9.3.4--><br>
+									<p class="drop-down-list9.3.5" style="float:left;font-size:18px;font-weight:100;">
+							            –Apache Ant
+									</p><!--9.3.5--><br>
+									<p class="drop-down-list9.3.6" style="float:left;font-size:18px;font-weight:100;">
+									    –C++ Android 开发工具
+									</p><!--9.3.6--><br>
+									
+									
+								</div><!--drop-down-list9.3-->
+							
+							    <div class="drop-down-list9.4" style="float;left;width:100%;margin:30px 0 0 30px;font-size:18px;font-weight:100;color:#2A6496;height:25px;">
+							          详细了解如何使用C++进行移动开发  <b>></b>
+							    </div><!--drop-down-list9.4-->
+							</div><!--line3box2active-->
+							
+							<div class="lineboxactive">
+								<div class="drop-down-list10.1" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+									<p class="drop-down-list10.1.1" style="float:left;width:100%;font-size:20px;font-weight:700;">
+										使用 Unity 的游戏开发
+									</p><!--drop-down-list10.1.1--></br>
+								    <p class="drop-down-list10.1.2" style="float:left;width:100%;font-size:18px;font-weight:100;">
+										使用功能强大的跨平台开发环境 Unity 创建 2D 和 3D 游戏
+									</p><!--drop-down-list10.1.2-->
+								</div><!--drop-down-list10.1-->
+								
+								
+								<div class="drop-down-list10.2" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+									<p class="drop-down-list10.2.1" style="float:left;font-size:20px;font-weight:700;">
+										说明
+									</p><!--drop-down-list10.2.1--></br>
+								    <p class="drop-down-list10.2.2" style="float:left;font-size:18px;font-weight:100;">
+										创建游戏和交互式内容，并发布到 21 个平台，
+										包括所有移动平台、WebGL、Mac、PC 和 Linux 桌面、Web 或控制台。
+									</p><!--drop-down-list10.2.2--></br>
+								    
+								</div><!--drop-down-list10.2-->
+								
+								<div class="drop-down-list10.3" style="float;left;width:100%;margin:30px 0 0 30px;height:150px;">
+									<p class="drop-down-list10.3.1" style="float:left;font-size:20px;font-weight:700;">
+										开发应用程序
+									</p><!--drop-down-list10.3.1--><br>
+								    <p class="drop-down-list10.3.2" style="float:left;font-size:18px;font-weight:100;">
+										使用高级调试体验开发
+									</p><!--drop-down-list10.3.2-->
+								    <p class="drop-down-list10.3.3" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+										Unity游戏
+									</p><!--10.3.3--><br>
+								    
+								</div><!--drop-down-list10.3-->
+							
+							    <div class="drop-down-list10.3" style="float;left;width:100%;margin:30px 0 0 30px;height:150px;">
+							    	<p class="drop-down-list10.3.1" style="float:left;font-size:20px;font-weight:700;">
+							    		组件
+							    	</p><!--drop-down-list10.3.1--><br>
+							        <p class="drop-down-list10.3.2" style="float:left;font-size:18px;font-weight:100;">
+							    		–Visual Studio Tools for Unity
+							    	</p><!--drop-down-list10.3.2--><br>
+							        <p class="drop-down-list10.3.3" style="float:left;font-size:18px;font-weight:100;">
+							    		–C# 和 Visual Basic
+							    	</p><!--10.3.3--><br>
+							       
+							    </div><!--drop-down-list10.3-->
+								
+								<div class="drop-down-list10.4" style="float;left;width:100%;margin:30px 0 0 30px;font-size:18px;font-weight:100;color:#2A6496;height:25px;">
+							           详细了解如何使用 Unity 进行游戏开发 <b>></b>
+							    </div><!--drop-down-list10.4-->
+							</div><!--line3box3active-->
+							
+							<div class="lineboxactive">
+								<div class="drop-down-list11.1" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+									<p class="drop-down-list11.1.1" style="float:left;width:100%;font-size:20px;font-weight:700;">
+										使用C++游戏开发
+									</p><!--drop-down-list11.1.1--></br>
+								    <p class="drop-down-list11.1.2" style="float:left;width:100%;font-size:18px;font-weight:100;">
+										以 DirectX、Unreal 或 Cocos2d 为后盾，利用 C++ 的强大功能生成专业游戏
+									</p><!--drop-down-list11.1.2-->
+								</div><!--drop-down-list11.1-->
+								
+								
+								<div class="drop-down-list11.2" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+									<p class="drop-down-list11.2.1" style="float:left;font-size:20px;font-weight:700;">
+										说明
+									</p><!--drop-down-list11.2.1--></br>
+								    <p class="drop-down-list11.2.2" style="float:left;font-size:18px;font-weight:100;">
+										以 DirectX、Unreal 或 Cocos2d 为后盾，
+										利用 C++ 的强大功能生成适用于 Windows、Xbox 和其他控制台的专业游戏。
+									</p><!--drop-down-list11.2.2--></br>
+								    
+								</div><!--drop-down-list11.2-->
+								
+								<div class="drop-down-list11.3" style="float;left;width:100%;margin:30px 0 0 30px;height:100px;">
+									<p class="drop-down-list11.3.1" style="float:left;font-size:20px;font-weight:700;">
+										开发应用程序
+									</p><!--drop-down-list11.3.1--><br>
+								    <p class="drop-down-list11.3.2" style="float:left;font-size:18px;font-weight:100;">
+										-Xbox Live 应用
+									</p><!--drop-down-list11.3.2-->
+								    <p class="drop-down-list11.3.3" style="float:left;font-size:18px;font-weight:100;">
+									   – HoloLens 上的 UWP 应用
+									</p><!--11.3.3--><br>
+									<p class="drop-down-list11.3.4" style="float:left;font-size:18px;font-weight:100;">
+									   – Marble Maze
+									</p><!--11.3.4--><br>
+								    
+								</div><!--drop-down-list11.3-->
+							
+							    <div class="drop-down-list11.3" style="float;left;width:100%;margin:30px 0 0 30px;height:180px;">
+							    	<p class="drop-down-list11.3.1" style="float:left;font-size:20px;font-weight:700;">
+							    		组件
+							    	</p><!--drop-down-list11.3.1--><br>
+							        <p class="drop-down-list11.3.2" style="float:left;font-size:18px;font-weight:100;">
+							    		–MSVC x64/x86 生成工具
+							    	</p><!--drop-down-list11.3.2--><br>
+							        <p class="drop-down-list11.3.3" style="float:left;font-size:18px;font-weight:100;">
+							    		–Visual Studio C++ 核心功能
+							    	</p><!--11.3.3--><br>
+									<p class="drop-down-list11.3.4" style="float:left;font-size:18px;font-weight:100;">
+										– Windows 通用 C 运行时
+									</p><!--drop-down-list11.3.4--><br>
+									<p class="drop-down-list11.3.5" style="float:left;font-size:18px;font-weight:100;">
+										–C++ 分析工具
+									</p><!--drop-down-list11.3.5--><br>
+									<p class="drop-down-list11.3.6" style="float:left;font-size:18px;font-weight:100;">
+										–Windows 10 SDK
+									</p><!--11.3.6--><br>
+									<p class="drop-down-list11.3.7" style="float:left;font-size:18px;font-weight:100;">
+										–IntelliTrace
+									</p><!--11.3.7--><br>
+							       
+							    </div><!--drop-down-list11.3-->
+								
+								<div class="drop-down-list11.4" style="float;left;width:100%;margin:30px 0 0 30px;font-size:18px;font-weight:100;color:#2A6496;height:25px;">
+							           详细了解如何使用C++进行游戏开发 <b>></b>
+							    </div><!--drop-down-list11.4-->
+							</div><!--line3box4active-->
+							
+							<div class="line4" style="float:left;width:1280px;margin-top:30px;">
+								<div class="line4text" style="display:inline-block;width:180px;color:#000000;float:left;font-weight:700;font-size:22px;">
+									Other&nbsp;toolsets
+								</div><!--line4text-->
+								
+								<div class="linebox" style="display:inline-block;width:180px;height:120px;float:left;border:1px solid rgba(186,172,172,.2);">
+									<div class="box4.1logo" style="float:left;width:150px;margin:10px 0 0 10px;">
+										<a href="#">
+										<img src="box4.1.jpg" alt="logo">
+										</a>
+									</div><!--box4.1logo-->
+									<div class="box4.1text" style="float:left;width:150px;margin:10px 0 0 10px;color:#000000;font-size:16px;font-weight:200;">
+										数据存储和处理
+									</div><!--box4.1text-->
+								</div><!--line4box1-->
+								
+								<div class="linebox" style="display:inline-block;width:180px;height:120px;float:left;border:1px solid rgba(186,172,172,.2);margin-left:30px;">
+									<div class="box4.2logo" style="float:left;width:150px;margin:10px 0 0 10px;">
+										<a href="#">
+										<img src="box4.2.jpg" alt="logo">
+										</a>
+									</div><!--box4.2logo-->
+									<div class="box4.2text" style="float:left;width:150px;margin:10px 0 0 10px;color:#000000;font-size:16px;font-weight:200;">
+										数据科学和分析应用程序
+									</div><!--box4.2text-->
+								</div><!--line4box2-->
+								
+								<div class="linebox" style="display:inline-block;width:180px;height:120px;float:left;border:1px solid rgba(186,172,172,.2);margin-left:30px;">
+									<div class="box4.3logo" style="float:left;width:150px;margin:10px 0 0 10px;">
+										<a href="#">
+										<img src="box4.3.jpg" alt="logo">
+										</a>
+									</div><!--box4.3logo-->
+									<div class="box4.3text" style="float:left;width:150px;margin:10px 0 0 10px;color:#000000;font-size:16px;font-weight:200;">
+										VisualStudio扩展开发
+									</div><!--box4.3text-->
+								</div><!--line4box3-->
+								
+								<div class="linebox" style="display:inline-block;width:180px;height:120px;float:left;border:1px solid rgba(186,172,172,.2);margin-left:30px;">
+									<div class="box4.4logo" style="float:left;width:150px;margin:10px 0 0 10px;">
+										<a href="#">
+										<img src="box4.4.jpg" alt="logo">
+										</a>
+									</div><!--box4.4logo-->
+									<div class="box4.4text" style="float:left;width:150px;margin:10px 0 0 10px;color:#000000;font-size:16px;font-weight:200;">
+										Office/SharePoint
+									</div><!--box4.4text-->
+								</div><!--line4box4-->
+								
+								<div class="linebox" style="display:inline-block;width:180px;height:120px;float:left;border:1px solid rgba(186,172,172,.2);margin-left:30px;">
+									<div class="box4.5logo" style="float:left;width:150px;margin:10px 0 0 10px;">
+										<a href="#">
+										<img src="box4.5.jpg" alt="logo">
+										</a>
+									</div><!--box4.5logo-->
+									<div class="box4.5text" style="float:left;width:150px;margin:10px 0 0 10px;color:#000000;font-size:16px;font-weight:200;">
+										使用C＋＋的Linux开发
+									</div><!--box4.5text-->
+								</div><!--line4box5-->
+								
+								<div class="linebox" style="width:180px;height:120px;float:left;border:1px solid rgba(186,172,172,.2);margin:30px 0 0 180px;">
+									<div class="box4.6logo" style="float:left;width:150px;margin:10px 0 0 10px;">
+										<a href="#">
+										<img src="box4.6.jpg" alt="logo">
+										</a>
+									</div><!--box4.6logo-->
+									<div class="box4.6text" style="float:left;width:150px;margin:10px 0 0 10px;color:#000000;font-size:16px;font-weight:200;">
+										.NETscore跨平台开发
+									</div><!--box4.6text-->
+								</div><!--line4box6-->
+							</div><!--line4-->
+						
+						<div class="lineboxactive">
+							<div class="drop-down-list12.1" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+								<p class="drop-down-list12.1.1" style="float:left;width:100%;font-size:20px;font-weight:700;">
+									数据存储和处理
+								</p><!--drop-down-list12.1.1--></br>
+							    <p class="drop-down-list12.1.2" style="float:left;width:100%;font-size:18px;font-weight:100;">
+									使用 SQL Server、Azure Data Lake、Hadoop 或 Azure ML 连接、开发和测试数据解决方案
+								</p><!--drop-down-list12.1.2-->
+							</div><!--drop-down-list12.1-->
+							
+							
+							<div class="drop-down-list12.2" style="float;left;width:100%;margin:30px 0 0 30px;height:150px;">
+								<p class="drop-down-list12.2.1" style="float:left;font-size:20px;font-weight:700;">
+									说明
+								</p><!--drop-down-list12.2.1--></br>
+							    <p class="drop-down-list12.2.2" style="float:left;font-size:18px;font-weight:100;">
+									借助数据工作负载，可以跨各种关系资产和大数据资产进行开发。 
+									提供了针对数据库、数据仓库和 Data Lake （无论是在本地，还是在 Azure 中）开发查询的工具。
+									 支持 SQL、U-SQL 和 Hive。
+								</p><!--drop-down-list12.2.2--></br>
+							    
+							</div><!--drop-down-list12.2-->
+							
+							<div class="drop-down-list12.3" style="float;left;width:100%;margin:30px 0 0 30px;height:100px;">
+								<p class="drop-down-list12.3.1" style="float:left;font-size:20px;font-weight:700;">
+									开发应用程序
+								</p><!--drop-down-list12.3.1--><br>
+							    <p class="drop-down-list12.3.2" style="float:left;font-size:18px;font-weight:100;">
+									-使用SQL Server Data Tools 设计、部署和维护数据库
+								</p><!--drop-down-list12.3.2-->
+							    <p class="drop-down-list12.3.3" style="float:left;font-size:18px;font-weight:100;">
+								   – 使用 Azure Data Lake Tools 开发U-SQL 脚本 
+								</p><!--12.3.3--><br>
+								<p class="drop-down-list12.3.4" style="float:left;font-size:18px;font-weight:100;">
+								   –在 Azure HDInsight 上使用 Hadoop 运行 Hive 查询
+								</p><!--12.3.4--><br>
+							    
+							</div><!--drop-down-list12.3-->
+						
+						    <div class="drop-down-list12.3" style="float;left;width:100%;margin:30px 0 0 30px;height:100px;">
+						    	<p class="drop-down-list12.3.1" style="float:left;font-size:20px;font-weight:700;">
+						    		组件
+						    	</p><!--drop-down-list12.3.1--><br>
+						        <p class="drop-down-list12.3.2" style="float:left;font-size:18px;font-weight:100;">
+						    		–SQL Server Data Tools
+						    	</p><!--drop-down-list12.3.2--><br>
+						        <p class="drop-down-list12.3.3" style="float:left;font-size:18px;font-weight:100;">
+						    		–Azure Data Lake 和流分析工具
+						    	</p><!--12.3.3--><br>
+								<p class="drop-down-list12.3.4" style="float:left;font-size:18px;font-weight:100;">
+									– .NET Framework 4.x 开发工具
+								</p><!--drop-down-list12.3.4--><br>
+								
+						    </div><!--drop-down-list12.3-->
+							
+							<div class="drop-down-list12.4" style="float;left;width:100%;margin:30px 0 0 30px;font-size:18px;font-weight:100;color:#2A6496;height:25px;">
+						            深入了解数据存储和处理  <b>></b>
+						    </div><!--drop-down-list12.4-->
+						</div><!--line4box1active-->
+						
+						<div class="lineboxactive">
+							<div class="drop-down-list13.1" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+								<p class="drop-down-list13.1.1" style="float:left;width:100%;font-size:20px;font-weight:700;">
+									数据科学和分析应用程序
+								</p><!--drop-down-list13.1.1--></br>
+							    <p class="drop-down-list13.1.2" style="float:left;width:100%;font-size:18px;font-weight:100;">
+									用于创建数据科学应用程序的语言和工具，包括 Python 和 F#
+								</p><!--drop-down-list13.1.2-->
+							</div><!--drop-down-list13.1-->
+							
+							
+							<div class="drop-down-list13.2" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+								<p class="drop-down-list13.2.1" style="float:left;font-size:20px;font-weight:700;">
+									说明
+								</p><!--drop-down-list13.2.1--></br>
+							    <p class="drop-down-list13.2.2" style="float:left;font-size:18px;font-weight:100;">
+									将 R 和 Python 用于各种情况，比如数据采集、清理、模型定型、部署和绘制。
+									 将功能强大的函数优先 .NET 语言 F# 用于各种数据处理任务。
+								</p><!--drop-down-list13.2.2--></br>
+							    
+							</div><!--drop-down-list13.2-->
+							
+							<div class="drop-down-list13.3" style="float;left;width:100%;margin:30px 0 0 30px;height:200px;">
+								<p class="drop-down-list13.3.1" style="float:left;font-size:20px;font-weight:700;">
+									开发应用程序
+								</p><!--drop-down-list13.3.1--><br>
+							    <p class="drop-down-list13.3.2" style="float:left;font-size:18px;font-weight:100;">
+									-使用 R 创建可视数据图
+								</p><!--drop-down-list13.3.2-->
+							    <p class="drop-down-list13.3.3" style="float:left;font-size:18px;font-weight:100;">
+								   – 使用 R 交互 (REPL) 窗口
+								</p><!--13.3.3--><br>
+								<p class="drop-down-list13.3.4" style="float:left;font-size:18px;font-weight:100;">
+								   –使用 R 和 Microsoft ML Server 创建机器学习模型
+								</p><!--13.3.4--><br>
+							    
+							</div><!--drop-down-list13.3-->
+						
+						    <div class="drop-down-list13.3" style="float;left;width:100%;margin:30px 0 0 30px;height:100px;">
+						    	<p class="drop-down-list13.3.1" style="float:left;font-size:20px;font-weight:700;">
+						    		组件
+						    	</p><!--drop-down-list13.3.1--><br>
+						        <p class="drop-down-list13.3.2" style="float:left;font-size:18px;font-weight:100;">
+						    		–R 和 Microsoft R Client 语言支持和运行时分发
+						    	</p><!--drop-down-list13.3.2--><br>
+						        <p class="drop-down-list13.3.3" style="float:left;font-size:18px;font-weight:100;">
+						    		–Python 和 Anaconda 语言支持和运行时分发
+						    	</p><!--13.3.3--><br>
+								<p class="drop-down-list13.3.4" style="float:left;font-size:18px;font-weight:100;">
+									– F# 和 .NET 框架语言支持和运行时分发
+								</p><!--drop-down-list13.3.4--><br>
+								
+						    </div><!--drop-down-list13.3-->
+							
+							<div class="drop-down-list13.4" style="float;left;width:100%;margin:30px 0 0 30px;font-size:18px;font-weight:100;color:#2A6496;height:25px;">
+						             深入了解数据科学和分析应用程序  <b>></b>
+						    </div><!--drop-down-list13.4-->
+						</div><!--line4box2active-->
+						
+						
+						<div class="lineboxactive">
+							<div class="drop-down-list14.1" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+								<p class="drop-down-list14.1.1" style="float:left;width:100%;font-size:20px;font-weight:700;">
+									Visual Studio 扩展插件开发
+								</p><!--drop-down-list14.1.1--></br>
+							    <p class="drop-down-list14.1.2" style="float:left;width:100%;font-size:18px;font-weight:100;">
+									创建用于 Visual Studio 的加载项和扩展，包括新命令、代码分析器和工具窗口
+								</p><!--drop-down-list14.1.2-->
+							</div><!--drop-down-list14.1-->
+							
+							
+							<div class="drop-down-list14.2" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+								<p class="drop-down-list14.2.1" style="float:left;font-size:20px;font-weight:700;">
+									说明
+								</p><!--drop-down-list14.2.1--></br>
+							    <p class="drop-down-list14.2.2" style="float:left;font-size:18px;font-weight:100;">
+									添加所需的 SDK 和工具，以使用 C# 创建新命令、代码分析器、
+									工具窗口和语言服务。 然后，将扩展与Visual Studio Marketplace 社区共享。 
+								</p><!--drop-down-list14.2.2--></br>
+							    
+							</div><!--drop-down-list14.2-->
+							
+							<div class="drop-down-list14.3" style="float;left;width:100%;margin:30px 0 0 30px;height:150px;">
+								<p class="drop-down-list14.3.1" style="float:left;font-size:20px;font-weight:700;">
+									开发应用程序
+								</p><!--drop-down-list14.3.1--><br>
+							    <p class="drop-down-list14.3.2" style="float:left;font-size:18px;font-weight:100;">
+									-用于 Visual Studio IDE 的扩展
+								</p><!--drop-down-list14.3.2-->
+							    <p class="drop-down-list14.3.3" style="float:left;font-size:18px;font-weight:100;">
+								   – 软件开发工具包开发
+								</p><!--14.3.3--><br>
+								
+							</div><!--drop-down-list14.3-->
+						
+						    <div class="drop-down-list14.3" style="float;left;width:100%;margin:30px 0 0 30px;height:150px;">
+						    	<p class="drop-down-list14.3.1" style="float:left;font-size:20px;font-weight:700;">
+						    		组件
+						    	</p><!--drop-down-list14.3.1--><br>
+						        <p class="drop-down-list14.3.2" style="float:left;font-size:18px;font-weight:100;">
+						    		–Visual Studio SDK
+						    	</p><!--drop-down-list14.3.2--><br>
+						        <p class="drop-down-list14.3.3" style="float:left;font-size:18px;font-weight:100;">
+						    		–Visual Studio 扩展开发先决条件
+						    	</p><!--14.3.3--><br>
+								<p class="drop-down-list14.3.4" style="float:left;font-size:18px;font-weight:100;">
+									–.NET 分析工具
+								</p><!--drop-down-list14.3.4--><br>
+								<p class="drop-down-list14.3.5" style="float:left;font-size:18px;font-weight:100;">
+									–IntelliTrace
+								</p><!--drop-down-list14.3.5--><br>
+								
+						    </div><!--drop-down-list14.3-->
+							
+							<div class="drop-down-list14.4" style="float;left;width:100%;margin:30px 0 0 30px;font-size:18px;font-weight:100;color:#2A6496;height:25px;">
+						             深入了解 Visual Studio 扩展开发   <b>></b>
+						    </div><!--drop-down-list14.4-->
+						</div><!--line4box3active-->
+						
+						
+						<div class="lineboxactive">
+							<div class="drop-down-list15.1" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+								<p class="drop-down-list15.1.1" style="float:left;width:100%;font-size:20px;font-weight:700;">
+									Office/SharePoint
+								</p><!--drop-down-list15.1.1--></br>
+							    <p class="drop-down-list15.1.2" style="float:left;width:100%;font-size:18px;font-weight:100;">
+									使用 C#、VB 和 JavaScript 创建 Office 和 SharePoint 加载项、
+									SharePoint 解决方案和 VSTO 加载项
+								</p><!--drop-down-list15.1.2-->
+							</div><!--drop-down-list15.1-->
+							
+							
+							<div class="drop-down-list15.2" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+								<p class="drop-down-list15.2.1" style="float:left;font-size:20px;font-weight:700;">
+									说明
+								</p><!--drop-down-list15.2.1--></br>
+							    <p class="drop-down-list15.2.2" style="float:left;font-size:18px;font-weight:100;">
+									利用各种项目模板扩展 Office 和 SharePoint。 
+									在 Visual Studio 中轻松生成、调试和发布外接程序和解决方案。
+								</p><!--drop-down-list15.2.2--></br>
+							    
+							</div><!--drop-down-list15.2-->
+							
+							<div class="drop-down-list15.3" style="float;left;width:100%;margin:30px 0 0 30px;height:150px;">
+								<p class="drop-down-list15.3.1" style="float:left;font-size:20px;font-weight:700;">
+									开发应用程序
+								</p><!--drop-down-list15.3.1--><br>
+							    <p class="drop-down-list15.3.2" style="float:left;font-size:18px;font-weight:100;">
+									-Office 加载项
+								</p><!--drop-down-list15.3.2-->
+							    <p class="drop-down-list15.3.3" style="float:left;font-size:18px;font-weight:100;">
+								   – VSTO 加载项
+								</p><!--15.3.3--><br>
+								<p class="drop-down-list15.3.4" style="float:left;font-size:18px;font-weight:100;">
+								   –SharePoint 加载项
+								</p><!--15.3.4--><br>
+								<p class="drop-down-list15.3.5" style="float:left;font-size:18px;font-weight:100;">
+								   – SharePoint 解决方案
+								</p><!--15.3.5--><br>
+							    
+							</div><!--drop-down-list15.3-->
+						
+						    <div class="drop-down-list15.3" style="float;left;width:100%;margin:30px 0 0 30px;height:150px;">
+						    	<p class="drop-down-list15.3.1" style="float:left;font-size:20px;font-weight:700;">
+						    		组件
+						    	</p><!--drop-down-list15.3.1--><br>
+						        <p class="drop-down-list15.3.2" style="float:left;font-size:18px;font-weight:100;">
+						    		–适用于 Visual Studio 的 Office 开发人员工具
+						    	</p><!--drop-down-list15.3.2--><br>
+						        <p class="drop-down-list15.3.3" style="float:left;font-size:18px;font-weight:100;">
+						    		–.NET Framework 4.5 目标包
+						    	</p><!--15.3.3--><br>
+								<p class="drop-down-list15.3.4" style="float:left;font-size:18px;font-weight:100;">
+									–.NET Framework 4.x 开发工具
+								</p><!--drop-down-list15.3.4--><br>
+								<p class="drop-down-list15.3.5" style="float:left;font-size:18px;font-weight:100;">
+									–Developer Analytics Tools
+								</p><!--drop-down-list15.3.5--><br>
+								
+						    </div><!--drop-down-list15.3-->
+							
+							<div class="drop-down-list15.4" style="float;left;width:100%;margin:30px 0 0 30px;font-size:18px;font-weight:100;color:#2A6496;height:25px;">
+						               深入了解 Office/SharePoint   <b>></b>
+						    </div><!--drop-down-list15.4-->
+						</div><!--line4box4active-->
+						
+						<div class="lineboxactive">
+							<div class="drop-down-list16.1" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+								<p class="drop-down-list16.1.1" style="float:left;width:100%;font-size:20px;font-weight:700;">
+									使用 C++ 的 Linux 开发
+								</p><!--drop-down-list16.1.1--></br>
+							    <p class="drop-down-list16.1.2" style="float:left;width:100%;font-size:18px;font-weight:100;">
+									创建和调试在 Linux 环境或 Linux 的 Windows 子系统 (WSL) 中运行的应用程序
+								</p><!--drop-down-list16.1.2-->
+							</div><!--drop-down-list16.1-->
+							
+							
+							<div class="drop-down-list16.2" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+								<p class="drop-down-list16.2.1" style="float:left;font-size:20px;font-weight:700;">
+									说明
+								</p><!--drop-down-list16.2.1--></br>
+							    <p class="drop-down-list16.2.2" style="float:left;font-size:18px;font-weight:100;">
+									在远程计算机或 Linux 的 Windows 子系统上生成并运行代码，并从 Visual Studio 中进行浏览、
+									编辑和调试。 使用 CMake，从单个集成开发环境轻松地将多个平台作为目标。
+								</p><!--drop-down-list16.2.2--></br>
+							    
+							</div><!--drop-down-list16.2-->
+							
+							<div class="drop-down-list16.3" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+								<p class="drop-down-list16.3.1" style="float:left;font-size:20px;font-weight:700;">
+									开发应用程序
+								</p><!--drop-down-list16.3.1--><br>
+							    <p class="drop-down-list16.3.2" style="float:left;font-size:18px;font-weight:100;">
+									-入门
+								</p><!--drop-down-list16.3.2-->
+							    
+							</div><!--drop-down-list16.3-->
+						
+						    <div class="drop-down-list16.3" style="float;left;width:100%;margin:30px 0 0 30px;height:150px;">
+						    	<p class="drop-down-list16.3.1" style="float:left;font-size:20px;font-weight:700;">
+						    		组件
+						    	</p><!--drop-down-list16.3.1--><br>
+						        <p class="drop-down-list16.3.2" style="float:left;font-size:18px;font-weight:100;">
+						    		–Visual Studio C++ 核心功能
+						    	</p><!--drop-down-list16.3.2--><br>
+						        <p class="drop-down-list16.3.3" style="float:left;font-size:18px;font-weight:100;">
+						    		–Windows 通用 C 运行时
+						    	</p><!--16.3.3--><br>
+								<p class="drop-down-list16.3.4" style="float:left;font-size:18px;font-weight:100;">
+									–适用于 Linux 开发的 Visual C++
+								</p><!--drop-down-list16.3.4--><br>
+								<p class="drop-down-list16.3.5" style="float:left;font-size:18px;font-weight:100;">
+									– 用于 CMake 和 Linux 的 Visual C++ 工具
+								</p><!--drop-down-list16.3.5--><br>
+								
+						    </div><!--drop-down-list16.3-->
+							
+							<div class="drop-down-list16.4" style="float;left;width:100%;margin:30px 0 0 30px;font-size:18px;font-weight:100;color:#2A6496;height:25px;">
+						             详细了解如何使用 C++ 进行 Linux 开发   <b>></b>
+						    </div><!--drop-down-list16.4-->
+						</div><!--line4box5active-->
+						
+						<div class="lineboxactive">
+							<div class="drop-down-list17.1" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+								<p class="drop-down-list17.1.1" style="float:left;width:100%;font-size:20px;font-weight:700;">
+									.NET Core 跨平台开发
+								</p><!--drop-down-list17.1.1--></br>
+							    <p class="drop-down-list17.1.2" style="float:left;width:100%;font-size:18px;font-weight:100;">
+									使用 .NET Core、ASP.NET Core、HTML/JavaScript 和包括 Docker 支持的容器生成跨平台应用程序
+								</p><!--drop-down-list17.1.2-->
+							</div><!--drop-down-list17.1-->
+							
+							
+							<div class="drop-down-list17.2" style="float;left;width:100%;margin:30px 0 0 30px;height:50px;">
+								<p class="drop-down-list17.2.1" style="float:left;font-size:20px;font-weight:700;">
+									说明
+								</p><!--drop-down-list17.2.1--></br>
+							    <p class="drop-down-list17.2.2" style="float:left;font-size:18px;font-weight:100;">
+									.NET Core 是开放源代码通用开发平台，由 Microsoft 和 .NET 社区在 GitHub 上共同维护。
+									 它跨平台（支持 Windows、macOS 和 Linux），并且可用于生成设备、云和 IoT 应用程序。
+								</p><!--drop-down-list17.2.2--></br>
+							    
+							</div><!--drop-down-list17.2-->
+							
+							<div class="drop-down-list17.3" style="float;left;width:100%;margin:30px 0 0 30px;height:100px;">
+								<p class="drop-down-list17.3.1" style="float:left;font-size:20px;font-weight:700;">
+									开发应用程序
+								</p><!--drop-down-list17.3.1--><br>
+							    <p class="drop-down-list17.3.2" style="float:left;font-size:18px;font-weight:100;">
+									Windows 上的完整 .NET Core 解决方案
+								</p><!--drop-down-list17.3.2--></br>
+								<p class="drop-down-list17.3.2" style="float:left;font-size:18px;font-weight:100;">
+									.NET Core 应用程序的 Docker 映像
+								</p><!--drop-down-list17.3.2-->
+								<p class="drop-down-list17.3.2" style="float:left;font-size:18px;font-weight:100;">
+									使用 .NET Core 的 C# 控制台应用程序
+								</p><!--drop-down-list17.3.2-->
+								
+							</div><!--drop-down-list17.3-->
+						
+						    <div class="drop-down-list17.3" style="float;left;width:100%;margin:30px 0 0 30px;height:250px;">
+						    	<p class="drop-down-list17.3.1" style="float:left;font-size:20px;font-weight:700;">
+						    		组件
+						    	</p><!--drop-down-list17.3.1--><br>
+						        <p class="drop-down-list17.3.2" style="float:left;font-size:18px;font-weight:100;">
+						    		–.NET Core 2.x 开发工具
+						    	</p><!--drop-down-list17.3.2--><br>
+						        <p class="drop-down-list17.3.3" style="float:left;font-size:18px;font-weight:100;">
+						    		–.NET Framework 4.x 开发工具
+						    	</p><!--17.3.3--><br>
+								<p class="drop-down-list17.3.4" style="float:left;font-size:18px;font-weight:100;">
+									–ASP.NET 和 Web 开发工具先决条件
+								</p><!--drop-down-list17.3.1--><br>
+								<p class="drop-down-list17.3.5" style="float:left;font-size:18px;font-weight:100;">
+									– 用于 Web 开发的云工具
+								</p><!--drop-down-list17.3.5--><br>
+								<p class="drop-down-list17.3.6" style="float:left;font-size:18px;font-weight:100;">
+									– .NET 分析工具
+								</p><!--drop-down-list17.3.6--><br>
+								<p class="drop-down-list17.3.7" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+									–IntelliTrace
+								</p><!--drop-down-list17.3.7--><br>
+								<p class="drop-down-list17.3.8" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+									–Live Unit Testing
+								</p><!--drop-down-list17.3.8--><br>
+								<p class="drop-down-list17.3.9" style="float:left;font-size:18px;font-weight:100;color:#2A6496;">
+									–Live Share
+								</p><!--drop-down-list17.3.9--><br>
+								
+						    </div><!--drop-down-list17.3-->
+							
+							<div class="drop-down-list17.4" style="float;left;width:100%;margin:30px 0 0 30px;font-size:18px;font-weight:100;color:#2A6496;height:25px;">
+						              深入了解 .NET Core 跨平台开发   <b>></b>
+						    </div><!--drop-down-list17.4-->
+						</div><!--line4box6active-->
+						
+						
+						
+						</div><!--pagethreebottom-->
+					
+					
+					
+					
+					</div><!--pagethree-->
+					<!--这是第三张网页-->
+				<div class="pagefour" style="float:left;height:500px;width:100%;background-color:#F4EDFF;">
+					<div class="pagefourtop" style="margin-top:80px;">
+						<h1 class="pagefourtitle" style="color: #000000;font-size:44px;font-weight:700;text-align: center;">VisualStudio使Azure开发变得更简单</h1><!--pagefourtitle-->
+					</div><!--pagefourtop-->
+					<div class="pagefourbottom"style="margin:50px 0 0 100px;float:left;">
+						<div class="pagefourbox1" style="float:left;width:250px;height:200px;">
+							<div class="fourbox1" style="float:left;">
+								<div style="display:inline-block;float:left;">
+									<a href="#">
+									<img src="page4.1.jpg" alt="logo">
+									</a>
+								</div><!--图片-->
+								<div class="fourbox1title"style="display:inline-block;float:left;font-size:24px;font-weight:700;color:#000000">
+									快速入门
+								</div><!--div标题-->
+							</div><!--fourbox1-->
+							<div style="float:left;margin:30px 0 0 30px;">
+								<div class="fourbox1text" style="float:left;color:#000000;font-size:18px;font-weight:300;">
+									使用 Azure 专用项目模板完成更多工作。 这些快速入门模板为你提供一个工作应用，以便你可以立即部署到云。
+								</div><!--div文字-->
+							</div>
+						</div><!--pagefourbox1-->
+						
+						<div class="pagefourbox2"style="float:left;width:250px;height:200px;margin-left:30px;">
+							<div class="fourbox2" style="float:left;">
+								<div style="display:inline-block;float:left;">
+									<a href="#">
+									<img src="page4.2.jpg" alt="logo">
+									</a>
+								</div><!--图片-->
+								<div class="fourbox2title"style="display:inline-block;float:left;font-size:24px;font-weight:700;color:#000000">
+									易于部署
+								</div><!--fourbox2title-->
+							</div><!--fourbox2-->
+							<div style="float:left;margin:30px 0 0 30px;">
+								<div class="fourbox2text" style="float:left;color:#000000;font-size:18px;font-weight:300;">
+									将应用程序直接从 Visual Studio 一键部署到 Azure，以便轻松连接到选择的数据库。
+								</div><!--div文字-->
+							</div>
+						</div><!--pagefourbox2-->
+						
+						<div class="pagefourbox3"style="float:left;width:250px;height:200px;margin-left:30px;">
+							<div  class="fourbox3"style="float:left;">
+								<div style="display:inline-block;float:left;">
+									<a href="#">
+									<img src="page4.3.jpg" alt="logo">
+									</a>
+								</div><!--图片-->
+								<div class="fourbox3title"style="display:inline-block;float:left;font-size:24px;font-weight:700;color:#000000">
+									远程调试
+								</div><!--fourbox3title-->
+							</div><!--fourbox3-->
+							<div style="float:left;margin:30px 0 0 30px;">
+								<div class="fourbox3text" style="float:left;color:#000000;font-size:18px;font-weight:300;">
+									处理难以在计算机上本地重现的问题时，
+									可以使用 Visual Studio 中的 Cloud Explorer 
+									快速轻松地将 Visual Studio 远程调试器附加到 Azure 环境。
+								</div><!--div文字-->
+							</div>
+						</div><!--pagefourbox3-->
+						
+						<div class="pagefourbox4"style="float:left;width:250px;height:200px;margin-left:30px;">
+							<div  class="fourbox4"style="float:left;">
+								<div style="display:inline-block;float:left;">
+									<a href="#">
+									<img src="page4.4.jpg" alt="logo">
+									</a>
+								</div><!--图片-->
+								<div class="fourbox4title"style="display:inline-block;float:left;font-size:24px;font-weight:700;color:#000000">
+									直观地浏览
+								</div><!--fourbox4title-->
+							</div><!--fourbox4-->
+							<div style="float:left;margin:30px 0 0 30px;">
+								<div class="fourbox4text" style="float:left;color:#000000;font-size:18px;font-weight:300;">
+									使用 Cloud Explorer 从 Visual Studio 管理和浏览 Azure 资源和资源组。
+									可以检查其属性并轻松执行关键诊断操作。
+								</div><!--div文字-->
+							</div>
+						</div><!--pagefourbox4-->
+					
+					
+					</div><!--pagefourbottom-->
+				</div><!--pagefour-->
+				
+				
+				<div class="pagefive" style="float:left;height:700px;width:100%;overflow: hidden;">
+					<div class="pagefivetop" style="float:left;width:100%;">
+						<h1 class="fivetitle" style="display:block;float:left;font-size:40px;font-weight:700;color:#000000;text-align:center;width:100%;margin-top:50px;">扩展和集成</h1>
+						<p class="fivep"style="display:block;float:left;font-size:18px;font-weight:200;color:#000000;text-align:center;width:100%;margin-top:30px;">使用最常见的加载项轻松保持高效</p>
+						
+						<div  class="fivetext1"style="float:left;width:100%;margin-left:600px;margin-top:30px;">
+							<div class="fivetext1.1"style="float:left;font-size:18px;color:#2C84F4;font-weight:200;text-align:center;">详细了解扩展</div>
+							<div class="triangle2" style="border-color:#2C84F4;">
+							    <div class="content2" style="border-color:#2C84F4;">
+							    </div><!--content2-->
+							</div><!--triangle2-->
+						</div><!--详细了解扩展-->
+						
+						<div class="fivetext2"style="float:left;width:100%;margin-left:620px;margin-top:30px;">
+							<div class="fivetext2.2"style="float:left;font-size:18px;color:#2C84F4;font-weight:200;text-align:center;">浏览市场</div>
+							<div class="triangle2" style="border-color:#2C84F4;">
+							    <div class="content2" style="border-color:#2C84F4;">
+							    </div><!--content2-->
+							</div><!--triangle2-->
+						</div><!--浏览市场-->
+					
+					</div><!--pagefivetop-->
+					
+					<div class="pagefivebottom"style="float:left;width:100%;margin-top:30px;">
+						<div class="fivebox1">
+							<div class="triangle4" style="border-color:#ACACAD;z-index:9999;">
+							    <div class="content4" style="border-color:#ACACAD;z-index:9999;">
+							    </div><!--content4-->
+							</div><!--triangle4-->
+						</div><!--fivebox1-->
+					
+					
+					
+				<div class="outer" style="float:left;width:1010px;height:250px;overflow:hidden;position:relative;">
+					<div class="imglist">
+						
+						<div class="fivebox2">
+							<div style="float:left;margin:20px 0 0 20px;width:100%;">
+							    <a href="#">
+							    <img src="fivebox2.jpg" alt="logo">
+							    </a>
+							</div>
+							<div style="float:left;width:100%;margin:20px 0 0 10px;color:#000000;font-size:18px;font-weight:600;">
+								CodeMaid
+							</div><!--codemaid-->
+							<div style="float:left;width:100%;margin:10px 0 0 10px;">
+							    <div style="color:#000000;font-size:16px;font-weight:100;float:left;display:inline-block;">
+								    SteveCadwa
+							    </div>
+								<div style="float:left;display:inline-block;color:#000000;font-size:16px;font-weight:100;margin-left:10px;">
+									434k
+								</div>
+							</div><!--steve整行-->
+							<div style="float:left;width:100%;margin:20px 0 0 100px;color:#008000;font-size:20px;font-weight:500;">
+								FREE
+							</div>
+						</div><!--fivebox2-->
+						
+						<div class="fivebox3">
+							<div style="float:left;margin:0 0 0 20px;width:100%;">
+							    <a href="#">
+							    <img src="fivebox3.jpg" alt="logo">
+							    </a>
+							</div>
+							<div style="float:left;width:100%;margin:15px 0 0 10px;color:#000000;font-size:18px;font-weight:600;">
+								GitHubExtensic
+							</div><!--GitHubExtensic-->
+							<div style="float:left;width:100%;margin:10px 0 0 10px;">
+							    <div style="color:#000000;font-size:16px;font-weight:100;float:left;display:inline-block;">
+								    GitHub
+							    </div>
+								<div style="float:left;display:inline-block;color:#000000;font-size:16px;font-weight:100;">
+									716k
+								</div>
+							</div><!--github整行-->
+							<div style="float:left;width:100%;margin:20px 0 0 100px;color:#008000;font-size:20px;font-weight:500;">
+								FREE
+							</div>
+						</div><!--fivebox3-->
+						
+						<div class="fivebox4">
+							<div style="float:left;margin:0 0 0 20px;width:100%;">
+							    <a href="#">
+							    <img src="fivebox4.jpg" alt="logo">
+							    </a>
+							</div>
+							<div style="float:left;width:100%;margin:0 0 0 10px;color:#000000;font-size:18px;font-weight:600;">
+								ReSharper
+							</div><!--ReSharper-->
+							<div style="float:left;width:100%;margin:0 0 0 10px;">
+							    <div style="color:#000000;font-size:16px;font-weight:100;float:left;display:inline-block;">
+								    JetBrains
+							    </div>
+								<div style="float:left;display:inline-block;color:#000000;font-size:16px;font-weight:100;">
+									339k
+								</div>
+							</div><!--github整行-->
+							<div style="float:left;width:100%;margin:20px 0 0 100px;color:#008000;font-size:20px;font-weight:500;">
+								FREE
+							</div>
+						</div><!--fivebox4-->
+						
+						<div class="fivebox5">
+							<div style="float:left;margin:20px 0 0 20px;width:100%;">
+							    <a href="#">
+							    <img src="fivebox5.jpg" alt="logo">
+							    </a>
+							</div>
+							<div style="float:left;width:100%;margin:10px 0 0 10px;color:#000000;font-size:18px;font-weight:600;">
+								VisualAssist
+							</div><!--VisualAssist-->
+							<div style="float:left;width:100%;margin:10px 0 0 10px;">
+							    <div style="color:#000000;font-size:16px;font-weight:100;float:left;display:inline-block;">
+								    WholeToma
+							    </div>
+								<div style="float:left;display:inline-block;color:#000000;font-size:16px;font-weight:100;">
+									208k
+								</div>
+							</div><!--WholeToma整行-->
+							<div style="float:left;right;width:100%;margin:20px 0 0 100px;color:#008000;font-size:20px;font-weight:500;">
+								FREE
+							</div>
+						</div><!--fivebox5-->
+						
+						<div class="fivebox6">
+							<div style="float:left;margin:20px 0 0 20px;width:100%;">
+							    <a href="#">
+							    <img src="fivebox6.jpg" alt="logo">
+							    </a>
+							</div>
+							<div style="float:left;width:100%;margin:10px 0 0 10px;color:#000000;font-size:18px;font-weight:600;">
+								IndentGuides
+							</div><!--IndentGuides-->
+							<div style="float:left;width:100%;margin:10px 0 0 10px;">
+							    <div style="color:#000000;font-size:16px;font-weight:100;float:left;display:inline-block;">
+								    SteveDowe
+							    </div>
+								<div style="float:left;display:inline-block;color:#000000;font-size:16px;font-weight:100;">
+									147k
+								</div>
+							</div><!--SteveDowe整行-->
+							<div style="float:left;width:100%;margin:20px 0 0 100px;color:#008000;font-size:20px;font-weight:500;">
+								FREE
+							</div>
+						</div><!--fivebox6-->
+						
+						<div class="fivebox7">
+							<div style="float:left;margin:20px 0 0 20px;width:100%;">
+							    <a href="#">
+							    <img src="pagefivebox7.jpg" alt="logo">
+							    </a>
+							</div>
+							<div style="float:left;width:100%;margin:10px 0 0 10px;color:#000000;font-size:18px;font-weight:600;">
+								Microsoft Visual
+							</div><!--IndentGuides-->
+							<div style="float:left;width:100%;margin:10px 0 0 10px;">
+							    <div style="color:#000000;font-size:16px;font-weight:100;float:left;display:inline-block;">
+								    Microsoft
+							    </div>
+								<div style="float:left;display:inline-block;color:#000000;font-size:16px;font-weight:100;">
+									147k
+								</div>
+							</div><!--SteveDowe整行-->
+							<div style="float:left;width:100%;margin:20px 0 0 100px;color:#008000;font-size:20px;font-weight:500;">
+								FREE
+							</div>
+						</div><!--fivebox7-->
+						
+						<div class="fivebox8">
+							<div style="float:left;margin:20px 0 0 20px;width:100%;">
+							    <a href="#">
+							    <img src="pagefivebox8.jpg" alt="logo">
+							    </a>
+							</div>
+							<div style="float:left;width:100%;margin:10px 0 0 10px;color:#000000;font-size:18px;font-weight:600;">
+								SQLite/SQL
+							</div><!--IndentGuides-->
+							<div style="float:left;width:100%;margin:10px 0 0 10px;">
+							    <div style="color:#000000;font-size:16px;font-weight:100;float:left;display:inline-block;">
+								    ErikEJ
+							    </div>
+								<div style="float:left;display:inline-block;color:#000000;font-size:16px;font-weight:100;">
+									235k
+								</div>
+							</div><!--SteveDowe整行-->
+							<div style="float:left;width:100%;margin:20px 0 0 100px;color:#008000;font-size:20px;font-weight:500;">
+								FREE
+							</div>
+						</div><!--fivebox8-->
+						
+						<div class="fivebox9">
+							<div style="float:left;margin:20px 0 0 20px;width:100%;">
+							    <a href="#">
+							    <img src="pagefivebox9.jpg" alt="logo">
+							    </a>
+							</div>
+							<div style="float:left;width:100%;margin:10px 0 0 10px;color:#000000;font-size:18px;font-weight:600;">
+								Web Compiler
+							</div><!--IndentGuides-->
+							<div style="float:left;width:100%;margin:10px 0 0 10px;">
+							    <div style="color:#000000;font-size:16px;font-weight:100;float:left;display:inline-block;">
+								    Made Krister
+							    </div>
+								<div style="float:left;display:inline-block;color:#000000;font-size:16px;font-weight:100;">
+									243k
+								</div>
+							</div><!--SteveDowe整行-->
+							<div style="float:left;width:100%;margin:20px 0 0 100px;color:#008000;font-size:20px;font-weight:500;">
+								FREE
+							</div>
+						</div><!--fivebox9-->
+						
+						<div class="fivebox10">
+							<div style="float:left;margin:20px 0 0 20px;width:100%;">
+							    <a href="#">
+							    <img src="pagefivebox10.jpg" alt="logo">
+							    </a>
+							</div>
+							<div style="float:left;width:100%;margin:10px 0 0 10px;color:#000000;font-size:18px;font-weight:600;">
+								Arduino IDE
+							</div><!--IndentGuides-->
+							<div style="float:left;width:100%;margin:10px 0 0 10px;">
+							    <div style="color:#000000;font-size:16px;font-weight:100;float:left;display:inline-block;">
+								    Visual Micro
+							    </div>
+								<div style="float:left;display:inline-block;color:#000000;font-size:16px;font-weight:100;">
+									272k
+								</div>
+							</div><!--SteveDowe整行-->
+							<div style="float:left;width:100%;margin:20px 0 0 100px;color:#008000;font-size:20px;font-weight:500;">
+								FREE
+							</div>
+						</div><!--fivebox10-->
+						
+						<div class="fivebox11">
+							<div style="float:left;margin:20px 0 0 20px;width:100%;">
+							    <a href="#">
+							    <img src="pagefivebox11.jpg" alt="logo">
+							    </a>
+							</div>
+							<div style="float:left;width:100%;margin:10px 0 0 10px;color:#000000;font-size:18px;font-weight:600;">
+								NUnit 3 Test
+							</div><!--IndentGuides-->
+							<div style="float:left;width:100%;margin:10px 0 0 10px;">
+							    <div style="color:#000000;font-size:16px;font-weight:100;float:left;display:inline-block;">
+								    NUnit Deve
+							    </div>
+								<div style="float:left;display:inline-block;color:#000000;font-size:16px;font-weight:100;">
+									396k
+								</div>
+							</div><!--SteveDowe整行-->
+							<div style="float:left;width:100%;margin:20px 0 0 100px;color:#008000;font-size:20px;font-weight:500;">
+								FREE
+							</div>
+						</div><!--fivebox11-->
+					</div><!--imglist-->
+				</div><!--outer-->
+						
+						
+						
+						<div class="pagefivetriangle">
+							<div class="triangle5" style="border-color:#ACACAD;z-index:9999;">
+							    <div class="content5" style="border-color:#ACACAD;z-index:9999;">
+							    </div><!--content5-->
+							</div><!--triangle5-->
+						</div><!--pagefivetriangle-->
+					</div><!--pagefivebottom-->
+				</div><!--pagefive-->
+				
+				<div class="pagesix" style="float:left;height:700px;width:100%;overflow: hidden;background-color:#FAF9F8;">
+					<div class="sixtitle" style="float:left;width:100%;text-align:center;font-size:42px;font-weight:700;">
+						Visual&nbsp;Studio&nbsp;2019发布视频
+					</div><!--sixtitle-->
+					
+		<div class="sixline1" style="float:left;width:100%;height:230px;">
+						<div class="sixtriangle1">
+							<div class="triangle6">
+							    <div class="content6">
+							    </div><!--content6-->
+							</div><!--triangle6-->
+						</div><!--含triangle的box-->
+						
+				<div class="visible" style="float:left;width:1100px;height:230px;overflow:hidden;margin-left:20px;">
+						
+					<div class="banner" style="float:left;width:2800px;height:230px;overflow:hidden;">
+						<div class="part1" style="float:left;width:1100px;height:230px;">
+						
+						<div class="sixline1box1" style="float:left;width:200px;height:230px;display:inline-block;">
+							<div style="float:left;width:200px;">
+								<a href="#">
+								<img src="2019-launch-video-1.jpg" alt="logo">
+								</a>
+							</div>
+							<div style="float:left;width:200px;margin-top:30px;font-size:18px;font-weight:700;color:#000000;">
+								"Not&nbsp;your&nbsp;average"主题演讲
+							</div>
+						</div><!--sixline1box1-->
+						
+						<div class="sixline1box2" style="float:left;width:200px;height:230px;display:inline-block;margin-left:60px;">
+							<div style="float:left;width:200px;">
+								<a href="#">
+								<img src="VSL_Live_10AM.jpg" alt="logo">
+								</a>
+							</div>
+							<div style="float:left;width:200px;margin-top:30px;font-size:18px;font-weight:700;color:#000000;">
+								Visual&nbsp;Studio&nbsp;Big&nbsp;Wigs现场问答
+							</div>
+						</div><!--sixline1box2-->
+						
+						<div class="sixline1box3" style="float:left;width:200px;height:230px;display:inline-block;margin-left:80px;">
+							<div style="float:left;width:200px;">
+								<a href="#">
+								<img src="VSL_Live_1030AM.jpg" alt="logo">
+								</a>
+							</div>
+							<div style="float:left;width:200px;margin-top:30px;font-size:18px;font-weight:700;color:#000000;">
+								以更快的速度编写更出色的代码
+							</div>
+						</div><!--sixline1box3-->
+						
+						<div class="sixline1box4" style="float:left;width:200px;height:230px;display:inline-block;margin-left:80px;">
+							<div style="float:left;width:200px;">
+								<a href="#">
+								<img src="VSL_Live_11AM.jpg" alt="logo">
+								</a>
+							</div>
+							<div style="float:left;width:200px;margin-top:30px;font-size:18px;font-weight:700;color:#000000;">
+								简化开发团队
+							</div>
+						</div><!--sixline1box4-->
+						
+						</div><!--part1-->
+						
+						<div class="part2" style="float:left;width:800px;height:230px;">
+							<div class="sixline1box5" style="float:left;width:200px;height:230px;display:inline-block;margin-left:80px;">
+								<div style="float:left;width:200px;">
+									<a href="#">
+									<img src="VSL_Live_1130AM.jpg" alt="logo">
+									</a>
+								</div>
+								<div style="float:left;width:200px;margin-top:30px;font-size:18px;font-weight:700;color:#000000;">
+									消灭bug并提高代码的质量
+								</div>
+							</div><!--sixline1box5-->
+							
+							<div class="sixline1box6" style="float:left;width:200px;height:230px;display:inline-block;margin-left:80px;">
+								<div style="float:left;width:200px;">
+									<a href="#">
+									<img src="VSL_Live_12PM.jpg" alt="logo">
+									</a>
+								</div>
+								<div style="float:left;width:200px;margin-top:30px;font-size:18px;font-weight:700;color:#000000;">
+									借助GitHub和AzureDevOps使DevOps上一个台阶
+								</div>
+							</div><!--sixline1box6-->
+							
+							<div class="sixline1box7" style="float:left;width:200px;height:230px;display:inline-block;margin-left:80px;">
+								<div style="float:left;width:200px;">
+									<a href="#">
+									<img src="VSL_Live_1230PM.jpg"  alt="logo">
+									</a>
+								</div>
+								<div style="float:left;width:200px;margin-top:30px;font-size:18px;font-weight:700;color:#000000;">
+									AI注入中断
+								</div>
+							</div><!--sixline1box7-->
+							
+							<div class="sixline1box8" style="float:left;width:200px;height:230px;display:inline-block;margin-left:80px;">
+								<div style="float:left;width:200px;">
+									<a href="#">
+									<img src="VSL_Live_1PM.jpg" alt="logo">
+									</a>
+								</div>
+								<div style="float:left;width:200px;margin-top:30px;font-size:18px;font-weight:700;color:#000000;">
+									加速C++的开发
+								</div>
+							</div><!--sixline1box8-->
+						</div><!--part2-->
+						
+						<div class="part3" style="float:left;width:800px;height:230px;">
+						    <div class="sixline1box8" style="float:left;width:200px;height:230px;display:inline-block;margin-left:80px;">
+						    	<div style="float:left;width:200px;">
+						    		<a href="#">
+						    		<img src="VSL_Live_1PM.jpg" alt="logo">
+						    		</a>
+						    	</div>
+						    	<div style="float:left;width:200px;margin-top:30px;font-size:18px;font-weight:700;color:#000000;">
+						    		加速C++的开发
+						    	</div>
+						    </div><!--sixline1box8-->
+						</div><!--part3-->
+					
+					</div><!--banner-->
+				</div><!--visible-->
+						
+						<div class="sixtriangle2">
+							<div class="triangle7">
+							    <div class="content7">
+							    </div><!--content7-->
+							</div><!--triangle7-->
+						</div>
+					</div><!--sixline1-->
+					
+					
+					<div class="sixline2" style="float:left;width:100%;height:250px;margin-top:30px;">
+						<div class="sixtriangle1"style="display:inline-block;float:left;margin-left:50px;width:50px;height:50px;">
+							<div class="triangle6">
+							    <div class="content6">
+							    </div><!--content6-->
+							</div><!--triangle6-->
+						</div><!--含triangle的box-->
+						
+						<div class="sixline2box1" style="float:left;width:200px;height:250px;display:inline-block;">
+							<div style="float:left;width:200px;">
+								<a href="#">
+								<img src="VSLaunch_VSR101.jpg" alt="logo">
+								</a>
+							</div>
+							<div style="float:left;width:200px;margin-top:30px;font-size:18px;font-weight:700;color:#000000;">
+								包含所有内容
+							</div>
+							<div style="float:left;width:200px;margin-top:20px;font-size:16px;font-weight:100;color:#000000;">
+								Paul&nbsp;Yuknewicz
+							</div>
+						</div><!--sixline2box1-->
+						
+						<div class="sixline2box2" style="float:left;width:200px;height:250px;display:inline-block;margin-left:60px;">
+							<div style="float:left;width:200px;">
+								<a href="#">
+								<img src="VSLaunch_VSR102.jpg" alt="logo">
+								</a>
+							</div>
+							<div style="float:left;width:200px;margin-top:30px;font-size:18px;font-weight:700;color:#000000;">
+								你有Visual&nbsp;Studio订阅吗？现在要做什么？
+							</div>
+							<div style="float:left;width:200px;margin-top:20px;font-size:16px;font-weight:100;color:#000000;">
+								James&nbsp;Tramel
+							</div>
+						</div><!--sixline2box2-->
+						
+						<div class="sixline2box3" style="float:left;width:200px;height:250px;display:inline-block;margin-left:80px;">
+							<div style="float:left;width:200px;">
+								<a href="#">
+								<img src="VSLaunch_VSR103.jpg" alt="logo">
+								</a>
+							</div>
+							<div style="float:left;width:200px;margin-top:30px;font-size:18px;font-weight:700;color:#000000;">
+								利用Visual&nbsp;Studio开发Python
+							</div>
+							<div style="float:left;width:200px;margin-top:20px;font-size:16px;font-weight:100;color:#000000;">
+								Tyreke&nbsp;White
+							</div>
+						</div><!--sixline2box3-->
+						
+						<div class="sixline2box4" style="float:left;width:200px;height:250px;display:inline-block;margin-left:80px;">
+							<div style="float:left;width:200px;">
+								<a href="#">
+								<img src="VSLaunch_VSR106.jpg" alt="logo">
+								</a>
+							</div>
+							<div style="float:left;width:200px;margin-top:30px;font-size:18px;font-weight:700;color:#000000;">
+								使用.NET&nbsp;Core&nbsp;3.0&nbsp;统一Windows桌面开发
+							</div>
+							<div style="float:left;width:200px;margin-top:20px;font-size:16px;font-weight:100;color:#000000;">
+								Olia&nbsp;Gavrysh&nbsp;和Scott&nbsp;Hunter
+							</div>
+						</div><!--sixline2box4-->
+						
+						
+						<div class="sixtriangle2"style="display:inline-block;float:left;margin-left:50px;">
+							<div class="triangle7">
+							    <div class="content7">
+							    </div><!--content7-->
+							</div><!--triangle7-->
+						</div>
+					</div><!--sixline2-->
+				</div><!--pagesix-->
+				
+				<div class="pageseven" style="float:left;width:100%;height:150px;">
+					<div class="seventop" style="width:100%;height:100px;background-color:#32145A;float:left;">
+						<div class="seven1" style="float:left;width:200px;height:50px;margin:30px 0 0 150px;">
+							<div class="circle"style="float:left;border-radius:25px;background-color:#5C2D91;width:50px;height:50px;">
+								<div style="float:left;margin:10px 0 0 10px;">
+								    <a href="#">
+								    <img src="seven1.jpg" alt="logo">
+								    </a>
+							    </div>
+							</div>
+							<div style="float;left;font-size:18px;color:#fff;font-weight:500;margin:10px 0 0 70px;">
+								开发人员社区
+							</div>
+						</div><!--seven1-->
+						
+						<div class="seven2" style="float:left;width:200px;height:50px;margin:30px 0 0 230px;">
+							<div class="circle"style="float:left;border-radius:25px;background-color:#5C2D91;width:50px;height:50px;">
+								<div style="float:left;margin:10px 0 0 10px;">
+								    <a href="#">
+								    <img src="seven2.jpg" alt="logo">
+								    </a>
+							    </div>
+							</div>
+							<div style="float;left;font-size:18px;color:#fff;font-weight:500;margin:10px 0 0 70px;">
+								文档
+							</div>
+						</div><!--seven2-->
+						
+						<div class="seven3" style="float:left;width:200px;height:50px;margin:30px 0 0 230px;">
+							<div class="circle"style="float:left;border-radius:25px;background-color:#5C2D91;width:50px;height:50px;">
+								<div style="float:left;margin:10px 0 0 10px;">
+								    <a href="#">
+								    <img src="seven3.jpg" alt="logo">
+								    </a>
+							    </div>
+							</div>
+							<div style="float;left;font-size:18px;color:#fff;font-weight:500;margin:10px 0 0 70px;">
+								博客
+							</div>
+						</div><!--seven3-->
+					</div><!--seventop-->
+					
+					<div class="sevenbottom" style="float:left;width:100%;height:50px;background-color:#5C2D91;">
+						<div vlass="sevenbottom1" style="float:right;margin:10px 50px 0 0;">
+							<a href="#">
+							<img src="TwitterWhite.png" alt="logo">
+							</a>
+						</div><!--sevenbottom1-->
+						<div class="sevenbottom2" style="float:right;margin:10px 20px 0 0;">
+							 <a href="#">
+							<img src="Facebook.png" alt="logo">
+							</a>
+						</div><!--sevenbottom2-->
+						<div class="sevenbottom3" style="float:right;margin:10px 20px 0 0;">
+							 <a href="#">
+							<img src="youtube.png" alt="logo">
+							</a>
+						</div><!--sevenbottom3-->
+					</div><!--sevenbottom-->
+				</div><!--pageseven-->
+				
+			<div class="pageeight" style="float:left;width:100%;height:550px;background-color:#F2F2F2;">
+				<div class="pageeighttop" style="float:left;width:100%;height:400px;">
+					<div class="eight1" style="float:left;margin:30px 0 0 50px;width:150px;">
+						<p style="display:block;color:#000000;font-size:16px;font-weight:700;margin-top:20px;">新增内容</p>
+						<p class="P1" style="display:block;color:#666666;font-size:14px;font-weight:100;margin-top:20px;">	Surface&nbsp;Pro6</p>
+						<p class="P1" style="display:block;color:#666666;font-size:14px;font-weight:100;margin-top:20px;">Surface&nbsp;Laptop2</p>
+						<p class="P1" style="display:block;color:#666666;font-size:14px;font-weight:100;margin-top:20px;">Surface&nbsp;Go</p>
+						<p class="P1" style="display:block;color:#666666;font-size:14px;font-weight:100;margin-top:20px;">Windows&nbsp;10&nbsp;应用程序</p>
+					</div><!--eight1-->
+					<div class="eight2" style="float:left;margin:30px 0 0 50px;width:150px;">
+						<p style="display:block;color:#000000;font-size:16px;font-weight:700;margin-top:20px;">Microsoft&nbsp;Store</p>
+						<p class="P1" style="display:block;color:#666666;font-size:14px;font-weight:100;margin-top:20px;">账户个人资料</p>
+						<p class="P1" style="display:block;color:#666666;font-size:14px;font-weight:100;margin-top:20px;">下载中心</p>
+						<p class="P1" style="display:block;color:#666666;font-size:14px;font-weight:100;margin-top:20px;">订单追踪</p>
+					</div><!--eight2-->
+					<div class="eight3" style="float:left;margin:30px 0 0 50px;width:150px;">
+						<p style="display:block;color:#000000;font-size:16px;font-weight:700;margin-top:20px;">教育</p>
+						<p class="P1" style="display:block;color:#666666;font-size:14px;font-weight:100;margin-top:20px;">Microsoft教育领域</p>
+						<p class="P1" style="display:block;color:#666666;font-size:14px;font-weight:100;margin-top:20px;">适合学生的Office</p>
+						<p class="P1" style="display:block;color:#666666;font-size:14px;font-weight:100;margin-top:20px;">适合学校的Office&nbsp;365</p>
+						<p class="P1" style="display:block;color:#666666;font-size:14px;font-weight:100;margin-top:20px;">Microsoft&nbsp;Azure&nbsp;教育领域</p>
+					</div><!--eight3-->
+					<div class="eight4" style="float:left;margin:30px 0 0 50px;width:150px;">
+						<p style="display:block;color:#000000;font-size:16px;font-weight:700;margin-top:20px;">企业</p>
+						<p class="P1" style="display:block;color:#666666;font-size:14px;font-weight:100;margin-top:20px;">Azure</p>
+						<p class="P1" style="display:block;color:#666666;font-size:14px;font-weight:100;margin-top:20px;">AppSource</p>
+						<p class="P1" style="display:block;color:#666666;font-size:14px;font-weight:100;margin-top:20px;">汽车</p>
+						<p class="P1" style="display:block;color:#666666;font-size:14px;font-weight:100;margin-top:20px;">政府机构</p>
+						<p class="P1" style="display:block;color:#666666;font-size:14px;font-weight:100;margin-top:20px;">医疗保健</p>
+						<p class="P1" style="display:block;color:#666666;font-size:14px;font-weight:100;margin-top:20px;">制造业</p>
+						<p class="P1" style="display:block;color:#666666;font-size:14px;font-weight:100;margin-top:20px;">金融服务</p>
+					</div><!--eight4-->
+					<div class="eight5" style="float:left;margin:30px 0 0 50px;width:170px;">
+						<p style="display:block;color:#000000;font-size:16px;font-weight:700;margin-top:20px;">开发人员</p>
+						<p class="P1" style="display:block;color:#666666;font-size:14px;font-weight:100;margin-top:20px;">Microsoft&nbsp;Visual&nbsp;Studio</p>
+						<p class="P1" style="display:block;color:#666666;font-size:14px;font-weight:100;margin-top:20px;">Windows&nbsp;开发人员中心</p>
+						<p class="P1" style="display:block;color:#666666;font-size:14px;font-weight:100;margin-top:20px;">开发人员网络</p>
+						<p class="P1" style="display:block;color:#666666;font-size:14px;font-weight:100;margin-top:20px;">TechNet</p>
+						<p class="P1" style="display:block;color:#666666;font-size:14px;font-weight:100;margin-top:20px;">Microsoft开发人员计划</p>
+						<p class="P1" style="display:block;color:#666666;font-size:14px;font-weight:100;margin-top:20px;">第9频道</p>
+						<p class="P1" style="display:block;color:#666666;font-size:14px;font-weight:100;margin-top:20px;">Office开发人员中心</p>
+					</div><!--eight5-->
+					<div class="eight6" style="float:left;margin:30px 0 0 50px;width:200px;">
+						<p style="display:block;color:#000000;font-size:16px;font-weight:700;margin-top:20px;">公司</p>
+						<p class="P1" style="display:block;color: #666666;font-size:14px;font-weight:100;margin-top:20px;">招贤纳士</p>
+						<p class="P1" style="display:block;color: #666666;font-size:14px;font-weight:100;margin-top:20px;">关于Misrosoft</p>
+						<p class="P1" style="display:block;color: #666666;font-size:14px;font-weight:100;margin-top:20px;">公司新闻</p>
+						<p class="P1" style="display:block;color: #666666;font-size:14px;font-weight:100;margin-top:20px;">Mcosoft隐私</p>
+						<p class="P1" style="display:block;color: #666666;font-size:14px;font-weight:100;margin-top:20px;">投资人</p>
+						<p class="P1" style="display:block;color: #666666;font-size:14px;font-weight:100;margin-top:20px;">安全性</p>
+					</div><!--eight6-->
+				</div><!--pageeighttop-->
+				    <div class="bottomleft"style="float:left;margin:50px 0 0 50px;">
+						<div class="bottomleftphoto"style="display:inline-block;float:left;">
+						    <a href="#">
+						    <img src="pageeight1.jpg" alt="logo">
+						    </a>
+						</div><!--photo-->
+						<div class="bottomlefttext"style="display:inline-block;float:left;color: #666666;margin-left:20px;margin-top:5px;font-size:10px;">
+							简体中文（Chinese,Simplified)
+						</div><!--简体中文-->
+					</div><!--bottomleft-->
+					<div class="bottomright"style="float:left;width:100%;height:30px;">
+						<div class="right1"style="display:inline-block;font-size:12px;font-weight:100;color:#666666;margin-left:700px;">
+							请联系我们
+						</div>
+						<div class="right2"style="display:inline-block;font-size:12px;font-weight:100;color:#666666;margin-left:30px;">
+							隐私& Cookie
+						</div>
+						<div class="right3"style="display:inline-block;font-size:12px;font-weight:100;color:#666666;margin-left:30px;">
+							使用条款
+						</div>
+						<div class="right4"style="display:inline-block;font-size:12px;font-weight:100;color:#666666;margin-left:30px;">
+							商标
+						</div>
+						<div class="right5"style="display:inline-block;font-size:12px;font-weight:100;color:#666666;margin-left:30px;">
+							关于我们的广告
+						</div>
+						<div class="right6"style="display:inline-block;font-size:12px;font-weight:100;color:#666666;margin-left:30px;">
+							Microsoft2019
+						</div>
+					</div><!--bottomright-->
+				</div><!--pageeight-->
+			 </div><!--content-->
+			<!--这是网页的内容-->
+		
+		
+		
+		
+		
+		
+		
+		</body>
+	</html>
+	
