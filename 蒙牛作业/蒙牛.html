@@ -1,0 +1,3137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>蒙牛页面</title>
+<!--		<script language="JavaScript" type="text/javascript" src="js/js.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/css.css">-->
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			html,
+			body {
+				width: 100%;
+				height: 100%;
+			}
+
+			.allbanner {
+						position: fixed;
+						height: 631px;
+						width:100px;
+						/*overflow: hidden;*/
+		     			background-color: rgba(255, 255, 255,.7);
+						/*opacity:0.2; */
+						/*position:absolute;*/
+						/*float: left;*/
+						z-index:999;	
+					}
+			.outer {
+				/*position: fixed;*/
+				height: 100%;
+				width:100px;
+				/*overflow: hidden;*/
+				background-color: rgba(255, 255, 255,.7);
+				/*opacity:0.2; */
+				/*position:absolute;*/
+				float: left;
+				z-index:999;	
+			}
+			/*.banner {
+				
+				/*height: 100%;
+				width:100%;
+				background-color: rgba(255, 255, 255,.7);
+				float: left;
+				z-index:999;	
+			}*/
+			.logo {
+				width: 100%;
+				height: 10%;
+				background-color: #008B42;
+			}
+
+			.logo1 {
+				width: 100%;
+				height: 100%;
+				padding: 20% 0 0 15%;
+			}
+
+			.first {
+				/*display:block;*/
+				width: 100%;
+				height: 13%;
+				background-color: #FFFFFF;
+				border-bottom: 2px lightgrey solid;
+				background-color: rgba(255, 255, 255,.9);
+			}
+
+			.first1 {
+				width: 2em;
+				height: 2.75em;
+				margin: 10% 0 0 35%;
+			}
+			.first2 {display:block;
+				text-align: center;
+				font-size:0.7em;
+				margin-top:0.625em;
+				color: grey;
+			}
+
+			.second {
+				/*display:block;*/
+				width: 100%;
+				height: 13%;
+				background-color: #FFFFFF;
+				border-bottom: 2px lightgrey solid;
+				background-color: rgba(255, 255, 255, .7);
+			}
+
+			.second1 {
+				width: 2em;
+				height: 2.75em;
+				margin: 10% 0 0 35%;
+			}
+			.second2 {display:block;
+				text-align: center;
+				font-size:0.7em;
+				margin-top:0.625em;
+				color: grey;
+			}
+            .hide2{
+		            	/*display:none;*/
+						position:absolute;
+						height:631px;
+		            	width:100px;
+		            	float:left;
+		            	background-color:rgba(243,158,56);
+						left:0px;
+						z-index:5;
+		            }
+			 .hide2text{
+						position:absolute;
+						height:10.3125rem;
+						width:100px;
+						float:left;
+						background-color:rgba(243,158,56);
+						left:0px;
+						z-index:5;
+						top:165px;
+					}
+           .hide21{
+           	text-align:center;
+           	padding:0.625rem 0 0.625rem 0;
+           	width:6.2rem;
+           	color:#ffffff;
+           	font-size:0.9em;
+           	background-color:rgba(243,158,56);
+           }
+           .hide22{
+           	text-align:center;
+           	padding:0.625rem 0 0.625rem 0;
+           	width:6.2rem;
+           	color:#ffffff;
+           	font-size:0.9em;
+           	background-color:rgba(243,158,56);
+           }
+           .hide23{
+           	text-align:center;
+           	padding:0.625rem 0 0.625rem 0;
+           	width:6.2rem;
+           	color:#ffffff;
+           	font-size:0.9em;
+           	background-color:rgba(243,158,56);
+           }
+           .hide24{
+           	text-align:center;
+           	padding:0.625rem 0 0.625rem 0;
+           	width:6.2rem;
+           	color:#ffffff;
+           	font-size:0.9em;
+           	background-color:rgba(243,158,56);
+           }
+			.third {
+				/*display:block;*/
+				width: 100%;
+				height: 13%;
+				background-color: #FFFFFF;
+				border-bottom: 2px lightgrey solid;
+				background-color: rgba(255, 255, 255, .7);
+			}
+
+			.third1 {
+				width: 2em;
+				height: 2.75em;
+				margin: 10% 0 0 35%;
+			}
+			.third2 {display:block;
+				text-align: center;
+				font-size:0.7em;
+				margin-top:0.625em;
+				color: grey;
+			}
+             .hide3{
+            	/*display:none;*/
+            	position:absolute;
+            	height:631px;
+            	width:100px;
+            	z-index:5;
+            	float:left;
+            	background-color:#DB766C;
+            	left:0;
+            }
+            .hide3text{
+            	position:absolute;
+            	height:5.157rem;
+            	width:100px;
+            	float:left;
+            	background-color:#DB766C;
+            	left:0px;
+            	z-index:5;
+            	top:230px;
+            }
+            .hide31{
+            	padding:0.625rem 0 0.625rem 0;
+            	width:6.2rem;
+            	color:#ffffff;
+            	font-size:0.9em;
+            	text-align:center;
+            }
+            .hide32{
+            	padding:0.625rem 0 0.625rem 0;
+            	width:6.2rem;
+            	color:#ffffff;
+            	font-size:0.9em;
+            	text-align:center;
+            }
+			.fourth {
+				/*display:block;*/
+				width: 100%;
+				height: 13%;
+				background-color: #FFFFFF;
+				border-bottom: 2px lightgrey solid;
+				background-color: rgba(255, 255, 255, .7);
+			}
+
+			.fourth1 {
+				width: 2em;
+				height: 2.75em;
+				margin: 10% 0 0 35%;
+			}
+			.fourth2 {display:block;
+				text-align: center;
+				font-size:0.7em;
+				margin-top:0.625em;
+				color: grey;
+			}
+           	.hide4	{
+           		/*display:none;*/
+           		position:absolute;
+           		height:631px;
+           		width:100px;
+           		z-index:5;
+           		float:left;
+           		background-color:#79B9D4;
+           		left:0;
+           	}
+           .hide4text{
+           	position:absolute;
+           	height:5.157rem;
+           	width:100px;
+           	float:left;
+           	background-color:#79B9D4;
+           	left:0px;
+           	z-index:5;
+           	top:300px;
+           }
+           .hide41{
+           	padding:0.625rem 0 0.625rem 0;
+           	width:6.2rem;
+           	color:#ffffff;
+           	font-size:0.9em;
+           	text-align:center;
+           }
+           .hide42{
+           	padding:0.625rem 0 0.625rem 0;
+           	width:6.2rem;
+           	color:#ffffff;
+           	font-size:0.9em;
+           	text-align:center;
+           }
+           .hide43{
+           	padding:0.625rem 0 0.625rem 0;
+           	width:6.2rem;
+           	color:#ffffff;
+           	font-size:0.9em;
+           	text-align:center;
+           }
+           .hide44{
+           	padding:0.625rem 0 0.625rem 0;
+           	width:6.2rem;
+           	color:#ffffff;
+           	font-size:0.9em;
+           	text-align:center;
+           }
+			.fifth {
+				width: 100%;
+				height: 13%;
+				background-color: #FFFFFF;
+				border-bottom: 2px lightgrey solid;
+				background-color: rgba(255, 255, 255, .7);
+			}
+					
+			.fifth1 {
+				width: 2em;
+				height: 2.75em;
+				margin: 10% 0 0 35%;
+			}
+			.fifth2 {display:block;
+				text-align: center;
+				font-size:0.7em;
+				margin-top:0.625em;
+				color: grey;
+			}
+			.hide5	{
+					/*display:none;*/
+					position:absolute;
+					height:631px;
+					width:100px;
+					z-index:5;
+					float:left;
+					background-color:#008B42;
+					left:0;
+				}
+			.hide5text{
+				position:absolute;
+				height:5.157rem;
+				width:100px;
+				float:left;
+				background-color:#008B42;
+				left:0px;
+				z-index:5;
+				top:380px;
+			}
+			.hide51{
+				padding:0.625rem 0 0.625rem 0;
+				width:6.2rem;
+				color:#ffffff;
+				font-size:0.9em;
+				text-align:center;
+			}
+			.hide52{
+				padding:0.625rem 0 0.625rem 0;
+				width:6.2rem;
+				color:#ffffff;
+				font-size:0.9em;
+				text-align:center;
+			}
+			.sixth {
+				width: 100%;
+				height: 13%;
+				background-color: #FFFFFF;
+				border-bottom: 2px lightgrey solid;
+				background-color: rgba(255, 255, 255, .7);
+			}
+					
+			.sixth1 {
+				width: 2em;
+				height: 2.75em;
+				margin: 10% 0 0 35%;
+			}
+			.sixth2 {display:block;
+				text-align: center;
+				font-size:0.7em;
+				margin-top:0.625em;
+				color: grey;
+			}
+            .seventh{
+				width:100%;
+			    height:12%;}
+			.p {display:block;
+				text-align: center;
+				font-size:0.7em;
+				margin-top:0.625em;
+				color: grey;
+			}
+			.page {
+				float: none;
+				height: 100%;
+			    overflow-x:hidden;
+				position: relative;
+				display:none;
+			}
+
+			.imglist {
+				float: none;
+				width: 100%;
+				height:100%;
+				/*top:-40em;/*640*/
+				top:0px;
+				position: absolute;
+			}
+
+			.navdiv {
+				z-index: 999;
+				position: absolute;
+				width: 60%;
+				height: 30%;
+				left: 45%;
+				top: 96%;
+			}
+
+			.circle {
+				display: inline-block;
+				width: 1.2em;
+				height: 1.2em;
+				margin-right: 1.3em;
+				border-radius: 0.6em;
+				background-color: #ffffff;
+			}
+			/*第二页*/
+			.background2{
+						    position:absolute;
+							margin-left:100px;
+							z-index:1;
+							opacity:0.5;
+							filter:alpha{opacity:50};
+					}
+					.page2title{
+						color:#ffffff;
+						font-size:1.5em;
+						position:absolute;
+						margin:5% 0 0 12%;
+						width:50%;
+						height:20%;
+						z-index:1;
+					}
+					.boxes{
+						top:15%;
+						margin-left:6.25em;
+						width:100%;
+						height:35rem;
+						position:absolute;
+						z-index:2;
+					}
+					.box1{
+						position:absolute;
+						
+						width:18.5625em;
+						height:90%;
+						z-index:2;
+						overflow:hidden;
+						top:50px;
+					}
+					.box1-2{
+						width:18.5625em;
+						position:relative;
+						z-index:999;
+					}
+					.box1-1{
+						float:none;
+						position:absolute;
+						z-index:3;
+						width:18.5625em;
+						height:240px;
+						background-color:#F39E38;
+						top:250px;
+					}
+					.box1btn{
+						position:absolute;
+						z-index:4;
+						width:9.375rem;
+						height:40px;
+						color:#ffffff;
+						font-size:0.9rem;
+						background-color:#F39E38;
+						border:2px solid #ffffff;
+						border-radius:1.5rem;
+						top:13em;
+						left:4rem;
+					}
+					.box2{
+						position:absolute;
+						margin:0 0 0 23%;
+						width:18.5625em;
+						height:90%;
+						z-index:2;
+						top:50px;
+					}
+					.box2-2{
+						position:relative;
+						z-index:999;
+					}
+					.boximg1
+					{
+						width:297px;
+						height:420px;
+						transition:all 1s;
+					}
+					.boximg2
+					{
+						width:297px;
+						height:420px;
+						transition:all 1s;
+					}
+					.boximg3
+					{
+						width:297px;
+						height:420px;
+						transition:all 1s;
+					}
+					.boximg4
+					{
+						width:297px;
+						height:420px;
+						transition:all 1s;
+					}
+					.box2-1{
+						float:none;
+						position:absolute;
+						z-index:3;
+						width:18.5625em;
+						height:240px;
+						background-color:#EB6B64;
+						top:250px;
+					}
+					.box2btn{
+						position:absolute;
+						z-index:4;
+						width:9.375rem;
+						height:40px;
+						color:#ffffff;
+						font-size:0.9rem;
+						background-color:#EB6B64;
+						border:2px solid #ffffff;
+						border-radius:1.5rem;
+						top:13em;
+						left:4rem;
+					}
+					.box3{
+						position:absolute;
+						margin:0 0 0 46%;
+						width:18.5625em;
+						height:90%;
+						z-index:2;
+						top:50px;
+					}
+					.box3-2{
+						position:relative;
+						z-index:999;
+					}
+					.box3-1{
+						float:none;
+						position:absolute;
+						z-index:3;
+						width:18.5625em;
+						height:240px;
+						background-color:#71BDE4;
+						top:250px;
+					}
+					.box3btn{
+						position:absolute;
+						z-index:4;
+						width:9.375rem;
+						height:40px;
+						color:#ffffff;
+						font-size:0.9rem;
+						background-color:#71BDE4;
+						border:2px solid #ffffff;
+						border-radius:1.5rem;
+						top:13em;
+						left:4rem;
+					}
+					.box4{
+						position:absolute;
+						margin:0 0 0 70%;
+						width:18.5625em;
+						height:90%;
+						z-index:2;
+						top:50px;
+					}
+					.box4-2{
+						position:relative;
+						z-index:999;
+					}
+					.box4-1{
+						float:none;
+						position:absolute;
+						z-index:3;
+						width:18.5625em;
+						height:240px;
+						background-color:#81C043;
+						top:250px;
+					}
+					.box4btn{
+						position:absolute;
+						z-index:4;
+						width:9.375rem;
+						height:40px;
+						color:#ffffff;
+						font-size:0.9rem;
+						background-color:#81C043;
+						border:2px solid #ffffff;
+						border-radius:1.5rem;
+						top:13em;
+						left:4rem;
+					}
+					/*底端的页面*/
+					.foot{
+						position:absolute;
+						top:629px;
+						margin-left:6.25em;
+					}
+					.weibo{
+						position:absolute;
+						top:100px;
+						left:600px;
+						width:82px;
+						height:90px;
+						cursor:pointer;
+					}
+					.weibotop{
+						position:absolute;
+						width:54px;
+						height:54px;
+						left:0.5em;
+					}
+					.weibobottom{
+						position:absolute;
+						width:82px;
+						color:#E3DCFF;
+						font-size:0.8em;
+						top:5em;
+					}
+					.weixin{
+						position:absolute;
+						top:100px;
+						left:690px;
+						width:82px;
+						height:90px;
+						cursor:pointer;
+					}
+					.photo{
+						position:absolute;
+						width:150px;
+						height:150px;
+						top:100px;
+						left:790px;
+						opacity:0;
+						filter:alpha{opacity:0};
+					}
+					.weixintop{
+						position:absolute;
+						width:54px;
+						height:54px;
+						left:0.5em;
+					}
+					.weixinbottom{
+						position:absolute;
+						width:82px;
+						color:#E3DCFF;
+						font-size:0.8em;
+						top:5em;
+					}
+					.foottext{
+						position:absolute;
+						width:70em;
+						height:6.25em;
+						top:12.5em;
+						left:18rem;
+					}
+					.line1{
+						position:absolute;
+						width:50rem;
+						height:1.2rem;
+						
+						font-size:0.9em;
+						left:6em;
+					}
+					.foottext1{
+						display:inline-block;
+						position:absolute;
+						width:4rem;
+						height:1.2em;
+						border-right:1px solid #E3DCFF;
+						color:#E3DCFF;
+						cursor:pointer;
+					}
+					.foottext2{
+						display:inline-block;
+						position:absolute;
+						width:4rem;
+						height:1.2em;
+						border-right:1px solid #E3DCFF;
+						left:5em;
+						color:#E3DCFF;
+						cursor:pointer;
+					}
+					.foottext3{
+						display:inline-block;
+						position:absolute;
+						width:5rem;
+						height:1.2em;
+						border-right:1px solid #E3DCFF;
+						left:10em;
+						color:#E3DCFF;
+						cursor:pointer;
+					}
+					.foottext4{
+						display:inline-block;
+						position:absolute;
+						width:3.9rem;
+						height:1.2em;
+						border-right:1px solid #E3DCFF;
+						left:16em;
+						color:#E3DCFF;
+						cursor:pointer;
+					}
+					.foottext5{
+						display:inline-block;
+						position:absolute;
+						width:5rem;
+						height:1.2em;
+						border-right:1px solid #E3DCFF;
+						left:21em;
+						color:#E3DCFF;
+						cursor:pointer;
+						
+						
+					}
+					.foottext6{
+						display:inline-block;
+						position:absolute;
+						width:6.9rem;
+						height:1.2em;
+						border-right:1px solid #E3DCFF;
+						left:27em;
+						color:#E3DCFF;
+						cursor:pointer;
+					}
+					.foottext7{
+						display:inline-block;
+						position:absolute;
+						width:4.5rem;
+						height:1.2em;
+						left:35em;
+						color:#E3DCFF;
+						cursor:pointer;
+					}
+					.line2{
+						position:absolute;
+						width:56rem;
+						height:1.2rem;
+						
+						font-size:0.9em;
+						top:1.5em;
+					}
+					.foottext8{
+						display:inline-block;
+						position:absolute;
+						width:42rem;
+						height:1.2em;
+						color:#E3DCFF;
+					}
+					.foottext9{
+						display:inline-block;
+						position:absolute;
+						width:1.25rem;
+						height:1.2em;
+						left:42em;
+						cursor:pointer;
+					}
+					.foottext10{
+						display:inline-block;
+						position:absolute;
+						width:16.5rem;
+						height:1.2em;
+						left:43.5em;
+						color:#E3DCFF;
+						cursor:pointer;
+					}
+					.line3{
+						position:absolute;
+						width:30rem;
+						height:1.2rem;
+						
+						font-size:0.9em;
+						top:3em;
+						left:20em;
+					}
+			/*第三页*/
+			.page3bottom{
+				height:100%;
+				width:100%;
+				z-index:2;
+				position:absolute;
+			}
+			.page3-1{
+				    position:absolute;
+					left:100px;
+					z-index:2;
+			}
+			.page3-1>img:nth-child(1){
+				width:100%;
+				height:100%;
+			}
+			.page3border1{
+                    position:absolute;
+					z-index:3;
+					left:-468px;
+			}
+			.page3border1>img:nth-child(1){
+				height:39.25rem;
+			}
+			.page3-2{
+				    position:absolute;
+					left:450px;
+					z-index:4;
+					-webkit-mask-image: url(page3/mask.png);
+					-webkit-mask-size: auto 100%;
+					-webkit-mask-position:top right;
+			}
+			.page3img1{
+				width:836px;
+				height:633px;
+				transition:all 1s;
+			}
+			.page3-2>img:nth-child(1){
+				width:100%;
+				height:100%;
+			}
+			.page3border2{
+				    position:absolute;
+					z-index:5;
+					left:-1026px;
+			}
+			.page3border2>img:nth-child(1){
+				height:39.25rem;
+			}
+			.page33{
+				    position:absolute;
+					height:628px;
+					width:836px;
+					z-index:6;
+					top:0px;
+					-webkit-mask-image: url(page3/mask.png);
+					-webkit-mask-size: auto 100%;
+					-webkit-mask-position:top right;
+					left:-110px;
+			}
+			.page3img2{
+				width:836px;
+				height:633px;
+				left:0x;
+				position:absolute;
+				transition:all 1s;
+			}
+			.page3img3{
+				width:180px;
+				height:256px;
+				position:absolute;
+				transition:all 1s;
+			}
+			.page3img4{
+				width:180px;
+				height:256px;
+				position:absolute;
+				transition:all 1s;
+			}
+			.page3top{
+				position:absolute;
+				z-index:5;
+				
+			}
+			.page3topleft{
+				position:absolute;
+				top:200px;
+				left:300px;
+				z-index:5;
+				opacity:0.6;
+			}
+			.page3toplefttext{
+				position:absolute;
+				z-index:6;
+				font-size:1.4rem;
+				color:#ffffff;
+				font-weight:500;
+				top:9.375rem;
+				left:1.875rem;
+				width:9.375rem;
+			}
+			.pae3topleftbtn{
+				position:absolute;
+				z-index:6;
+				width:6.25rem;
+				height:1.6rem;
+				border-radius:0.625rem;
+				top:11.8rem;
+				left:2.5rem;
+				color:#ffffff;
+				border:2px solid #ffffff;
+				text-align:center;
+			}
+			.page3topright{
+				position:absolute;
+				top:200px;
+				left:900px;
+				z-index:5;
+				opacity:0.6;
+			}
+			.page3toprighttext{
+				position:absolute;
+				z-index:6;
+				font-size:1.4rem;
+				color:#ffffff;
+				font-weight:500;
+				top:9.375rem;
+				left:3rem;
+				width:9.375rem;
+			}
+			.pae3toprightbtn{
+				position:absolute;
+				z-index:6;
+				width:6.25rem;
+				height:1.6rem;
+				border-radius:0.625rem;
+				top:11.8rem;
+				left:2.7rem;
+				color:#ffffff;
+				border:2px solid #ffffff;
+				text-align:center;
+			}
+			.ul{
+				width:2000px;
+			}
+			.li1{
+				position:absolute;
+				display:block;
+				width:337px;
+				transition:all 1s;
+				float:left;
+			}
+			.li2{
+				position:absolute;
+				display:block;
+				width:337px;
+				transition:all 1s;
+				float:left;
+			}
+			.li3{
+				position:absolute;
+				display:block;
+				width:337px;
+				transition:all 1s;
+				float:left;
+			}
+			.li4{
+				position:absolute;
+				display:block;
+				width:337px;
+				transition:all 1s;
+				float:left;
+			}
+			.page4-background1{
+				z-index:1;
+				position:absolute;
+				width:667px;
+			}
+			.page4-background1>img:nth-child(1){
+				height:39.25rem;
+
+			}
+			.page4-background2{
+				position:absolute;
+				/*z-index:2;*/
+				left:400px;
+				top:0px;
+			}
+			.page4-background2-right>img:nth-child(1){
+				height:39.25rem;
+			}
+			.page4-background2-right{
+				z-index:3;
+				position:absolute;
+	        }
+			.page4-background2-left{
+				position:absolute;
+				z-index:2;
+				left:-180px;
+				top:126px;
+			}
+			.page4-background3{
+				position:absolute;
+				/*z-index:2;*/
+				left:700px;
+				top:0px;
+			}
+			.page4-background3-right>img:nth-child(1){
+				height:39.25rem;
+			}
+			.page4-background3-right{
+				z-index:5;
+				position:absolute;
+			}
+			.page4-background3-left{
+				position:absolute;
+				z-index:4;
+				left:-180px;
+				top:126px;
+			}
+			.page4-background4{
+				position:absolute;
+				/*z-index:2;*/
+				left:1000px;
+				top:0px;
+			}
+			.page4-background4-right>img:nth-child(1){
+				height:39.25rem;
+			}
+			.page4-background4-right{
+				z-index:7;
+				position:absolute;
+			}
+			.page4-background4-left{
+				position:absolute;
+				z-index:6;
+				left:-180px;
+				top:126px;
+			}
+			.page4-background5{
+				position:absolute;
+				/*z-index:2;*/
+				left:1000px;
+				top:0px;
+			}
+			.page4-background5-left{
+				position:absolute;
+				z-index:8;
+				left:190px;
+				top:126px;
+			}
+			.page5-top{
+				height:21.875rem;/*350px*/
+				width:100%;
+				overflow:hidden;
+				position:absolute;
+			}
+			.page5-top-background{
+				width:100%;
+				height:100%;
+				position:absolute;
+				overflow:hidden;
+			}
+			.page5img1{
+				width:85rem;
+				height:21.875rem;
+				position:absolute;
+				top:0px;
+				transition:all 1s;
+			}
+			.page5-bottom{
+				height:21.875rem;/*350px*/
+				width:100%;
+				overflow:hidden;
+				position:absolute;
+				top:21.875rem;/*350px*/
+			}
+			.page5-bottom-background{
+				width:100%;
+				height:100%;
+				position:absolute;
+				overflow:hidden;
+			}
+			
+			.page5img3{
+				width:85rem;
+				height:21.875rem;
+				position:absolute;
+				top:0px;
+				transition:all 1s;
+			}
+			.page5topleft{
+				position:absolute;
+				width:350px;
+				height:500px;
+				overflow:hidden;
+				top:-200px;
+				left:150px;
+				z-index:1;
+			}
+			.page5img2{
+				width:350px;
+				height:500px;
+				position:absolute;
+				opacity:0.7;
+				z-index:1;
+				transition:all 1s;
+			}
+			.page5-top-left-text{
+				position:absolute;
+				width:10px;
+				height:100px;
+				left:50px;
+				top:200px;
+				z-index:2;
+			}
+			.page5-top-left-text>img:nth-child(1){
+				top:100px;
+				position:absolute;
+				left:120px;
+			}
+			.page5-top-left-text>p:nth-child(2)
+			{
+				position:absolute;
+				width:150px;
+				height:30px;
+				text-align:center;
+				display:block;
+				color:#ffffff;
+				font-size:25px;
+				top:150px;
+				left:50px;
+			}
+			.page5toplefttextbtn{
+				position:absolute;
+				width:80px;
+				height:20px;
+				left:80px;
+				top:200px;
+				color:#ffffff;
+				font-size:15px;
+				border-radius:10px;
+				border:1px solid #ffffff;
+				text-align:center;
+				padding:5px 0;
+				background-color:#D58067;
+			}
+			.page5-top-right{
+				position:absolute;
+				right:100px;
+				top:150px;
+			}
+			
+			
+			.page5bottomright{
+				position:absolute;
+				width:350px;
+				height:500px;
+				overflow:hidden;
+				top:-200px;
+				right:150px;
+				z-index:1;
+			}
+			.page5img4{
+				width:350px;
+				height:500px;
+				position:absolute;
+				opacity:0.7;
+				z-index:1;
+				top:-50px;
+				transition:all 1s;
+			}
+			.page5-bottom-right-text{
+				position:absolute;
+				width:10px;
+				height:100px;
+				right:50px;
+				top:170px;
+				z-index:2;
+			}
+			.page5-bottom-right-text>img:nth-child(1){
+				top:70px;
+				position:absolute;
+				right:120px;
+			}
+			.page5-bottom-right-text>p:nth-child(2)
+			{
+				position:absolute;
+				width:150px;
+				height:30px;
+				text-align:center;
+				display:block;
+				color:#ffffff;
+				font-size:25px;
+				top:120px;
+				right:50px;
+			}
+			.page5bottomrighttextbtn{
+				position:absolute;
+				width:80px;
+				height:20px;
+				right:80px;
+				top:170px;
+				color:#ffffff;
+				font-size:15px;
+				border-radius:10px;
+				border:1px solid #ffffff;
+				text-align:center;
+				padding:5px 0;
+				background-color:#69B3B3;
+			}
+			.page5-bottom-left{
+				position:absolute;
+				left:100px;
+				top:150px;
+			}
+			.page6-top{
+				height:31.25rem;/*500px*/
+				width:100%;
+				overflow:hidden;
+				position:absolute;
+			}
+			.page6-top>img:nth-child(1){
+				width:100%;
+				position:absolute;
+				height:480px;
+			}
+			.page6-top-bottom{
+				position:absolute;
+				width:100%;
+				height:130px;
+				top:350px;
+			}
+			.page6-top-bottom-white-left{
+				position:absolute;
+				width:45%;
+				height:100%;
+				background-color:#F8F7F3;
+				left:0;
+			}
+			.page6-top-bottom-white-right{
+				position:absolute;
+				width:44.5%;
+				height:100%;
+				background-color:#F8F7F3;
+				right:0;
+			}
+			.page6-top-bottom-middle{
+				position:absolute;
+				width:10%;
+				height:100px;
+				left:607px;
+			}
+			.page6-top-bottom-middle>img:nth-child(1){
+				position:absolute;
+				width:142px;
+				height:166px;
+				/*left:115px;*/
+				top:-36px;
+			}
+			.page6-top-bottom-middle>img:nth-child(2){
+				position:absolute;
+				width:40%;
+				height:50%;
+				left:40px;
+				top:10px;
+			}
+			.page6-middle{
+				position:absolute;
+				width:100%;
+				height:100%;
+			}
+			.page6-middle-top{
+				position:absolute;
+				width:100%;
+				height:500px;
+				top:480px;
+				padding-left:130px;
+				background-color:#F8F7F3;
+			}
+			.page6-middle-title{
+				display:block;
+				padding-bottom:30px;
+			}
+			.page6-middle-text{
+				font-size:12px;
+				width:700px;
+			}
+			.page6middletextleft{
+				display:inline-block;
+				padding:10px 0;
+				text-decoration: none;
+			}
+			.page6-middle-text-right{
+				display:inline-block;
+				float:right;
+			}
+			.page6-middle-bottom{
+				position:absolute;
+				width:300px;
+				height:30px;
+				top:920px;
+				background-color:#F1F0EA;
+				left:300px;
+				overflow:hidden;
+			}
+			.page6-middle-bottom-left{
+				width:30px;
+				height:30px;
+				border-radius:15px;
+				background-color:white;
+				display:inline-block;
+				left:-15px;
+				position:absolute;
+				text-align: -moz-right;
+				color:#BEBFBF;
+				font-size:20px;
+			}
+			.page6-middle-bottom-right{
+				width:30px;
+				height:30px;
+				border-radius:15px;
+				background-color:white;
+				position:absolute;
+				right:-15px;
+				display:inline-block;
+				top:0;
+				color:#BEBFBF;
+				font-size:20px;
+			}
+			.page6-middle-bottom1{
+				width:20px;
+				height:20px;
+				border-radius:10px;
+				position:absolute;
+				left:30px;
+				background-color:#26A13A;
+				top:5px;
+				text-align: center;
+			}
+			.page6-middle-bottom2{
+				width:20px;
+				height:20px;
+				position:absolute;
+				left:70px;
+				top:5px;
+				text-align: center;
+			}
+			.page6-middle-bottom>div:nth-child(4){
+				left:100px;
+			}
+			.page6-middle-bottom>div:nth-child(5){
+				left:130px;
+			}
+			.page6-middle-bottom>div:nth-child(6){
+				left:160px;
+			}
+			.page6-middle-bottom>div:nth-child(7){
+				left:190px;
+			}
+			.page6-middle-bottom>div:nth-child(8){
+				left:220px;
+			}
+			body>div:nth-child(11)>div:nth-child(4){
+				top:980px;
+			}
+			body>div:nth-child(6){
+				overflow:hidden;
+			}
+
+		</style>
+        
+           <script type="text/javascript">/*!!!!!!!!!现在切换页面还有滚动都有了*/
+			window.onload = function() 
+			{//window
+				var navdiv=document.getElementsByClassName("navdiv")[0]; //获取导航条的每个小圆点
+				var imglist =document.getElementsByClassName("imglist")[0];
+				var circle=navdiv.children;
+				var page1=document.getElementsByClassName("page")[0];
+				page1.style.overflow="hidden";
+				var btn=document.getElementsByTagName("li");
+				var page=document.getElementsByClassName("page");
+				/*点击导航栏切换页面*/
+				page[0].style.display="block";
+				for(var i=0;i<page.length;i++){
+					btn[i].index = i;
+					btn[i].onclick = function(){
+						for (var i =0;i<page.length;i++){
+							page[i].style.display="none";
+						}/*for*/
+					page[this.index].style.display="block";	
+					}/*onclick*/
+				}/*for-->*/
+				/*点击原点切换图片*/
+				for (var i = 0;i<circle.length;i++)
+				{
+					circle[i].index = i;//为每一个链接添加一个index属性
+					circle[i].onclick=function()
+					{
+						var num=this.index;
+						var cha=imglist.offsetTop+640*num;//-1280+640点的按钮在现在的前面<0
+						var speed=0;
+						var timer=null;	
+						clearInterval(timer);
+							timer=setInterval(function(){
+								
+                                if(cha<0)
+						        {
+							       speed=10;
+								}
+								else if(cha>0)
+						        {
+							       speed=-10;
+								}
+								else
+								{
+									speed=0;
+								}
+								   imglist.style.top=imglist.offsetTop+speed+"px";
+							       if(imglist.offsetTop==-640*num)
+							       {
+							            clearInterval(timer);
+							       } 
+							},10);
+					}//切换图片的onclick
+				}//切换图片的for
+				
+				
+				//导航栏图标变化
+				/*var first=document.getElementsByClassName("first")[0];
+				var firstimg=document.getElementsByClassName("firstimg")[0];*/
+				var first=document.querySelector(".first");
+				var firstimg=document.querySelector(".firstimg");
+				first.onmouseover=function()
+				{
+					    firstimg.src="page1/t11.png";
+				
+				}
+				first.onmouseout=function()
+				{
+					    firstimg.src="page1/t1.png";
+				}
+				
+				
+				
+				/*微信照片明暗的变化*/
+				var weixin=document.querySelectorAll(".weixin");
+				var weixinimg=document.querySelectorAll(".weixinimg");
+				var weixinbottom=document.querySelectorAll(".weixinbottom");
+				var weibo=document.querySelectorAll(".weibo");
+				var weiboimg=document.querySelectorAll(".weiboimg");
+				var weibobottom=document.querySelectorAll(".weibobottom");
+				var foottext1=document.querySelectorAll(".foottext1");
+				var foottext2=document.querySelectorAll(".foottext2");
+				var foottext3=document.querySelectorAll(".foottext3");
+				var foottext4=document.querySelectorAll(".foottext4");
+				var foottext5=document.querySelectorAll(".foottext5");
+				var foottext6=document.querySelectorAll(".foottext6");
+				var foottext7=document.querySelectorAll(".foottext7");
+				var foottext10=document.querySelectorAll(".foottext10");
+			for(i=0;i<weixin.length;i++)
+			{
+				weixin[i].onmouseover=function()
+				{
+					for(i=0;i<weixin.length;i++)
+					{
+					    weixinimg[i].src="foot/xin2.png";
+						weixinbottom[i].style.color="#ffffff";
+						startMove100(100);
+					}
+				};
+				weibo[i].onmouseover=function()
+				{
+					for(i=0;i<weibo.length;i++)
+					{
+					    weiboimg[i].src="foot/weibo2.png";
+						weibobottom[i].style.color="#ffffff";
+						startMove100(0);
+					}
+				};
+				foottext1[i].onmouseover=function()
+				{
+					for(i=0;i<foottext1.length;i++)
+					{
+						foottext1[i].style.color="#ffffff";
+					}
+				};
+				foottext2[i].onmouseover=function()
+				{
+					for(i=0;i<foottext2.length;i++)
+					{
+						foottext2[i].style.color="#ffffff";
+					}
+				};
+				foottext3[i].onmouseover=function()
+				{
+					for(i=0;i<foottext3.length;i++)
+					{
+						foottext3[i].style.color="#ffffff";
+					}
+				};
+				foottext4[i].onmouseover=function()
+				{
+					for(i=0;i<foottext4.length;i++)
+					{
+						foottext4[i].style.color="#ffffff";
+					}
+				};
+				foottext5[i].onmouseover=function()
+				{
+					for(i=0;i<foottext5.length;i++)
+					{
+						foottext5[i].style.color="#ffffff";
+					}
+				};
+				foottext6[i].onmouseover=function()
+				{
+					for(i=0;i<foottext6.length;i++)
+					{
+						foottext6[i].style.color="#ffffff";
+					}
+				};
+				foottext7[i].onmouseover=function()
+				{
+					for(i=0;i<foottext7.length;i++)
+					{
+						foottext7[i].style.color="#ffffff";
+					}
+				};
+				foottext10[i].onmouseover=function()
+				{
+					for(i=0;i<foottext10.length;i++)
+					{
+						foottext10[i].style.color="#ffffff";
+					}
+				};
+				
+			}
+			for(i=0;i<weixin.length;i++)
+			{
+				weixin[i].onmouseout=function()
+				{
+					for(i=0;i<weixin.length;i++)
+					{
+					    weixinimg[i].src="foot/xin1.png";
+						weixinbottom[i].style.color="#E3DCFF";
+					}
+				};
+				weibo[i].onmouseout=function()
+				{
+					for(i=0;i<weibo.length;i++)
+					{
+					    weiboimg[i].src="foot/weibo1.png";
+						weibobottom[i].style.color="#E3DCFF";
+					}
+				};
+				foottext1[i].onmouseout=function()
+				{
+					for(i=0;i<foottext1.length;i++)
+					{
+						foottext1[i].style.color="#E3DCFF";
+					}
+				};
+				foottext2[i].onmouseout=function()
+				{
+					for(i=0;i<foottext2.length;i++)
+					{
+						foottext2[i].style.color="#E3DCFF";
+					}
+				};
+				foottext3[i].onmouseout=function()
+				{
+					for(i=0;i<foottext3.length;i++)
+					{
+						foottext3[i].style.color="#E3DCFF";
+					}
+				};
+				foottext4[i].onmouseout=function()
+				{
+					for(i=0;i<foottext4.length;i++)
+					{
+						foottext4[i].style.color="#E3DCFF";
+					}
+				};
+				foottext5[i].onmouseout=function()
+				{
+					for(i=0;i<foottext5.length;i++)
+					{
+						foottext5[i].style.color="#E3DCFF";
+					}
+				};
+				foottext6[i].onmouseout=function()
+				{
+					for(i=0;i<foottext6.length;i++)
+					{
+						foottext6[i].style.color="#E3DCFF";
+					}
+				};
+				foottext7[i].onmouseout=function()
+				{
+					for(i=0;i<foottext7.length;i++)
+					{
+						foottext7[i].style.color="#E3DCFF";
+					}
+				};
+				foottext10[i].onmouseout=function()
+				{
+					for(i=0;i<foottext10.length;i++)
+					{
+						foottext10[i].style.color="#E3DCFF";
+					}
+				};
+			}
+				
+			
+		var boxes=document.getElementsByClassName("boxes")[0];
+		boxes.onmouseover=function()
+		{
+			startMove1(100);//暗
+			
+		}
+		 boxes.onmouseout=function()
+		{
+			startMove1(50);//亮
+		}
+		//第二页第一个盒子
+		var box1=document.getElementsByClassName("box1")[0];
+		var boximg1=document.getElementsByClassName("boximg1")[0];
+		box1.onmouseover=function()
+		{
+			boximg1.style.transform="scale(1.1)";
+			onchange1();
+		}
+		box1.onmouseout=function()
+		{
+			boximg1.style.transform="scale(1)";
+			onchange2();
+		}
+	    var box1btn=document.getElementsByClassName("box1btn")[0];
+		function onchange1()
+		{
+			box1btn.style.color="#F39E38";
+			box1btn.style.backgroundColor="white";
+		}
+		function onchange2()
+		{
+			box1btn.style.color="#ffffff";
+			box1btn.style.backgroundColor="#F39E38";
+		}
+
+		//第二页第二个盒子
+		var box2=document.getElementsByClassName("box2")[0];
+		var boximg2=document.getElementsByClassName("boximg2")[0];
+		box2.onmouseover=function()
+		{
+			boximg2.style.transform="scale(1.1)";
+			onchange3();
+		}
+		box2.onmouseout=function()
+		{
+			boximg2.style.transform="scale(1)";
+			onchange4();
+		}
+	    var box2btn=document.getElementsByClassName("box2btn")[0];
+		function onchange3()
+		{
+			box2btn.style.color="#EB6B64";
+			box2btn.style.backgroundColor="white";
+		}
+		function onchange4()
+		{
+			box2btn.style.color="#ffffff";
+			box2btn.style.backgroundColor="#EB6B64";
+		}
+        
+		//第二页第三个盒子
+        var box3=document.getElementsByClassName("box3")[0];
+		var boximg3=document.getElementsByClassName("boximg3")[0];
+		box3.onmouseover=function()
+		{
+			boximg3.style.transform="scale(1.1)";
+			onchange5();
+		}
+		box3.onmouseout=function()
+		{
+			boximg3.style.transform="scale(1)";
+			onchange6();
+		}
+	    var box3btn=document.getElementsByClassName("box3btn")[0];
+		function onchange5()
+		{
+			box3btn.style.color="#71BDE4";
+			box3btn.style.backgroundColor="white";
+		}
+		function onchange6()
+		{
+			box3btn.style.color="#ffffff";
+			box3btn.style.backgroundColor="#71BDE4";
+		}
+         
+		 //第二页第四个盒子
+		var box4=document.getElementsByClassName("box4")[0];
+		var boximg4=document.getElementsByClassName("boximg4")[0];
+		box4.onmouseover=function()
+		{
+			boximg4.style.transform="scale(1.1)";
+			onchange7();
+		}
+		box4.onmouseout=function()
+		{
+			boximg4.style.transform="scale(1)";
+			onchange8();
+		}
+	    var box4btn=document.getElementsByClassName("box4btn")[0];
+		function onchange7()
+		{
+			box4btn.style.color="#81C043";
+			box4btn.style.backgroundColor="white";
+		}
+		function onchange8()
+		{
+			box4btn.style.color="#ffffff";
+			box4btn.style.backgroundColor="#81C043";
+		}
+	    
+		//第三页放大图片
+		var page3img1=document.getElementsByClassName("page3img1")[0];
+		var page3img4=document.getElementsByClassName("page3img4")[0];
+		var page3toprighttext=document.getElementsByClassName("page3toprighttext")[0];
+	    page3toprighttext.onmouseover=page3img4.onmouseover=page3img1.onmouseover=function()
+	    {
+	    	page3img1.style.transform="scale(1.4)";
+			page3img4.style.transform="scale(0.9)";
+	    }
+	    page3toprighttext.onmouseout=page3img4.onmouseout=page3img1.onmouseout=function()
+	    {
+			page3img1.style.transform="scale(1)";
+			page3img4.style.transform="scale(1)";
+	    }
+		var page3toplefttext=document.getElementsByClassName("page3toplefttext")[0];
+		var page3img3=document.getElementsByClassName("page3img3")[0];
+		var page3img2=document.getElementsByClassName("page3img2")[0];
+		page3toplefttext.onmouseover=page3img3.onmouseover=page3img2.onmouseover=function()
+		 {
+		 	page3img2.style.transform="scale(1.4)";
+		 	page3img3.style.transform="scale(0.9)";
+		 }
+		page3toplefttext.onmouseout=page3img3.onmouseout=page3img2.onmouseout=function()
+		 {
+		 	page3img2.style.transform="scale(1)";
+		 	page3img3.style.transform="scale(1)";
+		 }             //836   633
+		 //第五页放大图片
+		 var page5topleft=document.getElementsByClassName("page5topleft")[0];
+		 var page5img2=document.getElementsByClassName("page5img2")[0];
+		 var page5img1=document.getElementsByClassName("page5img1")[0];
+		 page5topleft.onmouseover=page5img1.onmouseover=page5img2.onmouseover=function()
+		  {
+		  	page5img1.style.transform="scale(1.4)";
+		  	page5img2.style.transform="scale(0.9)";
+		  }
+		 page5topleft.onmouseout=page5img1.onmouseout=page5img2.onmouseout=function()
+		  {
+		  	page5img1.style.transform="scale(1)";
+		  	page5img2.style.transform="scale(1)";
+		  }
+		  var page5bottomright=document.getElementsByClassName("page5bottomright")[0];
+		  var page5img3=document.getElementsByClassName("page5img3")[0];
+		  var page5img4=document.getElementsByClassName("page5img4")[0];
+		  page5bottomright.onmouseover=page5img3.onmouseover=page5img4.onmouseover=function()
+		   {
+		   	page5img3.style.transform="scale(1.4)";
+		   	page5img4.style.transform="scale(0.9)";
+		   }
+		  page5bottomright.onmouseout=page5img3.onmouseout=page5img4.onmouseout=function()
+		   {
+		   	page5img3.style.transform="scale(1)";
+		   	page5img4.style.transform="scale(1)";
+		   }
+		   
+		   var page5toplefttextbtn=document.getElementsByClassName("page5toplefttextbtn")[0];
+		   page5toplefttextbtn.onmouseover=function()
+		   {
+			   page5toplefttextbtn.style.backgroundColor="#ffffff";
+			   page5toplefttextbtn.style.color="#D58067";
+		   }
+		    page5toplefttextbtn.onmouseout=function()
+		   {
+		   			   page5toplefttextbtn.style.backgroundColor="#D58067";
+		   			   page5toplefttextbtn.style.color="#ffffff";
+		   }
+		   var page5bottomrighttextbtn=document.getElementsByClassName("page5bottomrighttextbtn")[0];
+		   page5bottomrighttextbtn.onmouseover=function()
+		   {
+		   			   page5bottomrighttextbtn.style.backgroundColor="#ffffff";
+		   			   page5bottomrighttextbtn.style.color="#69B3B3";
+		   }
+		    page5bottomrighttextbtn.onmouseout=function()
+		   {
+		   			   page5bottomrighttextbtn.style.backgroundColor="#69B3B3";
+		   			   page5bottomrighttextbtn.style.color="#ffffff";
+		   }
+		   var page6middletextleft0=document.getElementsByClassName("page6middletextleft")[0];
+		   page6middletextleft0.onmouseover=function()
+		   {   
+		   			page6middletextleft0.style.textDecoration="underline";
+			} 
+			page6middletextleft0.onmouseout=function()
+		   {    
+		   			   page6middletextleft0.style.textDecoration="none";
+			}
+			 var page6middletextleft1=document.getElementsByClassName("page6middletextleft")[1];
+			page6middletextleft1.onmouseover=function()
+			{   
+				page6middletextleft1.style.textDecoration="underline";
+			} 
+			page6middletextleft1.onmouseout=function()
+			{    
+			    page6middletextleft1.style.textDecoration="none";
+			}
+			 var page6middletextleft2=document.getElementsByClassName("page6middletextleft")[2];
+			page6middletextleft2.onmouseover=function()
+			{   
+				page6middletextleft2.style.textDecoration="underline";
+			} 
+			page6middletextleft2.onmouseout=function()
+			{    
+			    page6middletextleft2.style.textDecoration="none";
+			}
+			 var page6middletextleft3=document.getElementsByClassName("page6middletextleft")[3];
+			page6middletextleft3.onmouseover=function()
+			{   
+				page6middletextleft3.style.textDecoration="underline";
+			} 
+			page6middletextleft3.onmouseout=function()
+			{    
+			    page6middletextleft3.style.textDecoration="none";
+			}
+			 var page6middletextleft4=document.getElementsByClassName("page6middletextleft")[4];
+			page6middletextleft4.onmouseover=function()
+			{   
+				page6middletextleft4.style.textDecoration="underline";
+			} 
+			page6middletextleft4.onmouseout=function()
+			{    
+			    page6middletextleft4.style.textDecoration="none";
+			}
+			 var page6middletextleft5=document.getElementsByClassName("page6middletextleft")[5];
+			page6middletextleft5.onmouseover=function()
+			{   
+				page6middletextleft5.style.textDecoration="underline";
+			} 
+			page6middletextleft5.onmouseout=function()
+			{    
+			    page6middletextleft5.style.textDecoration="none";
+			}
+			 var page6middletextleft6=document.getElementsByClassName("page6middletextleft")[6];
+			page6middletextleft6.onmouseover=function()
+			{   
+				page6middletextleft6.style.textDecoration="underline";
+			} 
+			page6middletextleft6.onmouseout=function()
+			{    
+			    page6middletextleft6.style.textDecoration="none";
+			}
+			 var page6middletextleft7=document.getElementsByClassName("page6middletextleft")[7];
+			page6middletextleft7.onmouseover=function()
+			{   
+				page6middletextleft7.style.textDecoration="underline";
+			} 
+			page6middletextleft7.onmouseout=function()
+			{    
+			    page6middletextleft7.style.textDecoration="none";
+			}
+			 var page6middletextleft8=document.getElementsByClassName("page6middletextleft")[8];
+			page6middletextleft8.onmouseover=function()
+			{   
+				page6middletextleft8.style.textDecoration="underline";
+			} 
+			page6middletextleft8.onmouseout=function()
+			{    
+			    page6middletextleft8.style.textDecoration="none";
+			}
+			 var page6middletextleft9=document.getElementsByClassName("page6middletextleft")[9];
+			page6middletextleft9.onmouseover=function()
+			{   
+				page6middletextleft9.style.textDecoration="underline";
+			} 
+			page6middletextleft9.onmouseout=function()
+			{    
+			    page6middletextleft9.style.textDecoration="none";
+			}
+			
+			//第四页
+			/*var ul=document.getElementsByClassName("ul")[0];
+			var li= ul.children;
+			for (var i = 0; i < li.length; i++) {
+			    li[i].style.backgroundImage =  i ;
+			    li[i].onmouseover = function () {
+			        for (var i = 0; i < li.length; i++) {
+			            animate(li[i], { "width": 250 });
+			        }
+			        animate(this, { "width": 400 });
+			    };
+			    li[i].onmouseout = function () {
+			        for (var i = 0; i < li.length; i++) {
+			            animate(li[i], { "width": 300 });
+			        }
+			    };
+			}*/
+			
+			
+			var second=document.getElementsByClassName("second")[0];
+			var hide2text=document.getElementsByClassName("hide2text")[0];
+			var hide21=document.getElementsByClassName("hide21")[0];
+			var hide22=document.getElementsByClassName("hide22")[0];
+			var hide23=document.getElementsByClassName("hide23")[0];//242
+			var hide24=document.getElementsByClassName("hide24")[0];
+			hide2text.onmouseover=second.onmouseover=function()
+			{
+				startMove11(10,100);
+				onchange1();
+			}
+			hide2text.onmouseout=second.onmouseout=function()
+			{
+					startMove11(-10,0);
+					onchange2();
+			}
+			function onchange1()
+			{
+				var logo=document.getElementsByClassName("logo")[0];
+				    logo.style.backgroundColor="rgba(243,158,56)";
+				var second2=document.getElementsByClassName("second2")[0];
+				    second2.style.color="rgba(243,158,56)";
+			}
+			function onchange2()
+			{
+				var logo=document.getElementsByClassName("logo")[0];
+					logo.style.backgroundColor="#008B42";  
+				var second2=document.getElementsByClassName("second2")[0];
+				    second2.style.color="grey";	
+			}
+			hide21.onmouseover=function()
+			{
+				onchange211();
+			}
+			hide21.onmouseout=function()
+			{
+					onchange212();
+			}
+			function onchange211()
+			{
+				var hide21=document.getElementsByClassName("hide21")[0];
+				hide21.style.backgroundColor="rgba(243,158,120)";/*"E9B477";*/
+					
+			}
+			function onchange212()
+			{
+				var hide21=document.getElementsByClassName("hide21")[0];
+					hide21.style.backgroundColor="rgba(243,158,56)";
+			}
+			hide22.onmouseover=function()
+			{
+				onchange221();
+			}
+			hide22.onmouseout=function()
+			{
+					onchange222();
+			}
+			function onchange221()
+			{
+				var hide22=document.getElementsByClassName("hide22")[0];
+				hide22.style.backgroundColor="rgba(243,158,120)";/*"E9B477";*/
+					
+			}
+			function onchange222()
+			{
+				var hide22=document.getElementsByClassName("hide22")[0];
+					hide22.style.backgroundColor="rgba(243,158,56)";
+			}
+			hide23.onmouseover=function()
+			{
+				onchange231();
+			}
+			hide23.onmouseout=function()
+			{
+					onchange232();
+			}
+			function onchange231()
+			{
+				var hide23=document.getElementsByClassName("hide23")[0];
+				hide23.style.backgroundColor="rgba(243,158,120)";/*"E9B477";*/
+					
+			}
+			function onchange232()
+			{
+				var hide23=document.getElementsByClassName("hide23")[0];
+					hide23.style.backgroundColor="rgba(243,158,56)";
+			}
+			hide24.onmouseover=function()
+			{
+				onchange241();
+			}
+			hide24.onmouseout=function()
+			{
+					onchange242();
+			}
+			function onchange241()
+			{
+				var hide24=document.getElementsByClassName("hide24")[0];
+				hide24.style.backgroundColor="rgba(243,158,120)";/*"E9B477";*/
+					
+			}
+			function onchange242()
+			{
+				var hide24=document.getElementsByClassName("hide24")[0];
+					hide24.style.backgroundColor="rgba(243,158,56)";
+			}
+			
+			
+			
+			
+			var third=document.getElementsByClassName("third")[0];
+			var hide3text=document.getElementsByClassName("hide3text")[0];
+			var hide31=document.getElementsByClassName("hide31")[0];
+			var hide32=document.getElementsByClassName("hide32")[0];
+			hide3text.onmouseover=third.onmouseover=function()
+			{
+				startMove12(10,100);
+				onchange3();
+			}
+			hide3text.onmouseout=third.onmouseout=function()
+			{
+					startMove12(-10,0);
+					onchange4();
+			}
+			function onchange3()
+			{
+				var logo=document.getElementsByClassName("logo")[0];
+				    logo.style.backgroundColor="#DB766C";
+				var third2=document.getElementsByClassName("third2")[0];
+					    third2.style.color="#DB766C";
+			}
+			function onchange4()
+			{
+				var logo=document.getElementsByClassName("logo")[0];
+					logo.style.backgroundColor="#008B42"; 
+				var third2=document.getElementsByClassName("third2")[0];
+					    third2.style.color="grey";
+					
+			}
+			hide31.onmouseover=function()
+			{
+				onchange311();
+			}
+			hide31.onmouseout=function()
+			{
+					onchange312();
+			}
+			function onchange311()          
+			{
+				var hide31=document.getElementsByClassName("hide31")[0];
+				    hide31.style.backgroundColor="#E49595";/*"E9B477";*/
+			}
+			function onchange312()
+			{
+				var hide31=document.getElementsByClassName("hide31")[0];
+					hide31.style.backgroundColor="#DB766C";
+			}
+			hide32.onmouseover=function()
+			{
+				onchange321();
+			}
+			hide32.onmouseout=function()
+			{
+					onchange322();
+			}
+			function onchange321()
+			{
+				var hide32=document.getElementsByClassName("hide32")[0];
+				    hide32.style.backgroundColor="#E49595";/*"E9B477";*/
+			}
+			function onchange322()
+			{
+				var hide32=document.getElementsByClassName("hide32")[0];
+					hide32.style.backgroundColor="#DB766C";
+			}
+			
+			
+			var fourth=document.getElementsByClassName("fourth")[0];
+			var hide4text=document.getElementsByClassName("hide4text")[0];
+			var hide41=document.getElementsByClassName("hide41")[0];
+			var hide42=document.getElementsByClassName("hide42")[0];
+			var hide43=document.getElementsByClassName("hide43")[0];
+			var hide44=document.getElementsByClassName("hide44")[0];
+			hide4text.onmouseover=fourth.onmouseover=function()
+			{
+				startMove13(10,100);
+				onchange5();
+			}
+			hide4text.onmouseout=fourth.onmouseout=function()
+			{
+					startMove13(-10,0);
+					onchange6();
+			}
+			function onchange5()
+			{
+				var logo=document.getElementsByClassName("logo")[0];
+				    logo.style.backgroundColor="#79B9D4";
+				var fourth2=document.getElementsByClassName("fourth2")[0];
+				    fourth2.style.color="#79B9D4";
+				
+			}
+			function onchange6()
+			{
+				var logo=document.getElementsByClassName("logo")[0];
+					logo.style.backgroundColor="#008B42";  
+				var fourth2=document.getElementsByClassName("fourth2")[0];
+				    fourth2.style.color="grey";
+					
+			}
+			hide41.onmouseover=function()
+			{
+				onchange411();
+			}
+			hide41.onmouseout=function()
+			{
+					onchange412();
+			}
+			function onchange411()
+			{
+				var hide41=document.getElementsByClassName("hide41")[0];
+				    hide41.style.backgroundColor="#91C6E3";/*"E9B477";*/
+			}
+			function onchange412()
+			{
+				var hide41=document.getElementsByClassName("hide41")[0];
+					hide41.style.backgroundColor="#79B9D4";
+			}
+			hide42.onmouseover=function()        
+			{
+				onchange421();
+			}
+			hide42.onmouseout=function()
+			{
+					onchange422();
+			}
+			function onchange421()
+			{
+				var hide42=document.getElementsByClassName("hide42")[0];
+				    hide42.style.backgroundColor="#91C6E3";/*"E9B477";*/
+			}
+			function onchange422()
+			{
+				var hide42=document.getElementsByClassName("hide42")[0];
+					hide42.style.backgroundColor="#79B9D4";
+			}
+			hide43.onmouseover=function()
+			{
+				onchange431();
+			}
+			hide43.onmouseout=function()
+			{
+					onchange432();
+			}
+			function onchange431()
+			{
+				var hide43=document.getElementsByClassName("hide43")[0];
+				    hide43.style.backgroundColor="#91C6E3";/*"E9B477";*/
+			}
+			function onchange432()
+			{
+				var hide43=document.getElementsByClassName("hide43")[0];
+					hide43.style.backgroundColor="#79B9D4";
+			}
+			hide44.onmouseover=function()
+			{
+				onchange441();
+			}
+			hide44.onmouseout=function()
+			{
+					onchange442();
+			}
+			function onchange441()
+			{
+				var hide44=document.getElementsByClassName("hide44")[0];
+				    hide44.style.backgroundColor="#91C6E3";/*"E9B477";*/
+			}
+			function onchange442()
+			{
+				var hide44=document.getElementsByClassName("hide44")[0];
+					hide44.style.backgroundColor="#79B9D4";
+			}
+			
+			
+			var fifth=document.getElementsByClassName("fifth")[0];
+			var hide5text=document.getElementsByClassName("hide5text")[0];
+			var hide51=document.getElementsByClassName("hide51")[0];
+			var hide52=document.getElementsByClassName("hide52")[0];
+			hide5text.onmouseover=fifth.onmouseover=function()
+			{
+				startMove14(10,100);
+				onchange7();
+			}
+			hide5text.onmouseout=fifth.onmouseout=function()
+			{
+					startMove14(-10,0);
+					onchange8();
+			}
+			hide51.onmouseover=function()
+			{
+				onchange511();
+			}
+			hide51.onmouseout=function()
+			{
+					onchange512();
+			}
+			function onchange7()
+			{
+				var fifth2=document.getElementsByClassName("fifth2")[0];
+				    fifth2.style.color="#008B42";
+			}
+			function onchange8()
+			{
+				var fifth2=document.getElementsByClassName("fifth2")[0];
+				    fifth2.style.color="grey";
+			}
+			function onchange511()
+			{
+				var hide51=document.getElementsByClassName("hide51")[0];
+				    hide51.style.backgroundColor="#5cb172";/*"E9B477";*/
+			}
+			function onchange512()
+			{
+				var hide51=document.getElementsByClassName("hide51")[0];
+					hide51.style.backgroundColor="#008B42";
+			}
+			hide52.onmouseover=function()
+			{
+				onchange521();
+			}
+			hide52.onmouseout=function()
+			{
+					onchange522();
+			}
+			function onchange521()
+			{
+				var hide52=document.getElementsByClassName("hide52")[0];
+				    hide52.style.backgroundColor="#5DB172";/*"E9B477";*/
+			}
+			function onchange522()
+			{
+				var hide52=document.getElementsByClassName("hide52")[0];
+					hide52.style.backgroundColor="#008B42";
+			}
+	        
+			
+			var sixth=document.getElementsByClassName("sixth")[0];
+			sixth.onmouseover=function()
+			{
+				onchange9();
+			}
+			sixth.onmouseout=function()
+			{
+					onchange10();
+			}
+			function onchange9()
+			{
+				var sixth2=document.getElementsByClassName("sixth2")[0];
+				    sixth2.style.color="rgba(243,158,56)";
+			}
+			function onchange10()
+			{
+				var sixth2=document.getElementsByClassName("sixth2")[0];
+				    sixth2.style.color="grey";
+			}
+			
+			var first=document.getElementsByClassName("first")[0];
+			first.onmouseover=function()
+			{
+				onchange11();
+			}
+			first.onmouseout=function()
+			{
+					onchange12();
+			}
+			function onchange11()
+			{
+				var first2=document.getElementsByClassName("first2")[0];
+				    first2.style.color="#008B42";
+			}
+			function onchange12()
+			{
+				var first2=document.getElementsByClassName("first2")[0];
+				    first2.style.color="grey";
+			}
+	
+	/*var weixin=document.getElementsByClassName("weixin")[0];
+	wei.onmouseover=function()
+	{
+		startMove1(100);//暗
+		
+	}
+	 boxes.onmouseout=function()
+	{
+		startMove1(50);//亮
+	}*/
+	
+	}//window		
+	     
+		 var timer=null;
+		 function startMove11(speed,target)
+		 {
+		 	var hide2=document.getElementsByClassName("hide2")[0];
+		 	
+		 	clearInterval(timer);
+		 	timer=setInterval(function(){
+		 		if(hide2.offsetLeft==target)
+		 		{
+		 			clearInterval(timer);
+		 		}
+		 		else
+		 		{
+		 		    hide2.style.left=hide2.offsetLeft+speed+"px";
+		 		}
+		 	},10);
+		 }
+		 function startMove12(speed,target)
+		 {
+		 	var hide3=document.getElementsByClassName("hide3")[0];
+		 	
+		 	clearInterval(timer);
+		 	timer=setInterval(function(){
+		 		if(hide3.offsetLeft==target)
+		 		{
+		 			clearInterval(timer);
+		 		}
+		 		else
+		 		{
+		 		    hide3.style.left=hide3.offsetLeft+speed+"px";
+		 		}
+		 	},10);
+		 }
+		 function startMove13(speed,target)
+		 {
+		 	var hide4=document.getElementsByClassName("hide4")[0];
+		 	clearInterval(timer);
+		 	timer=setInterval(function(){
+		 		if(hide4.offsetLeft==target)
+		 		{
+		 			clearInterval(timer);
+		 		}
+		 		else
+		 		{
+		 		    hide4.style.left=hide4.offsetLeft+speed+"px";
+		 		}
+		 	},10);
+		 }
+		 function startMove14(speed,target)
+		 {
+		 	var hide5=document.getElementsByClassName("hide5")[0];
+		 	clearInterval(timer);
+		 	timer=setInterval(function(){
+		 		if(hide5.offsetLeft==target)
+		 		{
+		 			clearInterval(timer);
+		 		}
+		 		else
+		 		{
+		 		    hide5.style.left=hide5.offsetLeft+speed+"px";
+		 		}
+		 	},10);
+		 }
+		 
+		 
+		 /* function animate(tag, obj, fn) {
+		     clearInterval(tag.timer);
+		     tag.timer = setInterval(function () {
+		         // 假设当前这一次定时器代码执行可以清除（每个样式都到达了指定位置）
+		         var flag = true;
+		         // 先遍历obj
+		         for (var k in obj) {
+		                 var target = obj[k];
+		                 var leader = parseInt(getStyle(tag, k)) || 0;
+		                 var step = (target - leader) / 10;
+		                 step = step > 0 ? Math.ceil(step) : Math.floor(step);
+		                 leader = leader + step;
+		                 tag.style[k] = leader + "px";
+		             };
+		             if (leader != target) {
+		                 flag = false;
+		             }
+		         };
+		         if (flag) {
+		             clearInterval(tag.timer);
+		             fn && fn();
+		         }
+		  
+		     }, 20);
+		  
+		 }
+		  
+		 function getStyle(tag, attr) {
+		     if (tag.currentStyle) {
+		         return tag.currentStyle[attr];
+		     } else {
+		         return getComputedStyle(tag, null)[attr];
+		     }
+		 }*/
+	    
+		
+		
+		var alpha=50;
+		var timer=null;
+		
+		//改变第二个页面的背景图片透明度
+		function startMove1(target)
+		{
+			var background2=document.getElementsByClassName("background2")[0];
+			clearInterval(timer);
+		timer=setInterval(function(){
+				var speed=0;
+				
+				if(alpha<target)
+				{
+					speed=10;
+				}
+				else
+				{
+					speed=-10;
+				}
+				if(alpha==target)
+				{
+					clearInterval(timer);
+				}
+				else
+				{
+					alpha+=speed;
+					background2.style.filter='alpha(opacity:'+alpha+')';
+					background2.style.opacity=alpha/100;
+				}
+			},30)
+		}
+		function startMove100(target)
+		{
+			var background2=document.getElementsByClassName("background2")[0];
+			clearInterval(timer);
+		timer=setInterval(function(){
+				var speed=0;
+				
+				if(alpha<target)
+				{
+					speed=10;
+				}
+				else
+				{
+					speed=-10;
+				}
+				if(alpha==target)
+				{
+					clearInterval(timer);
+				}
+				else
+				{
+					alpha+=speed;
+					background2.style.filter='alpha(opacity:'+alpha+')';
+					background2.style.opacity=alpha/100;
+				}
+			},30)
+		}
+	    //改变第二页的图片的宽
+		function startMove(obj,json,fn)
+		{
+			var attr=' ';
+		  for(attr in json)
+		  {
+			  obj.style[attr]=json[attr];
+		  }
+			
+			clearInterval(obj.timer);
+			obj.timer=setInterval(function()
+			{
+				
+			    for(var attr in json)
+				{	
+				    var speed=0;
+				    var now=parseInt(getComputedStyle(obj,attr));
+					    speed=(json[attr]-now)/8;
+				    if(now==json[attr])
+				    {
+					    clearInterval(obj.timer);
+						if(fn)
+						{
+							fn();
+						}
+				    }
+				    else
+				    {
+					    obj.style[attr]=now+speed+'px';
+				    }
+				}
+			},30)
+		}
+
+</script>       
+			
+	</head>
+	<body>
+
+	         	<div class="allbanner">
+	         		<div class="outer">	
+	         		    <!--<div class="banner">-->
+	         				<div class="logo">
+	         					<div class="logo1">
+	         							<img src="page1/蒙牛.png" alt="logo">
+	         					</div>
+	         					<!--logo1-->
+	         				</div>
+	         				<!--logo-->
+	         				
+	         			<ul>
+	         				<li class="first">
+	         					<div class="first1">
+	         							<img src="page1/t1.png" class="firstimg">
+	         					</div>
+	         					<!--first1-->
+	         					<p class="first2">首页</p>
+	         				</li>
+	         				<!--first-->
+	         				<li class="second">
+	         					<div class="second1">
+	         							<img src="page1/t2.png" class="secondimg">
+	         					</div>
+	         					<!--second1-->
+	         					<p class="second2">关于蒙牛</p>
+	         				</li>
+	         				<!--second-->
+	         				<li class="third">
+	         					<div class="third1">
+	         							<img src="page1/t3.png"class="thirdimg">
+	         					</div>
+	         					<!--third1-->
+	         					<p class="third2">品牌与产品</p>
+	         				</li>
+	         				<!--third-->
+	         				<li class="fourth">
+	         					<div class="fourth1">
+	         							<img src="page1/t4.png" class="fourthimg">
+	         					</div>
+	         					<!--fourth1-->
+	         					<p class="fourth2">可持续发展</p>
+	         				</li>
+	         				<!--fourth-->
+	         				<li class="fifth">
+	         					<div class="fifth1">
+	         							<img src="page1/t5.png" class="fifthimg">
+	         					</div>
+	         					<!--fifth1-->
+	         					<p class="fifth2">新闻与活动</p>
+	         				</li>
+	         				<!--fifth-->
+	         				<li class="sixth">
+	         					<div class="sixth1">
+	         							<img src="page1/t6.png" class="sixthimg">
+	         					</div>
+	         					
+	         					<p class="sixth2">招标公告与公示</p>
+	         				</li><!--sixth1-->
+	         			</ul>	
+	         				
+	         				
+	         				
+	         				
+	         				<div class="seventh"></div>
+	         				<!--sixth-->
+	         			<!--</div><!--banner-->
+	         	    </div><!--outer-->
+	        </div><!--allbanner--> 	
+				<div class="hide2">
+					<div class="hide2text">
+					<div class="hide21">集团介绍</div>
+					<div class="hide22">企业文化</div>
+					<div class="hide23">企业荣誉</div>
+					<div class="hide24">联系我们</div>
+					</div><!--hide2text-->
+				</div><!--hide2-->
+	         	<div class="hide3">
+					<div class="hide3text">
+	         		<div class="hide31">所有产品</div>
+	         		<div class="hide32">购买产品</div>
+					</div><!--hide3text-->
+	         	</div><!--hide3-->
+	         	<div class="hide4">
+					<div class="hide4text">
+	         		<div class="hide41">有你最美</div>
+	         		<div class="hide42">成长共赢</div>
+	         		<div class="hide43">绿色发展</div>
+	         		<div class="hide44">报告下载</div>
+					</div><!--hide4text-->
+	         	</div><!--hide4-->
+	         	<div class="hide5">
+					<div class="hide5text">
+	         		<div class="hide51">热点新闻</div>
+	         		<div class="hide52">工厂参观</div>
+					</div><!--hide5text-->
+	         	</div><!--hide5-->
+<div class="page" >
+					<div class="navdiv">
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>
+					</div>
+					<div class="imglist">
+							<img src="page1/1.jpg" alt="1" style="width:100%;height:100%;">
+							<img src="page1/2.jpg" alt="2" style="width:100%;height:100%;">
+							<img src="page1/3.jpg" alt="3" style="width:100%;height:100%;">
+							<img src="page1/4.png" alt="4" style="width:100%;height:100%;">
+		                    <img src="page1/5.jpg" alt="5" style="width:100%;height:100%;">
+							<img src="page1/6.png" alt="6" style="width:100%;height:100%;">
+					</div>
+		</div><!--page-->	         
+
+<div class="page" >
+			<div class="background2">
+				    <img src="page2/jd.jpg" alt="back" style="width:100%;height:100%;">
+			</div><!--background2-->
+			<div class="page2title">
+				在蒙牛我们不止做好牛奶，更在我们的产品中注入关爱，让它们都成为传递关爱的桥梁
+			</div>
+			<div class="boxes">
+			    <div class="box1">
+				    <div class="box1-1">
+						<button class="box1btn">
+							集团介绍
+						</button><!--box1btn-->
+					</div><!--box1-1-->
+					<div class="box1-2">
+					        <img src="page2/1.png" class="boximg1">
+				    </div><!--box1-2-->
+			    </div><!--box1-->
+				<div class="box2">
+				    <div class="box2-1">
+						<button class="box2btn">
+							企业文化
+						</button><!--box1btn-->
+					</div><!--box2-1-->
+					<div class="box2-2">
+					        <img src="page2/2.png" class="boximg2">
+				    </div><!--box2-2-->
+				</div><!--box2-->
+				
+				<div class="box3">
+				    <div class="box3-1">
+						<button class="box3btn">
+							企业荣誉
+						</button><!--box1btn-->
+					</div><!--box3-1-->
+					<div class="box3-2">
+					        <img src="page2/3.png" class="boximg3">
+				    </div><!--box3-2-->
+				</div><!--box3-->
+				
+				<div class="box4">
+				    <div class="box4-1">
+						<button class="box4btn">
+							联系我们
+						</button><!--box1btn-->
+					</div><!--box4-1-->
+					<div class="box4-2">
+					        <img src="page2/4.png" class="boximg4">
+				    </div><!--box4-2-->
+				</div><!--box4-->
+			</div><!--boxes-->
+			<div class="foot">
+				<div class="footback">
+					    <img src="foot/s5bfe0b44eefb4.jpg">
+				</div><!--footback-->
+				<div class="weibo">
+					<div class="weibotop">
+					        <img src="foot/weibo1.png" class="weiboimg">
+					</div><!--weibotop-->
+					<div class="weibobottom">
+						蒙牛官方微博
+					</div><!--weibobottom-->
+				</div><!--weibo-->
+				<div class="weixin">
+					<div class="weixintop">
+					        <img src="foot/xin1.png" class="weixinimg">
+					</div><!--weixintop-->
+					<div class="weixinbottom">
+						蒙牛官方微信
+					</div><!--weixinbottom-->
+				</div><!--weixin-->
+				<div class="photo">
+					<img src="foot/二维码.png">
+				</div><!--photo-->
+				<div class="foottext">
+					<div class="line1">
+					    <div class="foottext1">关于蒙牛</div><!--foottext1-->
+					    <div class="foottext2">媒体中心</div><!--foottext2-->
+					    <div class="foottext3">投资者中心</div><!--foottext3-->
+					    <div class="foottext4">加入我们</div><!--foottext4-->
+					    <div class="foottext5">蒙牛微客服</div><!--foottext5-->
+					    <div class="foottext6">蒙牛天猫旗舰店</div><!--foottext6-->
+					    <div class="foottext7">牛蒙蒙APP</div><!--foottext7-->
+					</div><!--line1-->
+					<div class="line2">
+					    <div class="foottext8">CopyRight 2006-2019, All Rights Reserved
+						             内蒙古蒙牛乳业 版权所有 蒙ICP备05005622号
+						</div><!--foottext8-->
+					    <div class="foottext9">
+								<img src="foot/foot.png">
+						</div><!--foottext9-->
+					    <div class="foottext10">
+							蒙公网安备&nbsp;15012302000103号
+						</div><!--foottext10-->
+					</div><!--line2-->
+					<div class="line3">
+					    <div class="foottext8">
+							技术支持：&nbsp;北京分形科技
+						</div><!--foottext1-->
+					</div><!--line3-->
+				</div><!--foottext-->
+			</div><!--foot-->
+		</div><!--page2-->
+<div class="page" >
+	<div class="page3bottom">
+	    <div class="page3-1"><!--最右最底层-->
+		    <img src="page3/3-1.jpg" >
+	    </div><!--page3-1-->
+	    <div class="page3-right">
+		<div class="page3border1"><!--边框-->
+		    <img src="page3/5.png">
+	    </div><!--page3border1-->
+	    <div class="page3-2"><!--中间-->
+		    <img src="page3/3-2.jpg" class="page3img1">
+	    </div><!--page3-2-->
+		
+		</div><!--page3-right-->
+	    <div class="page3-left">
+		<div class="page3border2"><!--边框-->
+		    <img src="page3/5.png">
+	    </div><!--page3border2-->
+	    <div class="page33"><!--最左最上层-->
+		    <img src="page3/3-3.jpg" class="page3img2">
+	    </div><!--page33-->
+		</div><!--page3-left-->
+	</div><!--page3bottom-->
+	<div class="page3top">
+		
+		<div class="page3topleft">
+			<img src="page3/left.png" class="page3img3">
+			<div class="page3toplefttext">
+				品牌与产品
+			</div><!--page3toplefttext-->
+			<div class="pae3topleftbtn">
+				了解详情
+			</div><!--pae3topleftbtn-->
+		</div><!--page3topleft-->
+		
+		<div class="page3topright">
+			<img src="page3/right.png" class="page3img4">
+			<div class="page3toprighttext">
+				购买产品
+			</div><!--page3toplefttext-->
+			<div class="pae3toprightbtn">
+				去购买
+			</div><!--pae3topleftbtn-->
+		</div><!--page3topright-->
+	
+	</div><!--page3top-->
+	<div class="foot">
+		<div class="footback">
+			    <img src="foot/s5bfe0b44eefb4.jpg">
+		</div><!--footback-->
+		<div class="weibo">
+			<div class="weibotop">
+			        <img src="foot/weibo1.png" class="weiboimg">
+			</div><!--weibotop-->
+			<div class="weibobottom">
+				蒙牛官方微博
+			</div><!--weibobottom-->
+		</div><!--weibo-->
+		<div class="weixin">
+			<div class="weixintop">
+			        <img src="foot/xin1.png" class="weixinimg">
+			</div><!--weixintop-->
+			<div class="weixinbottom">
+				蒙牛官方微信
+			</div><!--weixinbottom-->
+		</div><!--weixin-->
+		<div class="foottext">
+			<div class="line1">
+			    <div class="foottext1">关于蒙牛</div><!--foottext1-->
+			    <div class="foottext2">媒体中心</div><!--foottext2-->
+			    <div class="foottext3">投资者中心</div><!--foottext3-->
+			    <div class="foottext4">加入我们</div><!--foottext4-->
+			    <div class="foottext5">蒙牛微客服</div><!--foottext5-->
+			    <div class="foottext6">蒙牛天猫旗舰店</div><!--foottext6-->
+			    <div class="foottext7">牛蒙蒙APP</div><!--foottext7-->
+			</div><!--line1-->
+			<div class="line2">
+			    <div class="foottext8">CopyRight 2006-2019, All Rights Reserved
+				             内蒙古蒙牛乳业 版权所有 蒙ICP备05005622号
+				</div><!--foottext8-->
+			    <div class="foottext9">
+						<img src="foot/foot.png">
+				</div><!--foottext9-->
+			    <div class="foottext10">
+					蒙公网安备&nbsp;15012302000103号
+				</div><!--foottext10-->
+			</div><!--line2-->
+			<div class="line3">
+			    <div class="foottext8">
+					技术支持：&nbsp;北京分形科技
+				</div><!--foottext1-->
+			</div><!--line3-->
+		</div><!--foottext-->
+	</div><!--foot-->
+</div><!--page-->
+<div class="page">
+	<div class="page4top">
+	  <ul class="ul">  
+		<li >
+		<div class="page4-background1">
+		    <img src="page4/s5c20af78ed4bb.jpg" >
+	    </div><!--page4-background1-->
+		</li>
+		<li >
+	    <div class="page4-background2">
+	        <div class="page4-background2-right">
+		        <img src="page4/s5bea48d11ebaa.jpg" ">
+	        </div><!--page4-background2-right-->
+	        <div class="page4-background2-left">
+		        <img src="page4/s5c20af7e148eb.png">
+	        </div><!--page4-background2-left-->
+        </div><!--page4-background2-->
+		</li>
+		<li >
+	    <div class="page4-background3">
+	        <div class="page4-background3-right">
+		         <img src="page4/s5bff93fdde7de.jpg">
+	        </div><!--page4-background3-right-->
+	        <div class="page4-background3-left">
+		          <img src="page4/s5c04d7ea25493.png">
+	        </div><!--page4-background3-left-->
+	    </div><!--page4-background3-->
+		</li>
+		<li >
+	    <div class="page4-background4">
+	        <div class="page4-background4-right">
+		         <img src="page4/s5bea487ce4c5b.jpg" >
+	        </div><!--page4-background4-right-->
+	        <div class="page4-background4-left">
+		         <img src="page4/s5bff9405ba23d.png">
+	        </div><!--page4-background4-left-->
+	    </div><!--page4-background4-->
+		</li>
+	</ul>
+	    <div class="page4-background5">
+		    <div class="page4-background5-left">
+			    <img src="page4/s5bea4bb8a32eb.png">
+		    </div><!--page4-background5-left-->
+	    </div><!--page4-background5-->
+
+	</div><!--page4top-->
+    <div class="foot">
+			<div class="footback">
+				    <img src="foot/s5bfe0b44eefb4.jpg">
+			</div><!--footback-->
+			<div class="weibo">
+				<div class="weibotop">
+				        <img src="foot/weibo1.png"class="weiboimg">
+				</div><!--weibotop-->
+				<div class="weibobottom">
+					蒙牛官方微博
+				</div><!--weibobottom-->
+			</div><!--weibo-->
+			<div class="weixin">
+				<div class="weixintop">
+				        <img src="foot/xin1.png" class="weixinimg">
+				</div><!--weixintop-->
+				<div class="weixinbottom">
+					蒙牛官方微信
+				</div><!--weixinbottom-->
+			</div><!--weixin-->
+			<div class="foottext">
+				<div class="line1">
+				    <div class="foottext1">关于蒙牛</div><!--foottext1-->
+				    <div class="foottext2">媒体中心</div><!--foottext2-->
+				    <div class="foottext3">投资者中心</div><!--foottext3-->
+				    <div class="foottext4">加入我们</div><!--foottext4-->
+				    <div class="foottext5">蒙牛微客服</div><!--foottext5-->
+				    <div class="foottext6">蒙牛天猫旗舰店</div><!--foottext6-->
+				    <div class="foottext7">牛蒙蒙APP</div><!--foottext7-->
+				</div><!--line1-->
+				<div class="line2">
+				    <div class="foottext8">CopyRight 2006-2019, All Rights Reserved
+					             内蒙古蒙牛乳业 版权所有 蒙ICP备05005622号
+					</div><!--foottext8-->
+				    <div class="foottext9">
+							<img src="foot/foot.png">
+					</div><!--foottext9-->
+				    <div class="foottext10">
+						蒙公网安备&nbsp;15012302000103号
+					</div><!--foottext10-->
+				</div><!--line2-->
+				<div class="line3">
+				    <div class="foottext8">
+						技术支持：&nbsp;北京分形科技
+					</div><!--foottext1-->
+				</div><!--line3-->
+			</div><!--foottext-->
+		</div><!--foot-->
+</div>
+</div>
+<div class="page">
+	<div class="page5-top">
+		<div class="page5-top-background">
+			<img src="page5/s5c04d048c2325.jpg" class="page5img1">
+		</div><!--page5-top-background-->
+	    <div class="page5topleft">
+			<img src="page5/9.png" class="page5img2">
+			<div class="page5-top-left-text">
+					<img src="page5/c0.png">
+					<p class="page5-top-left-text-p">
+						热点新闻
+					</p><!--page5-top-left-text-p-->
+					<div class="page5toplefttextbtn">
+						了解详情
+					</div><!--page5toplefttextbtn-->
+			</div><!--page5-top-left-text-->
+		</div><!--page5topleft-->
+		<div class="page5-top-right">
+			<img src="page5/s5c04d05f6b783.png">
+		</div><!--page5-top-right-->
+	</div><!--page5-top-->
+	<div class="page5-bottom">
+		<div class="page5-bottom-background">
+			<img src="page5/s5c20b40a51f1c.png" class="page5img3">
+		</div><!--page5-bottom-background-->
+		<div class="page5bottomright">
+			<img src="page5/8.png" class="page5img4">
+			<div class="page5-bottom-right-text">
+					<img src="page5/c0.png">
+					<p class="page5-bottom-right-text-p">
+						热点新闻
+					</p><!--page5-bottom-right-text-p-->
+					<div class="page5bottomrighttextbtn">
+						了解详情
+					</div><!--page5bottomrighttextbtn-->
+			</div><!--page5-bottom-right-text-->
+		</div><!--page5-bottom-right-->
+	</div><!--page5-bottom-->
+	<div class="foot">
+			<div class="footback">
+				    <img src="foot/s5bfe0b44eefb4.jpg">
+			</div><!--footback-->
+			<div class="weibo">
+				<div class="weibotop">
+				        <img src="foot/weibo1.png" class="weiboimg">
+				</div><!--weibotop-->
+				<div class="weibobottom">
+					蒙牛官方微博
+				</div><!--weibobottom-->
+			</div><!--weibo-->
+			<div class="weixin">
+				<div class="weixintop">
+				        <img src="foot/xin1.png" class="weixinimg">
+				</div><!--weixintop-->
+				<div class="weixinbottom">
+					蒙牛官方微信
+				</div><!--weixinbottom-->
+			</div><!--weixin-->
+			<div class="foottext">
+				<div class="line1">
+				    <div class="foottext1">关于蒙牛</div><!--foottext1-->
+				    <div class="foottext2">媒体中心</div><!--foottext2-->
+				    <div class="foottext3">投资者中心</div><!--foottext3-->
+				    <div class="foottext4">加入我们</div><!--foottext4-->
+				    <div class="foottext5">蒙牛微客服</div><!--foottext5-->
+				    <div class="foottext6">蒙牛天猫旗舰店</div><!--foottext6-->
+				    <div class="foottext7">牛蒙蒙APP</div><!--foottext7-->
+				</div><!--line1-->
+				<div class="line2">
+				    <div class="foottext8">CopyRight 2006-2019, All Rights Reserved
+					             内蒙古蒙牛乳业 版权所有 蒙ICP备05005622号
+					</div><!--foottext8-->
+				    <div class="foottext9">
+							<img src="foot/foot.png">
+					</div><!--foottext9-->
+				    <div class="foottext10">
+						蒙公网安备&nbsp;15012302000103号
+					</div><!--foottext10-->
+				</div><!--line2-->
+				<div class="line3">
+				    <div class="foottext8">
+						技术支持：&nbsp;北京分形科技
+					</div><!--foottext1-->
+				</div><!--line3-->
+			</div><!--foottext-->
+		</div><!--foot-->
+</div><!--page-->
+<div class="page">
+	<div class="page6-top">
+		<img src="page6/s5be958afe45cc.jpg">
+	</div><!--page6-top-->
+	<div class="page6-top-bottom">
+		<div class="page6-top-bottom-white-left"></div><!--page6-top-bottom-white-left-->
+		<div class="page6-top-bottom-middle">
+			<img src="page6/d!.png">
+			<img src="page6/s5e0eb03adf7a9.png">
+		</div><!--page6-top-bottom-middle-->
+		<div class="page6-top-bottom-white-right"></div><!--page6-top-bottom-white-right-->
+	</div><!--page6-top-bottom-->
+	
+	<div class="page6-middle">
+	    <div class="page6-middle-top">
+		    <h2 class="page6-middle-title">
+			    招标公告公示
+		    </h2><!--page6-middle-title-->
+		    <div class="page6-middle-text">
+			    <p class="page6middletextleft">
+				    蒙牛乳业常温事业部眉山工厂印刷品采购项目成交结果公示
+			    </p><!--page6middletextleft-->
+			    <p class="page6-middle-text-right">
+				    2020-01-15
+			    </p><!--page6-middle-text-right-->
+		    </div><!--page6-middle-text-->
+		    <div class="page6-middle-text">
+			    <p class="page6middletextleft">
+				    蒙牛乳业低温事业部焦作工厂风机联动项目比价结果公示
+			    </p><!--page6middletextleft-->
+			    <p class="page6-middle-text-right">
+				     2020-01-15 
+			    </p><!--page6-middle-text-right-->
+		    </div><!--page6-middle-text-->
+		    <div class="page6-middle-text">
+			    <p class="page6middletextleft">
+				    蒙牛乳业常温事业部唐山工厂二期半成品送样通道项目公开竞争性谈判结果公示
+			    </p><!--page6middletextleft-->
+			    <p class="page6-middle-text-right">
+				    2020-01-15 
+			    </p><!--page6-middle-text-right-->
+		    </div><!--page6-middle-text-->
+		    <div class="page6-middle-text">
+			    <p class="page6middletextleft">
+				    蒙牛乳业常温事业部唐山工厂化料罐间接加热改造项目公开竞争性谈判公告
+			    </p><!--page6middletextleft-->
+			    <p class="page6-middle-text-right">
+				    2020-01-15
+			    </p><!--page6-middle-text-right-->
+		    </div><!--page6-middle-text-->
+		    <div class="page6-middle-text">
+			    <p class="page6middletextleft">
+				    冰品事业部冰柜贴公开竞谈项目成交结果公示
+			    </p><!--page6middletextleft-->
+			    <p class="page6-middle-text-right">
+				    2020-01-15
+			    </p><!--page6-middle-text-right-->
+		    </div><!--page6-middle-text-->
+		    <div class="page6-middle-text">
+			    <p class="page6middletextleft">
+				    蒙牛乳业常温事业部滦南工厂新增生产线立项咨询项目比价结果公示
+			    </p><!--page6middletextleft-->
+			    <p class="page6-middle-text-right">
+				    2020-01-15
+			    </p><!--page6-middle-text-right-->
+		    </div><!--page6-middle-text-->
+		    <div class="page6-middle-text">
+			    <p class="page6middletextleft">
+				    蒙牛乳业常温事业部包头工厂复印机耗材申购与维修项目询比价公告
+			    </p><!--page6middletextleft-->
+			    <p class="page6-middle-text-right">
+				    2020-01-15
+			    </p><!--page6-middle-text-right-->
+		    </div><!--page6-middle-text-->
+		    <div class="page6-middle-text">
+			    <p class="page6middletextleft">
+				     蒙牛乳业常温事业部泰安工厂运营处监控购销项目第一次澄清公告
+			    </p><!--page6middletextleft-->
+			    <p class="page6-middle-text-right">
+				    2020-01-15 
+			    </p><!--page6-middle-text-right-->
+		    </div><!--page6-middle-text-->
+		    <div class="page6-middle-text">
+			    <p class="page6middletextleft">
+				    蒙牛乳业常温事业部焦作工厂网络、监控维护项目询比价二次公告
+			    </p><!--page6middletextleft-->
+			    <p class="page6-middle-text-right">
+				    2020-01-15
+			    </p><!--page6-middle-text-right-->
+		    </div><!--page6-middle-text-->
+		    <div class="page6-middle-text">
+			    <p class="page6middletextleft">
+				    蒙牛乳业常温事业部和林三期二楼花卉租赁项目公开竞争性谈判公告 
+			    </p><!--page6middletextleft-->
+			    <p class="page6-middle-text-right">
+				     2020-01-15
+			    </p><!--page6-middle-text-right-->
+		    </div><!--page6-middle-text-->
+	    </div><!--page6-middle-top-->
+	    
+		<div class="page6-middle-bottom">
+			<div class="page6-middle-bottom-left"> < </div><!--page6-middle-bottom-left-->
+			<div class="page6-middle-bottom1"> 1 </div><!--page6-middle-bottom1-->
+			<div class="page6-middle-bottom2"> 2 </div><!--page6-middle-bottom2-->
+			<div class="page6-middle-bottom2"> 3 </div><!--page6-middle-bottom2-->
+			<div class="page6-middle-bottom2"> 4 </div><!--page6-middle-bottom2-->
+			<div class="page6-middle-bottom2"> 5 </div><!--page6-middle-bottom2-->
+			<div class="page6-middle-bottom2"> ... </div><!--page6-middle-bottom2-->
+			<div class="page6-middle-bottom2"> 2435 </div><!--page6-middle-bottom2-->
+			<div class="page6-middle-bottom-right"> > </div><!--page6-middle-bottom-right-->
+		</div><!--page6-middle-bottom-->
+	</div><!--page6-middle-->
+
+    <div class="foot">
+    		<div class="footback">
+    			    <img src="foot/s5bfe0b44eefb4.jpg">
+    		</div><!--footback-->
+    		<div class="weibo">
+    			<div class="weibotop">
+    			        <img src="foot/weibo1.png" class="weiboimg">
+    			</div><!--weibotop-->
+    			<div class="weibobottom">
+    				蒙牛官方微博
+				</div><!--weibobottom-->
+    		</div><!--weibo-->
+    		<div class="weixin">
+    			<div class="weixintop">
+    			        <img src="foot/xin1.png" class="weixinimg">
+    			</div><!--weixintop-->
+    			<div class="weixinbottom">
+    				蒙牛官方微信
+    			</div><!--weixinbottom-->
+    		</div><!--weixin-->
+    		<div class="foottext">
+    			<div class="line1">
+    			    <div class="foottext1">关于蒙牛</div><!--foottext1-->
+    			    <div class="foottext2">媒体中心</div><!--foottext2-->
+    			    <div class="foottext3">投资者中心</div><!--foottext3-->
+    			    <div class="foottext4">加入我们</div><!--foottext4-->
+    			    <div class="foottext5">蒙牛微客服</div><!--foottext5-->
+    			    <div class="foottext6">蒙牛天猫旗舰店</div><!--foottext6-->
+    			    <div class="foottext7">牛蒙蒙APP</div><!--foottext7-->
+    			</div><!--line1-->
+    			<div class="line2">
+    			    <div class="foottext8">CopyRight 2006-2019, All Rights Reserved
+    				             内蒙古蒙牛乳业 版权所有 蒙ICP备05005622号
+    				</div><!--foottext8-->
+    			    <div class="foottext9">
+    						<img src="foot/foot.png">
+    				</div><!--foottext9-->
+    			    <div class="foottext10">
+    					蒙公网安备&nbsp;15012302000103号
+    				</div><!--foottext10-->
+    			</div><!--line2-->
+    			<div class="line3">
+    			    <div class="foottext8">
+    					技术支持：&nbsp;北京分形科技
+    				</div><!--foottext1-->
+    			</div><!--line3-->
+    		</div><!--foottext-->
+    	</div><!--foot-->
+</div><!--page-->
+
+
+
+
+</body>
+</html>
+
+
