@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css" >
+            #box1{
+                width:700px;
+                height:500px;
+                border:1px solid black;
+                left:100px;
+                position:relative;
+                float:left;
+            }
+            #ball{
+                width:20px;
+                height:20px;
+                border-radius:10px;
+                position:absolute;
+                background-color:red;
+                bottom:0px;
+                left:0px;
+            }
+            #bat{
+                width:100px;
+                height:50px;
+                background-color:black;
+                bottom:0px;
+                position:absolute;
+                left:100px;
+            }
+            #brick div{
+                width:98px;
+                height:28px;
+            
+                border:1px solid black;
+                float:left;
+            }
+            #box2{
+                width:100px;
+                height:50px;
+                bottom:0px;
+                left:0px;
+                display:block;
+            }
+            #text{
+                width:200px;
+                height:400px;
+                margin-left:100px;
+                top:0px;
+                float:left;
+            }
+        </style>
+        <script>
+            window.onload = function() {
+                /*alert(hao);*/
+                var ball=document.getElementById("ball");
+                var box1=document.getElementById("box1");
+                var bat=document.getElementById("bat");
+                var brick=document.getElementById("brick");
+                var bricks=brick.getElementsByTagName("div");
+                var box2=document.getElementById("box2");
+                
+                //控制滑块的函数
+                dragX(bat);
+                createBrick(70);
+
+                box2.onclick=function()
+        {
+
+                
+                
+               //让小球水平方向运动，随机一个水平的速度
+                var speedX=parseInt(Math.random()*4)+3;
+                //让小球竖直方向运动，随机一个竖直的速度
+                var speedY=-(parseInt(Math.random()*3)+5);
+            
+        
+            
+                //创建小块
+                /*createBrick(70);*/
+
+                setInterval(function(){
+                    ball.style.left=ball.offsetLeft+speedX+"px";
+                    if(ball.offsetLeft>=680||ball.offsetLeft<=0)
+                    {
+                        speedX *=-1;
+                    }
+                    ball.style.top=ball.offsetTop+speedY+"px";
+                    if(ball.offsetTop<=0)
+                    {
+                        speedY *=-1;
+                    }
+                    if(ball.offsetTop>=480)
+                    {
+                        alert("GAME OVER");
+                        window.location.reload();
+                    }       
+                   
+                    /*小球和滑板的检测*/
+                   if(knock(bat,ball))
+                    {
+                        speedY*=-1;
+                    }
+                    /*小球和砖块的检测*/
+                    for(var i=0;i<bricks.length+1;i++)
+                    {
+                                           
+                        /*小球反弹*/
+                        if(knock(bricks[i],ball))
+                        {
+                            /*小球反弹*/
+                            speedY*=-1;
+                        
+                            /*砖块消失*/
+                           brick.removeChild(bricks[i]);
+                            break;
+                        }
+            
+                    }
+                    
+                    
+
+                },30);
+        }    
+            }
+            
+           
+            function dragX(node)
+            {
+                node.onmousedown=function(ev)
+                {
+                    var e=ev||window.event;
+                    var offsetX=e.clientX-node.offsetLeft;
+                    //限制滑块出去
+                    
+                    document.onmousemove=function(ev)
+                    {
+                        var e=ev||window.event;
+                        var l=e.clientX-offsetX;
+                        if(l<=0)
+                        {
+                           l=0;
+                        }
+                        if(l>=600)
+                        {
+                           l=600;
+                        }
+                        node.style.left=l+"px";
+                    }
+                }
+            
+                document.onmouseup=function()
+                {
+                    document.onmousemove=null;
+                }
+            }
+
+            function createBrick(n)
+            {
+                var brick=document.getElementById("brick");
+                for(var i=0;i<n;i++)
+                {
+                    var node=document.createElement("div");
+                    node.style.backgroundColor=randomColor();
+                    brick.appendChild(node);
+                }
+
+                /*不改变其他砖块的位置*/
+                var bricks=brick.getElementsByTagName("div");
+                for(var i=0;i<bricks.length;i++)
+                {
+                    bricks[i].style.left=bricks[i].offsetLeft+"px";
+                    bricks[i].style.top=bricks[i].offsetTop+"px";
+                }
+                for(var i=0;i<bricks.length;i++)
+                {
+                    bricks[i].style.position="absolute";
+                }
+                
+            }
+            function randomColor()
+            {
+                var str="rgba("+parseInt(Math.random()*256)+","+parseInt(Math.random()*256)+","+parseInt(Math.random()*256)
+                         +")";
+                return str;
+           }
+           /*反向思考找碰不到的*/
+           function knock(node1,node2)/*node2为移动的*/
+           {
+               var l1=node1.offsetLeft;
+               var r1=node1.offsetLeft+node1.offsetWidth;
+               var t1=node1.offsetTop;
+               var b1=node1.offsetTop+node1.offsetHeight;
+
+               var l2=node2.offsetLeft;
+               var r2=node2.offsetLeft+node2.offsetWidth;
+               var t2=node2.offsetTop;
+               var b2=node2.offsetTop+node2.offsetHeight;
+
+               if(l2>r1||r2<l1||t2>b1||b2<t1)
+               {
+                   return false;
+               }
+               else
+               {
+                   return true;
+               }
+           }
+        </script>
+    </head>
+    <body>
+            <div id="text">
+                    <h3>游戏规则</h3>
+                    <p>
+                        1.当玩家点击开始的按钮之后，小球开始运动。</br>
+                        2.鼠标放在底部黑色的挡板上来回移动，滑块会跟着移动（不用点击即可）。</br>
+                        3.小球碰到砖块，砖块会消失；小球碰到挡板，会反弹。</br>
+                        4.当挡板没有接住小球时，游戏会结束。</br>
+                        5.当所有的砖块消失后。游戏胜利！</br>
+                    </p>
+                    <button id="box2">开始</button> 
+                </div>
+                   
+        <div id="box1">
+                <div id="ball"></div>
+                <div id="bat"></div>
+                <div id="brick">
+                </div>
+            </div>
+            
+            
+    </body>
+</html>
